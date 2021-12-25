@@ -403,4 +403,9 @@ PythonClient/docs/_build
 # clangd generated folder, for e.g. from VSCode clangd extension
 .cache/
 
-log.txt
+# custom: ignore
+/AirLibUnitTests/data
+/AirLibUnitTests/figures
+/AirLibUnitTests/log.txt
+/AirLibUnitTests/other.txt
+
