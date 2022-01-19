@@ -21,8 +21,11 @@ public:
 
     virtual Axis3r transformToBodyFrame(const Axis3r& world_frame_val) const = 0;
 
+<<<<<<< HEAD
     virtual ~IStateEstimator() = default;
     
+=======
+>>>>>>> 3c1a0725 (cleanup)
     virtual simple_flight::SensorMeasurements getTrueMeasurements() const = 0;
     virtual simple_flight::SensorMeasurements getEkfMeasurements() const = 0;
     virtual simple_flight::Axis3r getEkfPosition() const = 0;
