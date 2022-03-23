@@ -22,11 +22,6 @@ public:
 
     virtual Axis3r transformToBodyFrame(const Axis3r& world_frame_val) const = 0;
 
-<<<<<<< HEAD
-    virtual ~IStateEstimator() = default;
-    
-=======
->>>>>>> 3c1a0725 (cleanup)
     virtual simple_flight::SensorMeasurements getTrueMeasurements() const = 0;
     virtual simple_flight::SensorMeasurements getEkfMeasurements() const = 0;
     virtual simple_flight::Axis3r getEkfPosition() const = 0;
@@ -44,7 +39,7 @@ public:
     virtual simple_flight::Axis3r getEkfGyroBiasVariance() const = 0;
     virtual float getEkfBaroBiasVariance() const = 0;
     virtual simple_flight::EkfKinematicsState getEkfStateVariance() const = 0;
-    
+
     virtual float getEkfOrientationNorm() const = 0;
 
     virtual simple_flight::Axis3r getTrueAngles() const = 0;
@@ -55,6 +50,5 @@ public:
     virtual simple_flight::KinematicsState getTrueKinematicsEstimated() const = 0;
 
     virtual ~IStateEstimator() = default;
-
 };
 }
