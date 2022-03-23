@@ -12,7 +12,9 @@
 #include "AirSimSimpleEkfBase.hpp"
 #include "AirSimSimpleEkfModel.hpp"
 #include "AirSimSimpleEkfParams.hpp"
-#include "common/GeodeticConverter.hpp"
+#include "common/GeodeticConverter.hpp"       
+
+#define AirSimSimpleEkf_GROUND_TRUTH_MEAS_DIRECTIVE 0
 
 namespace msr
 {
@@ -25,7 +27,7 @@ namespace airlib
     public:
         // Constructor
         AirSimSimpleEkf(const simple_flight::IBoard* board, simple_flight::ICommLink* comm_link, const AirSimSettings::EkfSetting* setting = nullptr)
-            : board_(board), comm_link_(comm_link) // commlink is only temporary here
+            : board_(board)
         {
             params_.initializeParameters(setting);
             freq_limiter_.initialize(334); // physics engine and the imu refresh at period 3ms ~ 333.33Hz
@@ -743,7 +745,6 @@ namespace airlib
         // ---------------------------------------------------------------------
         FrequencyLimiter freq_limiter_;
         const simple_flight::IBoard* board_;
-        simple_flight::ICommLink* comm_link_;
 
         const Kinematics::State* kinematics_;
         const Environment* environment_;
