@@ -47,6 +47,58 @@
               <ul class="current">
                   <li class="toctree-l1 current"><a class="reference internal current" href=".">Home</a>
     <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#join-the-community">Join the Community</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#goals-and-project-development">Goals and Project Development</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#how-to-get-it">How to Get It</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#windows">Windows</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#linux">Linux</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#macos">macOS</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#how-to-use-it">How to Use It</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#documentation">Documentation</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#manual-drive">Manual drive</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#programmatic-control">Programmatic control</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#gathering-training-data">Gathering training data</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#computer-vision-mode">Computer Vision mode</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#weather-effects">Weather Effects</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#tutorials">Tutorials</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#participate">Participate</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#paper">Paper</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#contribute">Contribute</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#who-is-using-airsim">Who is Using AirSim?</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#contact">Contact</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#whats-new">What's New</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#faq">FAQ</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#code-of-conduct">Code of Conduct</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#license">License</a>
+    </li>
     </ul>
                   </li>
               </ul>
@@ -280,7 +332,8 @@
         <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
   <ul class="wy-breadcrumbs">
     <li><a href="." class="icon icon-home" alt="Docs"></a> &raquo;</li>
-          <li>Home &raquo;</li><li>Home</li>
+          <li>Home &raquo;</li>
+      <li>Home</li>
     <li class="wy-breadcrumbs-aside">
         <a href="https://github.com/microsoft/airsim/edit/master/docs/README.md"
           class="icon icon-github"> Edit on GitHub</a>
@@ -288,18 +341,19 @@
   </ul>
   <hr/>
 </div>
-
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <h2 id="airsim-announcement-this-repository-will-be-archived-in-the-coming-year">AirSim announcement: This repository will be archived in the coming year<a class="headerlink" href="#airsim-announcement-this-repository-will-be-archived-in-the-coming-year" title="Permanent link">#</a></h2>
-<p>In 2017 Microsoft Research created AirSim as a simulation platform for AI research and experimentation. Over the span of five years, this research project has served its purpose—and gained a lot of ground—as a common way to share research code and test new ideas around aerial AI development and simulation. Additionally, time has yielded advancements in the way we apply technology to the real world, particularly through aerial mobility and autonomous systems. For example, drone delivery is no longer a sci-fi storyline—it’s a business reality, which means there are new needs to be met. We’ve learned a lot in the process, and we want to thank this community for your engagement along the way. </p>
-<p>In the spirit of forward momentum, we will be releasing a new simulation platform in the coming year and subsequently archiving the original 2017 AirSim. Users will still have access to the original AirSim code beyond that point, but no further updates will be made, effective immediately. Instead, we will focus our efforts on a new product, Microsoft Project AirSim, to meet the growing needs of the aerospace industry. Project AirSim will provide an end-to-end platform for safely developing and testing aerial autonomy through simulation. Users will benefit from the safety, code review, testing, advanced simulation, and AI capabilities that are uniquely available in a commercial product. As we get closer to the release of Project AirSim, there will be learning tools and features available to help you migrate to the new platform and to guide you through the product. To learn more about building aerial autonomy with the new Project AirSim, visit <a href="https://aka.ms/exploreprojectairsim">https://aka.ms/exploreprojectairsim</a>.</p>
-<h1 id="welcome-to-airsim">Welcome to AirSim<a class="headerlink" href="#welcome-to-airsim" title="Permanent link">#</a></h1>
-<p>AirSim is a simulator for drones, cars and more, built on <a href="https://www.unrealengine.com/">Unreal Engine</a> (we now also have an experimental <a href="https://unity3d.com/">Unity</a> release). It is open-source, cross platform, and supports software-in-the-loop simulation with popular flight controllers such as PX4 &amp; ArduPilot and hardware-in-loop with PX4 for physically and visually realistic simulations. It is developed as an Unreal plugin that can simply be dropped into any Unreal environment. Similarly, we have an experimental release for a Unity plugin.</p>
-<p>Our goal is to develop AirSim as a platform for AI research to experiment with deep learning, computer vision and reinforcement learning algorithms for autonomous vehicles. For this purpose, AirSim also exposes APIs to retrieve data and control vehicles in a platform independent way.</p>
+                <h1 id="welcome-to-colosseum-a-successor-of-airsim">Welcome to Colosseum, a successor of <a href="https://github.com/microsoft/AirSim">AirSim</a><a class="headerlink" href="#welcome-to-colosseum-a-successor-of-airsim" title="Permanent link">#</a></h1>
+<p>Colosseum is a simulator for robotic, autonomous systems, built on <a href="https://www.unrealengine.com/">Unreal Engine</a> (we now also have an experimental <a href="https://unity3d.com/">Unity</a> release). It is open-source, cross platform, and supports software-in-the-loop simulation with popular flight controllers such as PX4 &amp; ArduPilot and hardware-in-loop with PX4 for physically and visually realistic simulations. It is developed as an Unreal plugin that can simply be dropped into any Unreal environment. Similarly, we have an experimental release for a Unity plugin.</p>
+<p>This is a fork of the AirSim repository, which Microsoft decided to shutdown in July of 2022. This fork serves as a waypoint to building a new and better simulation platform. The creater and maintainer of this fork is Codex Laboratories LLC (our website is <a href="https://www.codex-labs-llc.com">here</a>. Colosseum is one of the underlying simulation systems that we use in our product, the <a href="https://www.swarmsim.io">SWARM Simulation Platform</a>. This platform exists to provide pre-built tools and low-code/no-code autonomy solutions. Please feel free to check this platform out and reach out if interested.</p>
+<h2 id="join-the-community">Join the Community<a class="headerlink" href="#join-the-community" title="Permanent link">#</a></h2>
+<p>We have decided to create a Slack to better allow for community engagement. Join here: <a href="https://join.slack.com/t/colosseum-sim/shared_invite/zt-1cz1yke0l-dW9DPIJfwSlzOmn9pNwcjQ">Colosseum Slack</a></p>
+<h2 id="goals-and-project-development">Goals and Project Development<a class="headerlink" href="#goals-and-project-development" title="Permanent link">#</a></h2>
+<p>This section will contain a list of the current features that the community and Codex Labs are working on to support and build.
+Check back soon!</p>
 <p><strong>Check out the quick 1.5 minute demo</strong></p>
-<p>Drones in AirSim</p>
+<p>Quadrotor UAVs in AirSim</p>
 <p><a href="https://youtu.be/-WfTr1-OBGQ"><img alt="AirSim Drone Demo Video" src="images/demo_video.png" /></a></p>
 <p>Cars in AirSim</p>
 <p><a href="https://youtu.be/gnz1X3UNM5Y"><img alt="AirSim Car Demo Video" src="images/car_demo_video.png" /></a></p>
@@ -387,7 +441,7 @@
 </ul>
 <p>For complete list of changes, view our <a href="CHANGELOG/">Changelog</a></p>
 <h2 id="faq">FAQ<a class="headerlink" href="#faq" title="Permanent link">#</a></h2>
-<p>If you run into problems, check the <a href="https://microsoft.github.io/AirSim/faq">FAQ</a> and feel free to post issues in the  <a href="https://github.com/Microsoft/AirSim/issues">AirSim</a> repository.</p>
+<p>If you run into problems, check the <a href="https://codexlabsllc.github.io/Colosseum/faq">FAQ</a> and feel free to post issues in the  <a href="https://github.com/CodexLabsLLC/Colosseum/issues">Colosseum</a> repository.</p>
 <h2 id="code-of-conduct">Code of Conduct<a class="headerlink" href="#code-of-conduct" title="Permanent link">#</a></h2>
 <p>This project has adopted the <a href="https://opensource.microsoft.com/codeofconduct/">Microsoft Open Source Code of Conduct</a>. For more information see the <a href="https://opensource.microsoft.com/codeofconduct/faq/">Code of Conduct FAQ</a> or contact <a href="mailto:opencode@microsoft.com">opencode@microsoft.com</a> with any additional questions or comments.</p>
 <h2 id="license">License<a class="headerlink" href="#license" title="Permanent link">#</a></h2>
