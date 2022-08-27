@@ -5,14 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <link rel="shortcut icon" href="../../../img/favicon.ico" />
-    <title>AirSim Development Environment on Azure - AirSim</title>
+    <title>Colosseum Development Environment on Azure - AirSim</title>
     <link rel="stylesheet" href="../../../css/theme.css" />
     <link rel="stylesheet" href="../../../css/theme_extra.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
     
       <script>
         // Current page data
-        var mkdocs_page_name = "AirSim Development Environment on Azure";
+        var mkdocs_page_name = "Colosseum Development Environment on Azure";
         var mkdocs_page_input_path = "pages/colosseum/azure.md";
         var mkdocs_page_url = null;
       </script>
@@ -278,7 +278,7 @@
         <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
   <ul class="wy-breadcrumbs">
     <li><a href="../../.." class="icon icon-home" alt="Docs"></a> &raquo;</li>
-      <li>AirSim Development Environment on Azure</li>
+      <li>Colosseum Development Environment on Azure</li>
     <li class="wy-breadcrumbs-aside">
         <a href="https://github.com/microsoft/airsim/edit/master/docs/pages/colosseum/azure.md"
           class="icon icon-github"> Edit on GitHub</a>
@@ -289,8 +289,8 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <h1 id="airsim-development-environment-on-azure">AirSim Development Environment on Azure<a class="headerlink" href="#airsim-development-environment-on-azure" title="Permanent link">#</a></h1>
-<p>This document explains how to automate the creation of a development environment on Azure and code and debug a Python application connected to AirSim using Visual Studio Code</p>
+                <h1 id="colosseum-development-environment-on-azure">Colosseum Development Environment on Azure<a class="headerlink" href="#colosseum-development-environment-on-azure" title="Permanent link">#</a></h1>
+<p>This document explains how to automate the creation of a development environment on Azure and code and debug a Python application connected to Colosseum using Visual Studio Code</p>
 <h2 id="automatically-deploy-your-azure-vm">Automatically Deploy Your Azure VM<a class="headerlink" href="#automatically-deploy-your-azure-vm" title="Permanent link">#</a></h2>
 <p>Click the blue button to start the Azure deployment (The template is pre-filled with the recommended virtual machine size for the use cases of the following two tutorials)</p>
 <p><a href="https://aka.ms/AA8umgt" target="_blank">
@@ -300,7 +300,7 @@
 <h3 id="regarding-the-deployment-of-the-azure-vm">Regarding the deployment of the Azure VM<a class="headerlink" href="#regarding-the-deployment-of-the-azure-vm" title="Permanent link">#</a></h3>
 <ul>
 <li>
-<p>When using an Azure Trial account, the default vCPU quota is not enough to allocate the required VM to run AirSim. If that's the case, you will see an error when trying to create the VM and will have to submit a request for Quota increase. <strong>Be sure to understand how and how much you are going to be charged for the use of the VM</strong></p>
+<p>When using an Azure Trial account, the default vCPU quota is not enough to allocate the required VM to run Colosseum. If that's the case, you will see an error when trying to create the VM and will have to submit a request for Quota increase. <strong>Be sure to understand how and how much you are going to be charged for the use of the VM</strong></p>
 </li>
 <li>
 <p>To avoid charges for the Virtual Machine usage while not in use, remember to deallocate its resources from the <a href="https://portal.azure.com">Azure Portal</a> or use the following command from the Azure CLI:
@@ -314,14 +314,14 @@
 <li>Press <code>F1</code> and run the <code>Remote - SSH: Connect to host...</code> command</li>
 <li>Add the recently create VM details. For instance, <code>AzureUser@11.22.33.44</code></li>
 <li>Run the <code>Remote - SSH: Connect to host...</code> command again, and now select the newly added connection.</li>
-<li>Once connected, click on the <code>Clone Repository</code> button in Visual Studio Code, and either clone this repository in the remote VM and open <em>just the <code>azure</code> folder</em>, or create a brand new repository, clone it and copy the contents of the <code>azure</code> folder from this repository in it. It is important to open that directory so Visual Studio Code can use the specific <code>.vscode</code> directory for the scenario and not the general AirSim <code>.vscode</code> directory. It contains the recommended extensions to install, the task to start AirSim remotely and the launch configuration for the Python application.</li>
+<li>Once connected, click on the <code>Clone Repository</code> button in Visual Studio Code, and either clone this repository in the remote VM and open <em>just the <code>azure</code> folder</em>, or create a brand new repository, clone it and copy the contents of the <code>azure</code> folder from this repository in it. It is important to open that directory so Visual Studio Code can use the specific <code>.vscode</code> directory for the scenario and not the general Colosseum <code>.vscode</code> directory. It contains the recommended extensions to install, the task to start Colosseum remotely and the launch configuration for the Python application.</li>
 <li>Install all the recommended extensions</li>
-<li>Press <code>F1</code> and select the <code>Tasks: Run Task</code> option. Then, select the <code>Start AirSim</code> task from Visual Studio Code to execute the <code>start-airsim.ps1</code> script from Visual Studio Code.</li>
+<li>Press <code>F1</code> and select the <code>Tasks: Run Task</code> option. Then, select the <code>Start Colosseum</code> task from Visual Studio Code to execute the <code>start-Colosseum.ps1</code> script from Visual Studio Code.</li>
 <li>Open the <code>multirotor.py</code> file inside the <code>app</code> directory</li>
 <li>Start debugging with Python</li>
 <li>When finished, remember to stop an deallocate the Azure VM to avoid extra charges</li>
 </ul>
-<h2 id="code-and-debug-from-a-local-visual-studio-code-and-connect-to-airsim-via-forwarded-ports">Code and debug from a local Visual Studio Code and connect to AirSim via forwarded ports<a class="headerlink" href="#code-and-debug-from-a-local-visual-studio-code-and-connect-to-airsim-via-forwarded-ports" title="Permanent link">#</a></h2>
+<h2 id="code-and-debug-from-a-local-visual-studio-code-and-connect-to-colosseum-via-forwarded-ports">Code and debug from a local Visual Studio Code and connect to Colosseum via forwarded ports<a class="headerlink" href="#code-and-debug-from-a-local-visual-studio-code-and-connect-to-colosseum-via-forwarded-ports" title="Permanent link">#</a></h2>
 <p><em>Note: this scenario, will be using two Visual Studio Code instances. 
 The first one will be used as a bridge to forward ports via SSH to the Azure VM and execute remote processes, and the second one will 
 be used for local Python development.
@@ -330,7 +330,7 @@ To be able to reach the VM from the local Python code, it is required to keep th
 <li>Open the first Visual Studio Code instance</li>
 <li>Follow the steps in the previous section to connect via <code>Remote - SSH</code></li>
 <li>In the <em>Remote Explorer</em>, add the port <code>41451</code> as a forwarded port to localhost</li>
-<li>Either run the <code>Start AirSim</code> task on the Visual Studio Code with the remote session as explained in the previous scenario or manually start the AirSim binary in the VM</li>
+<li>Either run the <code>Start Colosseum</code> task on the Visual Studio Code with the remote session as explained in the previous scenario or manually start the Colosseum binary in the VM</li>
 <li>Open a second Visual Studio Code instance, without disconnecting or closing the first one</li>
 <li>Either clone this repository locally and open <em>just the <code>azure</code> folder</em> in Visual Studio Code, or create a brand new repository, clone it and copy the contents of the <code>azure</code> folder from this repository in it.</li>
 <li>Run <code>pip install -r requirements.txt</code> inside the <code>app</code> directory</li>
@@ -339,21 +339,21 @@ To be able to reach the VM from the local Python code, it is required to keep th
 <li>When finished, remember to stop an deallocate the Azure VM to avoid extra charges</li>
 </ul>
 <h2 id="running-with-docker">Running with Docker<a class="headerlink" href="#running-with-docker" title="Permanent link">#</a></h2>
-<p>Once both the AirSim environment and the Python application are ready, you can package everything as a Docker image. The sample project inside the <code>azure</code> directory is already prepared to run a prebuilt AirSim binary and Python code using Docker.</p>
+<p>Once both the Colosseum environment and the Python application are ready, you can package everything as a Docker image. The sample project inside the <code>azure</code> directory is already prepared to run a prebuilt Colosseum binary and Python code using Docker.</p>
 <p>This would be a perfect scenario when you want to run the simulation at scale. For instance, you could have several different configurations for the same simulation and execute them in a parallel, unattended way using a Docker image on Azure Container Services</p>
-<p>Since AirSim requires access to the host GPU, it is required to use a Docker runtime that supports it. For more information about running AirSim in Docker, click <a href="../docker_ubuntu/">here</a>.</p>
+<p>Since Colosseum requires access to the host GPU, it is required to use a Docker runtime that supports it. For more information about running Colosseum in Docker, click <a href="../docker_ubuntu/">here</a>.</p>
 <p>When using Azure Container Services to run this image, the only extra-requirement is to add GPU support to the Container Group where it will be deployed. </p>
 <p>It can use either public docker images from DockerHub or images deployed to a private Azure Container Registry</p>
 <h3 id="building-the-docker-image">Building the docker image<a class="headerlink" href="#building-the-docker-image" title="Permanent link">#</a></h3>
 <pre class="highlight"><code class="language-bash">docker build -t &lt;your-registry-url&gt;/&lt;your-image-name&gt; -f ./docker/Dockerfile .`</code></pre>
-<h2 id="using-a-different-airsim-binary">Using a different AirSim binary<a class="headerlink" href="#using-a-different-airsim-binary" title="Permanent link">#</a></h2>
-<p>To use a different AirSim binary, first check the official documentation on <a href="../build_windows/">How to Build AirSim on Windows</a> and <a href="../build_linux/">How to Build AirSim on Linux</a> if you also want to run it with Docker</p>
-<p>Once you have a zip file with the new AirSim environment (or prefer to use one from the <a href="https://github.com/microsoft/AirSim/releases">Official Releases</a>), you need to modify some of the scripts in the <code>azure</code> directory of the repository to point to the new environment:
-- In <a href="https://github.com/microsoft/AirSim/blob/main/azure/azure-env-creation/configure-vm.ps1"><code>azure/azure-env-creation/configure-vm.ps1</code></a>, modify all the parameters starting with <code>$airSimBinary</code> with the new values
-- In <a href="https://github.com/microsoft/AirSim/blob/main/azure/start-airsim.ps1"><code>azure/start-airsim.ps1</code></a>, modify <code>$airSimExecutable</code> and <code>$airSimProcessName</code> with the new values</p>
+<h2 id="using-a-different-colosseum-binary">Using a different Colosseum binary<a class="headerlink" href="#using-a-different-colosseum-binary" title="Permanent link">#</a></h2>
+<p>To use a different Colosseum binary, first check the official documentation on <a href="../build_windows/">How to Build Colosseum on Windows</a> and <a href="../build_linux/">How to Build Colosseum on Linux</a> if you also want to run it with Docker</p>
+<p>Once you have a zip file with the new Colosseum environment (or prefer to use one from the <a href="https://github.com/microsoft/Colosseum/releases">Official Releases</a>), you need to modify some of the scripts in the <code>azure</code> directory of the repository to point to the new environment:
+- In <a href="https://github.com/microsoft/Colosseum/blob/main/azure/azure-env-creation/configure-vm.ps1"><code>azure/azure-env-creation/configure-vm.ps1</code></a>, modify all the parameters starting with <code>$ColosseumBinary</code> with the new values
+- In <a href="https://github.com/microsoft/Colosseum/blob/main/azure/start-Colosseum.ps1"><code>azure/start-Colosseum.ps1</code></a>, modify <code>$ColosseumExecutable</code> and <code>$ColosseumProcessName</code> with the new values</p>
 <p>If you are using the docker image, you also need a linux binary zip file and modify the following Docker-related files:
-- In <a href="https://github.com/microsoft/AirSim/blob/main/azure/docker/Dockerfile"><code>azure/docker/Dockerfile</code></a>, modify the <code>AIRSIM_BINARY_ZIP_URL</code> and <code>AIRSIM_BINARY_ZIP_FILENAME</code> ENV declarations with the new values
-- In <a href="https://github.com/microsoft/AirSim/blob/main/azure/docker/docker-entrypoint.sh"><code>azure/docker/docker-entrypoint.sh</code></a>, modify <code>AIRSIM_EXECUTABLE</code> with the new value </p>
+- In <a href="https://github.com/microsoft/Colosseum/blob/main/azure/docker/Dockerfile"><code>azure/docker/Dockerfile</code></a>, modify the <code>Colosseum_BINARY_ZIP_URL</code> and <code>Colosseum_BINARY_ZIP_FILENAME</code> ENV declarations with the new values
+- In <a href="https://github.com/microsoft/Colosseum/blob/main/azure/docker/docker-entrypoint.sh"><code>azure/docker/docker-entrypoint.sh</code></a>, modify <code>Colosseum_EXECUTABLE</code> with the new value </p>
 <h2 id="maintaining-this-development-environment">Maintaining this development environment<a class="headerlink" href="#maintaining-this-development-environment" title="Permanent link">#</a></h2>
 <p>Several components of this development environment (ARM templates, initialization scripts and VSCode tasks) directly depend on the current directory structures file names and repository locations. When planning to modify/fork any of those, make sure to check every script and template to make any required adjustment.</p>
               
