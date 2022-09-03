@@ -1178,9 +1178,19 @@
 <span class="sd">        Returns:</span>
 <span class="sd">            str: Settings text in JSON format</span>
 <span class="sd">        &quot;&quot;&quot;</span>
-        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">client</span><span class="o">.</span><span class="n">call</span><span class="p">(</span><span class="s1">&#39;getSettingsString&#39;</span><span class="p">)</span></div></div>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">client</span><span class="o">.</span><span class="n">call</span><span class="p">(</span><span class="s1">&#39;getSettingsString&#39;</span><span class="p">)</span></div>
 
-<span class="c1">#----------------------------------- Multirotor APIs ---------------------------------------------</span>
+<div class="viewcode-block" id="VehicleClient.simSetExtForce"><a class="viewcode-back" href="../../index.html#airsim.client.VehicleClient.simSetExtForce">[docs]</a>    <span class="k">def</span> <span class="nf">simSetExtForce</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">ext_force</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Set arbitrary external forces, in World frame, NED direction. Can be used</span>
+<span class="sd">        for implementing simple payloads.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            ext_force (Vector3r): Force, in World frame, NED direction, in N</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">client</span><span class="o">.</span><span class="n">call</span><span class="p">(</span><span class="s1">&#39;simSetExtForce&#39;</span><span class="p">,</span> <span class="n">ext_force</span><span class="p">)</span></div></div>
+
+<span class="c1"># -----------------------------------  Multirotor APIs ---------------------------------------------</span>
 <div class="viewcode-block" id="MultirotorClient"><a class="viewcode-back" href="../../index.html#airsim.client.MultirotorClient">[docs]</a><span class="k">class</span> <span class="nc">MultirotorClient</span><span class="p">(</span><span class="n">VehicleClient</span><span class="p">,</span> <span class="nb">object</span><span class="p">):</span>
     <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">ip</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="n">port</span> <span class="o">=</span> <span class="mi">41451</span><span class="p">,</span> <span class="n">timeout_value</span> <span class="o">=</span> <span class="mi">3600</span><span class="p">):</span>
         <span class="nb">super</span><span class="p">(</span><span class="n">MultirotorClient</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">ip</span><span class="p">,</span> <span class="n">port</span><span class="p">,</span> <span class="n">timeout_value</span><span class="p">)</span>
