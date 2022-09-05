@@ -467,7 +467,7 @@ namespace airlib
             loadDefaultSensorSettings(simmode_name, settings_json, sensor_defaults);
             loadEkfSettings(settings_json);
             loadVehicleSettings(simmode_name, settings_json, vehicles, sensor_defaults, camera_defaults, ekf_setting);
-            loadExternalCameraSettings(settings_json, external_cameras);
+            loadExternalCameraSettings(settings_json, external_cameras, camera_defaults);
 
             //this should be done last because it depends on vehicles (and/or their type) we have
             loadRecordingSetting(settings_json);
