@@ -692,8 +692,6 @@ namespace airlib
         bool getMagnetometerData(real_T mag[3])
         {
 
-#if AirSimSimpleEkf_GROUND_TRUTH_MEAS_DIRECTIVE == 1
-#else
             board_->readMagnetometerData(mag);
 
             // check if the signal has all data that is valid, else return false
@@ -744,4 +742,3 @@ namespace airlib
     };
 }
 } //namespace
-#endif
