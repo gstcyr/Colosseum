@@ -693,7 +693,6 @@ namespace airlib
         {
 
 #if AirSimSimpleEkf_GROUND_TRUTH_MEAS_DIRECTIVE == 1
-
 #else
             board_->readMagnetometerData(mag);
 
