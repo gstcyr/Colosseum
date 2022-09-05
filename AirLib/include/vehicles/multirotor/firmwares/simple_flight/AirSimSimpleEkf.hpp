@@ -742,7 +742,6 @@ namespace airlib
         real_T R_baro_;
         real_T R_pseudo_;
     };
-
 }
 } //namespace
 #endif

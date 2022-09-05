@@ -96,10 +96,10 @@ public:
             updateGoalFromRc();
 
             if (state_estimator_->checkEkfEnabled()) {
-                message = string("requestApiControl was successful. ") + string("Ekf enabled: ") + string("True");
+                message = std::string("requestApiControl was successful. ") + std::string("Ekf enabled: ") + std::string("True");
             }
             else {
-                message = string("requestApiControl was successful. ") + string("Ekf enabled: ") + string("False");
+                message = std::string("requestApiControl was successful. ") + std::string("Ekf enabled: ") + std::string("False");
             }
             comm_link_->log(message, ICommLink::kLogLevelInfo);
             return true;
