@@ -6,6 +6,7 @@
 #include "interfaces/IOffboardApi.hpp"
 #include "interfaces/IUpdatable.hpp"
 #include "interfaces/CommonStructs.hpp"
+#include "AirSimSimpleFlightEstimator.hpp"
 #include "RemoteControl.hpp"
 #include "Params.hpp"
 
@@ -374,7 +375,7 @@ private:
     const TReal kMovementTolerance = (TReal)0.08;
     const Params* params_;
     RemoteControl rc_;
-    IStateEstimator* state_estimator_;
+    AirSimSimpleFlightEstimator* state_estimator_;
     ICommLink* comm_link_;
     const IBoardClock* clock_;
 
