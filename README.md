@@ -3,6 +3,11 @@
 ## Sponsors
 1. Codex Laboratories LLC [Website](https://www.codex-labs-llc.com)
   
+## Detailed Documentation
+Please visit [Colosseum Documentation](https://codexlabsllc.github.io/Colosseum/index.html) for in-depth
+documentation and tutorials. As this is open-source, we are working on this one step at a time. You can refer
+back to [AirSim Documentation](https://microsoft.github.io/AirSim/) if you don't see what you are looking for.
+  
 ## Introduction
   
 Colosseum is a simulator for robotic, autonomous systems, built on [Unreal Engine](https://www.unrealengine.com/) (we now also have an experimental [Unity](https://unity3d.com/) release). It is open-source, cross platform, and supports software-in-the-loop simulation with popular flight controllers such as PX4 & ArduPilot and hardware-in-loop with PX4 for physically and visually realistic simulations. It is developed as an Unreal plugin that can simply be dropped into any Unreal environment. Similarly, we have an experimental release for a Unity plugin.
