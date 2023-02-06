@@ -1,5 +1,10 @@
 # Welcome to Colosseum, a successor of [AirSim](https://github.com/microsoft/AirSim)
   
+## IMPORTANT UPDATE
+This branch officially supports Unreal Engine Version 4.25 - 4.27.2. If you want to use
+Unreal Engine 5 (which we recommend), please use the `main` branch or one of it's
+derivative branches!
+  
 ## Build Status
 [![Ubuntu Build](https://github.com/CodexLabsLLC/Colosseum/actions/workflows/test_ubuntu.yml/badge.svg)](https://github.com/CodexLabsLLC/Colosseum/actions/workflows/test_ubuntu.yml)
 [![MacOS Build](https://github.com/CodexLabsLLC/Colosseum/actions/workflows/test_macos.yml/badge.svg)](https://github.com/CodexLabsLLC/Colosseum/actions/workflows/test_macos.yml)
