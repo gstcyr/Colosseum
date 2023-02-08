@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>airsim &mdash; airsim 1.8.1 documentation</title>
@@ -27,14 +27,18 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="#" class="icon icon-home"> airsim
+
+          
+          
+          <a href="#" class="icon icon-home">
+            airsim
           </a>
               <div class="version">
                 1.8.1
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -547,7 +551,7 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="#" class="icon icon-home"></a></li>
+      <li><a href="#" class="icon icon-home" aria-label="Home"></a></li>
       <li class="breadcrumb-item active">airsim</li>
       <li class="wy-breadcrumbs-aside">
             <a href="_sources/index.rst.txt" rel="nofollow"> View page source</a>
@@ -576,16 +580,16 @@
 <span class="sig-name descname"><span class="pre">armDisarm</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">arm</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">vehicle_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/airsim/client.html#VehicleClient.armDisarm"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#airsim.client.VehicleClient.armDisarm" title="Permalink to this definition"></a></dt>
 <dd><p>Arms or disarms vehicle</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>arm</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.11)"><em>bool</em></a>) – True to arm, False to disarm the vehicle</p></li>
 <li><p><strong>vehicle_name</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a><em>, </em><em>optional</em>) – Name of the vehicle to send this command to</p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p>Success</p>
 </dd>
-<dt class="field-odd">Return type</dt>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
 <dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.11)">bool</a></p>
 </dd>
 </dl>
@@ -596,7 +600,7 @@
 <span class="sig-name descname"><span class="pre">cancelLastTask</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">vehicle_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/airsim/client.html#VehicleClient.cancelLastTask"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#airsim.client.VehicleClient.cancelLastTask" title="Permalink to this definition"></a></dt>
 <dd><p>Cancel previous Async task</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><p><strong>vehicle_name</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a><em>, </em><em>optional</em>) – Name of the vehicle</p>
 </dd>
 </dl>
@@ -613,7 +617,7 @@
 <span class="sig-name descname"><span class="pre">enableApiControl</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">is_enabled</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">vehicle_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/airsim/client.html#VehicleClient.enableApiControl"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#airsim.client.VehicleClient.enableApiControl" title="Permalink to this definition"></a></dt>
 <dd><p>Enables or disables API control for vehicle corresponding to vehicle_name</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>is_enabled</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.11)"><em>bool</em></a>) – True to enable, False to disable API control</p></li>
 <li><p><strong>vehicle_name</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a><em>, </em><em>optional</em>) – Name of the vehicle to send this command to</p></li>
@@ -626,13 +630,13 @@
 <dt class="sig sig-object py" id="airsim.client.VehicleClient.getBarometerData">
 <span class="sig-name descname"><span class="pre">getBarometerData</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">barometer_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">vehicle_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/airsim/client.html#VehicleClient.getBarometerData"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#airsim.client.VehicleClient.getBarometerData" title="Permalink to this definition"></a></dt>
 <dd><dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>barometer_name</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a><em>, </em><em>optional</em>) – Name of Barometer to get data from, specified in settings.json</p></li>
 <li><p><strong>vehicle_name</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a><em>, </em><em>optional</em>) – Name of vehicle to which the sensor corresponds to</p></li>
 </ul>
 </dd>
-<dt class="field-even">Return type</dt>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
 <dd class="field-even"><p><a class="reference internal" href="#airsim.types.BarometerData" title="airsim.types.BarometerData">BarometerData</a></p>
 </dd>
 </dl>
@@ -647,13 +651,13 @@
 <dt class="sig sig-object py" id="airsim.client.VehicleClient.getDistanceSensorData">
 <span class="sig-name descname"><span class="pre">getDistanceSensorData</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">distance_sensor_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">vehicle_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/airsim/client.html#VehicleClient.getDistanceSensorData"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#airsim.client.VehicleClient.getDistanceSensorData" title="Permalink to this definition"></a></dt>
 <dd><dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>distance_sensor_name</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a><em>, </em><em>optional</em>) – Name of Distance Sensor to get data from, specified in settings.json</p></li>
 <li><p><strong>vehicle_name</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a><em>, </em><em>optional</em>) – Name of vehicle to which the sensor corresponds to</p></li>
 </ul>
 </dd>
-<dt class="field-even">Return type</dt>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
 <dd class="field-even"><p><a class="reference internal" href="#airsim.types.DistanceSensorData" title="airsim.types.DistanceSensorData">DistanceSensorData</a></p>
 </dd>
 </dl>
@@ -663,13 +667,13 @@
 <dt class="sig sig-object py" id="airsim.client.VehicleClient.getGpsData">
 <span class="sig-name descname"><span class="pre">getGpsData</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">gps_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">vehicle_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/airsim/client.html#VehicleClient.getGpsData"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#airsim.client.VehicleClient.getGpsData" title="Permalink to this definition"></a></dt>
 <dd><dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>gps_name</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a><em>, </em><em>optional</em>) – Name of GPS to get data from, specified in settings.json</p></li>
 <li><p><strong>vehicle_name</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a><em>, </em><em>optional</em>) – Name of vehicle to which the sensor corresponds to</p></li>
 </ul>
 </dd>
-<dt class="field-even">Return type</dt>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
 <dd class="field-even"><p><a class="reference internal" href="#airsim.types.GpsData" title="airsim.types.GpsData">GpsData</a></p>
 </dd>
 </dl>
@@ -680,13 +684,13 @@
 <span class="sig-name descname"><span class="pre">getHomeGeoPoint</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">vehicle_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/airsim/client.html#VehicleClient.getHomeGeoPoint"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#airsim.client.VehicleClient.getHomeGeoPoint" title="Permalink to this definition"></a></dt>
 <dd><p>Get the Home location of the vehicle</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><p><strong>vehicle_name</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a><em>, </em><em>optional</em>) – Name of vehicle to get home location of</p>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p>Home location of the vehicle</p>
 </dd>
-<dt class="field-odd">Return type</dt>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
 <dd class="field-odd"><p><a class="reference internal" href="#airsim.types.GeoPoint" title="airsim.types.GeoPoint">GeoPoint</a></p>
 </dd>
 </dl>
@@ -696,13 +700,13 @@
 <dt class="sig sig-object py" id="airsim.client.VehicleClient.getImuData">
 <span class="sig-name descname"><span class="pre">getImuData</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">imu_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">vehicle_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/airsim/client.html#VehicleClient.getImuData"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#airsim.client.VehicleClient.getImuData" title="Permalink to this definition"></a></dt>
 <dd><dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>imu_name</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a><em>, </em><em>optional</em>) – Name of IMU to get data from, specified in settings.json</p></li>
 <li><p><strong>vehicle_name</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a><em>, </em><em>optional</em>) – Name of vehicle to which the sensor corresponds to</p></li>
 </ul>
 </dd>
-<dt class="field-even">Return type</dt>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
 <dd class="field-even"><p><a class="reference internal" href="#airsim.types.ImuData" title="airsim.types.ImuData">ImuData</a></p>
 </dd>
 </dl>
@@ -712,13 +716,13 @@
 <dt class="sig sig-object py" id="airsim.client.VehicleClient.getLidarData">
 <span class="sig-name descname"><span class="pre">getLidarData</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">lidar_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">vehicle_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/airsim/client.html#VehicleClient.getLidarData"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#airsim.client.VehicleClient.getLidarData" title="Permalink to this definition"></a></dt>
 <dd><dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>lidar_name</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a><em>, </em><em>optional</em>) – Name of Lidar to get data from, specified in settings.json</p></li>
 <li><p><strong>vehicle_name</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a><em>, </em><em>optional</em>) – Name of vehicle to which the sensor corresponds to</p></li>
 </ul>
 </dd>
-<dt class="field-even">Return type</dt>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
 <dd class="field-even"><p><a class="reference internal" href="#airsim.types.LidarData" title="airsim.types.LidarData">LidarData</a></p>
 </dd>
 </dl>
@@ -728,13 +732,13 @@
 <dt class="sig sig-object py" id="airsim.client.VehicleClient.getMagnetometerData">
 <span class="sig-name descname"><span class="pre">getMagnetometerData</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">magnetometer_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">vehicle_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/airsim/client.html#VehicleClient.getMagnetometerData"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#airsim.client.VehicleClient.getMagnetometerData" title="Permalink to this definition"></a></dt>
 <dd><dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>magnetometer_name</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a><em>, </em><em>optional</em>) – Name of Magnetometer to get data from, specified in settings.json</p></li>
 <li><p><strong>vehicle_name</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a><em>, </em><em>optional</em>) – Name of vehicle to which the sensor corresponds to</p></li>
 </ul>
 </dd>
-<dt class="field-even">Return type</dt>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
 <dd class="field-even"><p><a class="reference internal" href="#airsim.types.MagnetometerData" title="airsim.types.MagnetometerData">MagnetometerData</a></p>
 </dd>
 </dl>
@@ -760,10 +764,10 @@
 <span class="sig-name descname"><span class="pre">getSettingsString</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/airsim/client.html#VehicleClient.getSettingsString"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#airsim.client.VehicleClient.getSettingsString" title="Permalink to this definition"></a></dt>
 <dd><p>Fetch the settings text being used by AirSim</p>
 <dl class="field-list simple">
-<dt class="field-odd">Returns</dt>
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
 <dd class="field-odd"><p>Settings text in JSON format</p>
 </dd>
-<dt class="field-even">Return type</dt>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
 <dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)">str</a></p>
 </dd>
 </dl>
@@ -775,13 +779,13 @@
 <dd><p>Returns true if API control is established.</p>
 <p>If false (which is default) then API calls would be ignored. After a successful call to <cite>enableApiControl</cite>, <cite>isApiControlEnabled</cite> should return true.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><p><strong>vehicle_name</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a><em>, </em><em>optional</em>) – Name of the vehicle</p>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p>If API control is enabled</p>
 </dd>
-<dt class="field-odd">Return type</dt>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
 <dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.11)">bool</a></p>
 </dd>
 </dl>
@@ -792,10 +796,10 @@
 <span class="sig-name descname"><span class="pre">isRecording</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/airsim/client.html#VehicleClient.isRecording"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#airsim.client.VehicleClient.isRecording" title="Permalink to this definition"></a></dt>
 <dd><p>Whether Recording is running or not</p>
 <dl class="field-list simple">
-<dt class="field-odd">Returns</dt>
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
 <dd class="field-odd"><p>True if Recording, else False</p>
 </dd>
-<dt class="field-even">Return type</dt>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
 <dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.11)">bool</a></p>
 </dd>
 </dl>
@@ -806,10 +810,10 @@
 <span class="sig-name descname"><span class="pre">listVehicles</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/airsim/client.html#VehicleClient.listVehicles"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#airsim.client.VehicleClient.listVehicles" title="Permalink to this definition"></a></dt>
 <dd><p>Lists the names of current vehicles</p>
 <dl class="field-list simple">
-<dt class="field-odd">Returns</dt>
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
 <dd class="field-odd"><p>List containing names of all vehicles</p>
 </dd>
-<dt class="field-even">Return type</dt>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
 <dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.11)">list</a>[<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)">str</a>]</p>
 </dd>
 </dl>
@@ -820,7 +824,7 @@
 <span class="sig-name descname"><span class="pre">ping</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/airsim/client.html#VehicleClient.ping"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#airsim.client.VehicleClient.ping" title="Permalink to this definition"></a></dt>
 <dd><p>If connection is established then this call will return true otherwise it will be blocked until timeout</p>
 <dl class="field-list simple">
-<dt class="field-odd">Return type</dt>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
 <dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.11)">bool</a></p>
 </dd>
 </dl>
@@ -839,7 +843,7 @@
 <dd><p>Add mesh name to detect in wild card format</p>
 <p>For example: simAddDetectionFilterMeshName(“Car_*”) will detect all instance named “Car_*”</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>camera_name</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a>) – Name of the camera, for backwards compatibility, ID numbers such as 0,1,etc. can also be used</p></li>
 <li><p><strong>image_type</strong> (<a class="reference internal" href="#airsim.types.ImageType" title="airsim.types.ImageType"><em>ImageType</em></a>) – Type of image required</p></li>
@@ -856,7 +860,7 @@
 <span class="sig-name descname"><span class="pre">simAddVehicle</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">vehicle_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">vehicle_type</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pose</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pawn_path</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/airsim/client.html#VehicleClient.simAddVehicle"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#airsim.client.VehicleClient.simAddVehicle" title="Permalink to this definition"></a></dt>
 <dd><p>Create vehicle at runtime</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>vehicle_name</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a>) – Name of the vehicle being created</p></li>
 <li><p><strong>vehicle_type</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a>) – Type of vehicle, e.g. “simpleflight”</p></li>
@@ -864,10 +868,10 @@
 <li><p><strong>pawn_path</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a><em>, </em><em>optional</em>) – Vehicle blueprint path, default empty wbich uses the default blueprint for the vehicle type</p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p>Whether vehicle was created</p>
 </dd>
-<dt class="field-odd">Return type</dt>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
 <dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.11)">bool</a></p>
 </dd>
 </dl>
@@ -878,7 +882,7 @@
 <span class="sig-name descname"><span class="pre">simClearDetectionMeshNames</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">camera_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">image_type</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">vehicle_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">external</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/airsim/client.html#VehicleClient.simClearDetectionMeshNames"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#airsim.client.VehicleClient.simClearDetectionMeshNames" title="Permalink to this definition"></a></dt>
 <dd><p>Clear all mesh names from detection filter</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>camera_name</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a>) – Name of the camera, for backwards compatibility, ID numbers such as 0,1,etc. can also be used</p></li>
 <li><p><strong>image_type</strong> (<a class="reference internal" href="#airsim.types.ImageType" title="airsim.types.ImageType"><em>ImageType</em></a>) – Type of image required</p></li>
@@ -894,7 +898,7 @@
 <span class="sig-name descname"><span class="pre">simContinueForFrames</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">frames</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/airsim/client.html#VehicleClient.simContinueForFrames"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#airsim.client.VehicleClient.simContinueForFrames" title="Permalink to this definition"></a></dt>
 <dd><p>Continue (or resume if paused) the simulation for the specified number of frames, after which the simulation will be paused.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><p><strong>frames</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><em>int</em></a>) – Frames to run the simulation for</p>
 </dd>
 </dl>
@@ -905,7 +909,7 @@
 <span class="sig-name descname"><span class="pre">simContinueForTime</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">seconds</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/airsim/client.html#VehicleClient.simContinueForTime"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#airsim.client.VehicleClient.simContinueForTime" title="Permalink to this definition"></a></dt>
 <dd><p>Continue the simulation for the specified number of seconds</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><p><strong>seconds</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.11)"><em>float</em></a>) – Time to run the simulation for</p>
 </dd>
 </dl>
@@ -916,7 +920,7 @@
 <span class="sig-name descname"><span class="pre">simCreateVoxelGrid</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">position</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">z</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">res</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">of</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/airsim/client.html#VehicleClient.simCreateVoxelGrid"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#airsim.client.VehicleClient.simCreateVoxelGrid" title="Permalink to this definition"></a></dt>
 <dd><p>Construct and save a binvox-formatted voxel grid of environment</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>position</strong> (<a class="reference internal" href="#airsim.types.Vector3r" title="airsim.types.Vector3r"><em>Vector3r</em></a>) – Position around which voxel grid is centered in m</p></li>
 <li><p><strong>x</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><em>int</em></a>) – Size of each voxel grid dimension in m</p></li>
@@ -926,10 +930,10 @@
 <li><p><strong>of</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a>) – Name of output file to save voxel grid as</p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p>True if output written to file successfully, else False</p>
 </dd>
-<dt class="field-odd">Return type</dt>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
 <dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.11)">bool</a></p>
 </dd>
 </dl>
@@ -940,13 +944,13 @@
 <span class="sig-name descname"><span class="pre">simDestroyObject</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">object_name</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/airsim/client.html#VehicleClient.simDestroyObject"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#airsim.client.VehicleClient.simDestroyObject" title="Permalink to this definition"></a></dt>
 <dd><p>Removes selected object from the world</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><p><strong>object_name</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a>) – Name of object to be removed</p>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p>True if object is queued up for removal</p>
 </dd>
-<dt class="field-odd">Return type</dt>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
 <dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.11)">bool</a></p>
 </dd>
 </dl>
@@ -967,7 +971,7 @@
 <span class="sig-name descname"><span class="pre">simEnableWeather</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">enable</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/airsim/client.html#VehicleClient.simEnableWeather"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#airsim.client.VehicleClient.simEnableWeather" title="Permalink to this definition"></a></dt>
 <dd><p>Enable Weather effects. Needs to be called before using <cite>simSetWeatherParameter</cite> API</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><p><strong>enable</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.11)"><em>bool</em></a>) – True to enable, False to disable</p>
 </dd>
 </dl>
@@ -984,14 +988,14 @@
 <span class="sig-name descname"><span class="pre">simGetCameraInfo</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">camera_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">vehicle_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">external</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/airsim/client.html#VehicleClient.simGetCameraInfo"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#airsim.client.VehicleClient.simGetCameraInfo" title="Permalink to this definition"></a></dt>
 <dd><p>Get details about the camera</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>camera_name</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a>) – Name of the camera, for backwards compatibility, ID numbers such as 0,1,etc. can also be used</p></li>
 <li><p><strong>vehicle_name</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a><em>, </em><em>optional</em>) – Vehicle which the camera is associated with</p></li>
 <li><p><strong>external</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.11)"><em>bool</em></a><em>, </em><em>optional</em>) – Whether the camera is an External Camera</p></li>
 </ul>
 </dd>
-<dt class="field-even">Return type</dt>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
 <dd class="field-even"><p><a class="reference internal" href="#airsim.types.CameraInfo" title="airsim.types.CameraInfo">CameraInfo</a></p>
 </dd>
 </dl>
@@ -1001,10 +1005,10 @@
 <dt class="sig sig-object py" id="airsim.client.VehicleClient.simGetCollisionInfo">
 <span class="sig-name descname"><span class="pre">simGetCollisionInfo</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">vehicle_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/airsim/client.html#VehicleClient.simGetCollisionInfo"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#airsim.client.VehicleClient.simGetCollisionInfo" title="Permalink to this definition"></a></dt>
 <dd><dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><p><strong>vehicle_name</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a><em>, </em><em>optional</em>) – Name of the Vehicle to get the info of</p>
 </dd>
-<dt class="field-even">Return type</dt>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
 <dd class="field-even"><p><a class="reference internal" href="#airsim.types.CollisionInfo" title="airsim.types.CollisionInfo">CollisionInfo</a></p>
 </dd>
 </dl>
@@ -1020,7 +1024,7 @@
 <span class="sig-name descname"><span class="pre">simGetDetections</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">camera_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">image_type</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">vehicle_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">external</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/airsim/client.html#VehicleClient.simGetDetections"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#airsim.client.VehicleClient.simGetDetections" title="Permalink to this definition"></a></dt>
 <dd><p>Get current detections</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>camera_name</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a>) – Name of the camera, for backwards compatibility, ID numbers such as 0,1,etc. can also be used</p></li>
 <li><p><strong>image_type</strong> (<a class="reference internal" href="#airsim.types.ImageType" title="airsim.types.ImageType"><em>ImageType</em></a>) – Type of image required</p></li>
@@ -1028,7 +1032,7 @@
 <li><p><strong>external</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.11)"><em>bool</em></a><em>, </em><em>optional</em>) – Whether the camera is an External Camera</p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p>DetectionInfo array</p>
 </dd>
 </dl>
@@ -1039,17 +1043,17 @@
 <span class="sig-name descname"><span class="pre">simGetDistortionParams</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">camera_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">vehicle_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">external</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/airsim/client.html#VehicleClient.simGetDistortionParams"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#airsim.client.VehicleClient.simGetDistortionParams" title="Permalink to this definition"></a></dt>
 <dd><p>Get camera distortion parameters</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>camera_name</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a>) – Name of the camera, for backwards compatibility, ID numbers such as 0,1,etc. can also be used</p></li>
 <li><p><strong>vehicle_name</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a><em>, </em><em>optional</em>) – Vehicle which the camera is associated with</p></li>
 <li><p><strong>external</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.11)"><em>bool</em></a><em>, </em><em>optional</em>) – Whether the camera is an External Camera</p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p>List of distortion parameter values corresponding to K1, K2, K3, P1, P2 respectively.</p>
 </dd>
-<dt class="field-odd">Return type</dt>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
 <dd class="field-odd"><p>List (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.11)">float</a>)</p>
 </dd>
 </dl>
@@ -1081,13 +1085,13 @@
 <dd><p>Get ground truth environment state</p>
 <p>The position inside the returned EnvironmentState is in the frame of the vehicle’s starting point</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><p><strong>vehicle_name</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a><em>, </em><em>optional</em>) – Name of the vehicle</p>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p>Ground truth environment state</p>
 </dd>
-<dt class="field-odd">Return type</dt>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
 <dd class="field-odd"><p><a class="reference internal" href="#airsim.types.EnvironmentState" title="airsim.types.EnvironmentState">EnvironmentState</a></p>
 </dd>
 </dl>
@@ -1099,13 +1103,13 @@
 <dd><p>Get Ground truth kinematics of the vehicle</p>
 <p>The position inside the returned KinematicsState is in the frame of the vehicle’s starting point</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><p><strong>vehicle_name</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a><em>, </em><em>optional</em>) – Name of the vehicle</p>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p>Ground truth of the vehicle</p>
 </dd>
-<dt class="field-odd">Return type</dt>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
 <dd class="field-odd"><p><a class="reference internal" href="#airsim.types.KinematicsState" title="airsim.types.KinematicsState">KinematicsState</a></p>
 </dd>
 </dl>
@@ -1119,7 +1123,7 @@
 <cite>string_to_uint8_array()</cite> can be used to convert into Numpy unit8 array
 See <a class="reference external" href="https://microsoft.github.io/AirSim/image_apis/">https://microsoft.github.io/AirSim/image_apis/</a> for details</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>camera_name</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a>) – Name of the camera, for backwards compatibility, ID numbers such as 0,1,etc. can also be used</p></li>
 <li><p><strong>image_type</strong> (<a class="reference internal" href="#airsim.types.ImageType" title="airsim.types.ImageType"><em>ImageType</em></a>) – Type of image required</p></li>
@@ -1127,7 +1131,7 @@ See <a class="reference external" href="https://microsoft.github.io/AirSim/image
 <li><p><strong>external</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.11)"><em>bool</em></a><em>, </em><em>optional</em>) – Whether the camera is an External Camera</p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p>Binary string literal of compressed png image</p>
 </dd>
 </dl>
@@ -1139,14 +1143,14 @@ See <a class="reference external" href="https://microsoft.github.io/AirSim/image
 <dd><p>Get multiple images</p>
 <p>See <a class="reference external" href="https://microsoft.github.io/AirSim/image_apis/">https://microsoft.github.io/AirSim/image_apis/</a> for details and examples</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>requests</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.11)"><em>list</em></a><em>[</em><a class="reference internal" href="#airsim.types.ImageRequest" title="airsim.types.ImageRequest"><em>ImageRequest</em></a><em>]</em>) – Images required</p></li>
 <li><p><strong>vehicle_name</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a><em>, </em><em>optional</em>) – Name of vehicle associated with the camera</p></li>
 <li><p><strong>external</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.11)"><em>bool</em></a><em>, </em><em>optional</em>) – Whether the camera is an External Camera</p></li>
 </ul>
 </dd>
-<dt class="field-even">Return type</dt>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
 <dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.11)">list</a>[<a class="reference internal" href="#airsim.types.ImageResponse" title="airsim.types.ImageResponse">ImageResponse</a>]</p>
 </dd>
 </dl>
@@ -1163,16 +1167,16 @@ See <a class="reference external" href="https://microsoft.github.io/AirSim/image
 <dd><p>NOTE: Deprecated API, use <cite>getLidarData()</cite> API instead
 Returns Segmentation ID of each point’s collided object in the last Lidar update</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>lidar_name</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a><em>, </em><em>optional</em>) – Name of Lidar sensor</p></li>
 <li><p><strong>vehicle_name</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a><em>, </em><em>optional</em>) – Name of the vehicle wth the sensor</p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p>Segmentation IDs of the objects</p>
 </dd>
-<dt class="field-odd">Return type</dt>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
 <dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.11)">list</a>[<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)">int</a>]</p>
 </dd>
 </dl>
@@ -1184,7 +1188,7 @@ Returns Segmentation ID of each point’s collided object in the last Lidar upda
 <dd><p>Returns the static meshes that make up the scene</p>
 <p>See <a class="reference external" href="https://microsoft.github.io/AirSim/meshes/">https://microsoft.github.io/AirSim/meshes/</a> for details and how to use this</p>
 <dl class="field-list simple">
-<dt class="field-odd">Return type</dt>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
 <dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.11)">list</a>[<a class="reference internal" href="#airsim.types.MeshPositionVertexBuffersResponse" title="airsim.types.MeshPositionVertexBuffersResponse">MeshPositionVertexBuffersResponse</a>]</p>
 </dd>
 </dl>
@@ -1195,10 +1199,10 @@ Returns Segmentation ID of each point’s collided object in the last Lidar upda
 <span class="sig-name descname"><span class="pre">simGetObjectPose</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">object_name</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/airsim/client.html#VehicleClient.simGetObjectPose"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#airsim.client.VehicleClient.simGetObjectPose" title="Permalink to this definition"></a></dt>
 <dd><p>The position inside the returned Pose is in the world frame</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><p><strong>object_name</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a>) – Object to get the Pose of</p>
 </dd>
-<dt class="field-even">Return type</dt>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
 <dd class="field-even"><p><a class="reference internal" href="#airsim.types.Pose" title="airsim.types.Pose">Pose</a></p>
 </dd>
 </dl>
@@ -1209,13 +1213,13 @@ Returns Segmentation ID of each point’s collided object in the last Lidar upda
 <span class="sig-name descname"><span class="pre">simGetObjectScale</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">object_name</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/airsim/client.html#VehicleClient.simGetObjectScale"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#airsim.client.VehicleClient.simGetObjectScale" title="Permalink to this definition"></a></dt>
 <dd><p>Gets scale of an object in the world</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><p><strong>object_name</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a>) – Object to get the scale of</p>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p>Scale</p>
 </dd>
-<dt class="field-odd">Return type</dt>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
 <dd class="field-odd"><p>airsim.Vector3r</p>
 </dd>
 </dl>
@@ -1237,7 +1241,7 @@ Returns Segmentation ID of each point’s collided object in the last Lidar upda
 <dd><p>Returns Object ID for the given mesh name</p>
 <p>Mapping of Object IDs to RGB values can be seen at <a class="reference external" href="https://microsoft.github.io/AirSim/seg_rgbs.txt">https://microsoft.github.io/AirSim/seg_rgbs.txt</a></p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><p><strong>mesh_name</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a>) – Name of the mesh to get the ID of</p>
 </dd>
 </dl>
@@ -1248,10 +1252,10 @@ Returns Segmentation ID of each point’s collided object in the last Lidar upda
 <span class="sig-name descname"><span class="pre">simGetVehiclePose</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">vehicle_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/airsim/client.html#VehicleClient.simGetVehiclePose"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#airsim.client.VehicleClient.simGetVehiclePose" title="Permalink to this definition"></a></dt>
 <dd><p>The position inside the returned Pose is in the frame of the vehicle’s starting point</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><p><strong>vehicle_name</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a><em>, </em><em>optional</em>) – Name of the vehicle to get the Pose of</p>
 </dd>
-<dt class="field-even">Return type</dt>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
 <dd class="field-even"><p><a class="reference internal" href="#airsim.types.Pose" title="airsim.types.Pose">Pose</a></p>
 </dd>
 </dl>
@@ -1262,7 +1266,7 @@ Returns Segmentation ID of each point’s collided object in the last Lidar upda
 <span class="sig-name descname"><span class="pre">simGetWorldExtents</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/airsim/client.html#VehicleClient.simGetWorldExtents"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#airsim.client.VehicleClient.simGetWorldExtents" title="Permalink to this definition"></a></dt>
 <dd><p>Returns a list of GeoPoints representing the minimum and maximum extents of the world</p>
 <dl class="field-list simple">
-<dt class="field-odd">Returns</dt>
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
 <dd class="field-odd"><p>list[GeoPoint]</p>
 </dd>
 </dl>
@@ -1273,10 +1277,10 @@ Returns Segmentation ID of each point’s collided object in the last Lidar upda
 <span class="sig-name descname"><span class="pre">simIsPause</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/airsim/client.html#VehicleClient.simIsPause"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#airsim.client.VehicleClient.simIsPause" title="Permalink to this definition"></a></dt>
 <dd><p>Returns true if the simulation is paused</p>
 <dl class="field-list simple">
-<dt class="field-odd">Returns</dt>
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
 <dd class="field-odd"><p>If the simulation is paused</p>
 </dd>
-<dt class="field-even">Return type</dt>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
 <dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.11)">bool</a></p>
 </dd>
 </dl>
@@ -1287,10 +1291,10 @@ Returns Segmentation ID of each point’s collided object in the last Lidar upda
 <span class="sig-name descname"><span class="pre">simListAssets</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/airsim/client.html#VehicleClient.simListAssets"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#airsim.client.VehicleClient.simListAssets" title="Permalink to this definition"></a></dt>
 <dd><p>Lists all the assets present in the Asset Registry</p>
 <dl class="field-list simple">
-<dt class="field-odd">Returns</dt>
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
 <dd class="field-odd"><p>Names of all the assets</p>
 </dd>
-<dt class="field-even">Return type</dt>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
 <dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.11)">list</a>[<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)">str</a>]</p>
 </dd>
 </dl>
@@ -1302,13 +1306,13 @@ Returns Segmentation ID of each point’s collided object in the last Lidar upda
 <dd><p>Lists the objects present in the environment</p>
 <p>Default behaviour is to list all objects, regex can be used to return smaller list of matching objects or actors</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><p><strong>name_regex</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a><em>, </em><em>optional</em>) – String to match actor names against, e.g. “Cylinder.*”</p>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p>List containing all the names</p>
 </dd>
-<dt class="field-odd">Return type</dt>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
 <dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.11)">list</a>[<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)">str</a>]</p>
 </dd>
 </dl>
@@ -1319,13 +1323,13 @@ Returns Segmentation ID of each point’s collided object in the last Lidar upda
 <span class="sig-name descname"><span class="pre">simLoadLevel</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">level_name</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/airsim/client.html#VehicleClient.simLoadLevel"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#airsim.client.VehicleClient.simLoadLevel" title="Permalink to this definition"></a></dt>
 <dd><p>Loads a level specified by its name</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><p><strong>level_name</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a>) – Name of the level to load</p>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p>True if the level was successfully loaded</p>
 </dd>
-<dt class="field-odd">Return type</dt>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
 <dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.11)">bool</a></p>
 </dd>
 </dl>
@@ -1336,7 +1340,7 @@ Returns Segmentation ID of each point’s collided object in the last Lidar upda
 <span class="sig-name descname"><span class="pre">simPause</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">is_paused</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/airsim/client.html#VehicleClient.simPause"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#airsim.client.VehicleClient.simPause" title="Permalink to this definition"></a></dt>
 <dd><p>Pauses simulation</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><p><strong>is_paused</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.11)"><em>bool</em></a>) – True to pause the simulation, False to release</p>
 </dd>
 </dl>
@@ -1347,7 +1351,7 @@ Returns Segmentation ID of each point’s collided object in the last Lidar upda
 <span class="sig-name descname"><span class="pre">simPlotArrows</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">points_start</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">points_end</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">color_rgba</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">[1.0,</span> <span class="pre">0.0,</span> <span class="pre">0.0,</span> <span class="pre">1.0]</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">thickness</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">5.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">arrow_size</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">2.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">duration</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">-1.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">is_persistent</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/airsim/client.html#VehicleClient.simPlotArrows"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#airsim.client.VehicleClient.simPlotArrows" title="Permalink to this definition"></a></dt>
 <dd><p>Plots a list of arrows in World NED frame, defined from points_start[0] to points_end[0], points_start[1] to points_end[1], … , points_start[n-1] to points_end[n-1]</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>points_start</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.11)"><em>list</em></a><em>[</em><a class="reference internal" href="#airsim.types.Vector3r" title="airsim.types.Vector3r"><em>Vector3r</em></a><em>]</em>) – List of 3D start positions of arrow start positions, specified as Vector3r objects</p></li>
 <li><p><strong>points_end</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.11)"><em>list</em></a><em>[</em><a class="reference internal" href="#airsim.types.Vector3r" title="airsim.types.Vector3r"><em>Vector3r</em></a><em>]</em>) – List of 3D end positions of arrow start positions, specified as Vector3r objects</p></li>
@@ -1366,7 +1370,7 @@ Returns Segmentation ID of each point’s collided object in the last Lidar upda
 <span class="sig-name descname"><span class="pre">simPlotLineList</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">points</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">color_rgba</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">[1.0,</span> <span class="pre">0.0,</span> <span class="pre">0.0,</span> <span class="pre">1.0]</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">thickness</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">5.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">duration</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">-1.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">is_persistent</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/airsim/client.html#VehicleClient.simPlotLineList"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#airsim.client.VehicleClient.simPlotLineList" title="Permalink to this definition"></a></dt>
 <dd><p>Plots a line strip in World NED frame, defined from points[0] to points[1], points[2] to points[3], … , points[n-2] to points[n-1]</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>points</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.11)"><em>list</em></a><em>[</em><a class="reference internal" href="#airsim.types.Vector3r" title="airsim.types.Vector3r"><em>Vector3r</em></a><em>]</em>) – List of 3D locations of line start and end points, specified as Vector3r objects. Must be even</p></li>
 <li><p><strong>color_rgba</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.11)"><em>list</em></a><em>, </em><em>optional</em>) – desired RGBA values from 0.0 to 1.0</p></li>
@@ -1383,7 +1387,7 @@ Returns Segmentation ID of each point’s collided object in the last Lidar upda
 <span class="sig-name descname"><span class="pre">simPlotLineStrip</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">points</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">color_rgba</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">[1.0,</span> <span class="pre">0.0,</span> <span class="pre">0.0,</span> <span class="pre">1.0]</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">thickness</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">5.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">duration</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">-1.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">is_persistent</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/airsim/client.html#VehicleClient.simPlotLineStrip"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#airsim.client.VehicleClient.simPlotLineStrip" title="Permalink to this definition"></a></dt>
 <dd><p>Plots a line strip in World NED frame, defined from points[0] to points[1], points[1] to points[2], … , points[n-2] to points[n-1]</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>points</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.11)"><em>list</em></a><em>[</em><a class="reference internal" href="#airsim.types.Vector3r" title="airsim.types.Vector3r"><em>Vector3r</em></a><em>]</em>) – List of 3D locations of line start and end points, specified as Vector3r objects</p></li>
 <li><p><strong>color_rgba</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.11)"><em>list</em></a><em>, </em><em>optional</em>) – desired RGBA values from 0.0 to 1.0</p></li>
@@ -1400,7 +1404,7 @@ Returns Segmentation ID of each point’s collided object in the last Lidar upda
 <span class="sig-name descname"><span class="pre">simPlotPoints</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">points</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">color_rgba</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">[1.0,</span> <span class="pre">0.0,</span> <span class="pre">0.0,</span> <span class="pre">1.0]</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">size</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">10.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">duration</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">-1.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">is_persistent</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/airsim/client.html#VehicleClient.simPlotPoints"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#airsim.client.VehicleClient.simPlotPoints" title="Permalink to this definition"></a></dt>
 <dd><p>Plot a list of 3D points in World NED frame</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>points</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.11)"><em>list</em></a><em>[</em><a class="reference internal" href="#airsim.types.Vector3r" title="airsim.types.Vector3r"><em>Vector3r</em></a><em>]</em>) – List of Vector3r objects</p></li>
 <li><p><strong>color_rgba</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.11)"><em>list</em></a><em>, </em><em>optional</em>) – desired RGBA values from 0.0 to 1.0</p></li>
@@ -1417,7 +1421,7 @@ Returns Segmentation ID of each point’s collided object in the last Lidar upda
 <span class="sig-name descname"><span class="pre">simPlotStrings</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">strings</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">positions</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">scale</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">5</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">color_rgba</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">[1.0,</span> <span class="pre">0.0,</span> <span class="pre">0.0,</span> <span class="pre">1.0]</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">duration</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">-1.0</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/airsim/client.html#VehicleClient.simPlotStrings"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#airsim.client.VehicleClient.simPlotStrings" title="Permalink to this definition"></a></dt>
 <dd><p>Plots a list of strings at desired positions in World NED frame.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>strings</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.11)"><em>list</em></a><em>[</em><em>String</em><em>]</em><em>, </em><em>optional</em>) – List of strings to plot</p></li>
 <li><p><strong>positions</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.11)"><em>list</em></a><em>[</em><a class="reference internal" href="#airsim.types.Vector3r" title="airsim.types.Vector3r"><em>Vector3r</em></a><em>]</em>) – List of positions where the strings should be plotted. Should be in one-to-one correspondence with the strings’ list</p></li>
@@ -1434,7 +1438,7 @@ Returns Segmentation ID of each point’s collided object in the last Lidar upda
 <span class="sig-name descname"><span class="pre">simPlotTransforms</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">poses</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">scale</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">5.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">thickness</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">5.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">duration</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">-1.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">is_persistent</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/airsim/client.html#VehicleClient.simPlotTransforms"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#airsim.client.VehicleClient.simPlotTransforms" title="Permalink to this definition"></a></dt>
 <dd><p>Plots a list of transforms in World NED frame.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>poses</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.11)"><em>list</em></a><em>[</em><a class="reference internal" href="#airsim.types.Pose" title="airsim.types.Pose"><em>Pose</em></a><em>]</em>) – List of Pose objects representing the transforms to plot</p></li>
 <li><p><strong>scale</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.11)"><em>float</em></a><em>, </em><em>optional</em>) – Length of transforms’ axes</p></li>
@@ -1451,7 +1455,7 @@ Returns Segmentation ID of each point’s collided object in the last Lidar upda
 <span class="sig-name descname"><span class="pre">simPlotTransformsWithNames</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">poses</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">names</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tf_scale</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">5.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tf_thickness</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">5.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">text_scale</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">10.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">text_color_rgba</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">[1.0,</span> <span class="pre">0.0,</span> <span class="pre">0.0,</span> <span class="pre">1.0]</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">duration</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">-1.0</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/airsim/client.html#VehicleClient.simPlotTransformsWithNames"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#airsim.client.VehicleClient.simPlotTransformsWithNames" title="Permalink to this definition"></a></dt>
 <dd><p>Plots a list of transforms with their names in World NED frame.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>poses</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.11)"><em>list</em></a><em>[</em><a class="reference internal" href="#airsim.types.Pose" title="airsim.types.Pose"><em>Pose</em></a><em>]</em>) – List of Pose objects representing the transforms to plot</p></li>
 <li><p><strong>names</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.11)"><em>list</em></a><em>[</em><em>string</em><em>]</em>) – List of strings with one-to-one correspondence to list of poses</p></li>
@@ -1474,7 +1478,7 @@ but different message_param again then previous line is overwritten with new lin
 <p>For example, <cite>simPrintLogMessage(“Iteration: “, to_string(i))</cite> keeps updating same line on display when API is called with different values of i.
 The valid values of severity parameter is 0 to 3 inclusive that corresponds to different colors.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>message</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a>) – Message to be printed</p></li>
 <li><p><strong>message_param</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a><em>, </em><em>optional</em>) – Parameter to be printed next to the message</p></li>
@@ -1491,13 +1495,13 @@ The valid values of severity parameter is 0 to 3 inclusive that corresponds to d
 Affords access to the countless built-in commands such as “stat unit”, “stat fps”, “open [map]”, adjust any config settings, etc. etc.
 Allows the user to create bespoke APIs very easily, by adding a custom event to the level blueprint, and then calling the console command “ce MyEventName [args]”. No recompilation of AirSim needed!</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><p><strong>command</strong> (<em>[</em><em>string</em><em>]</em>) – Desired Unreal Engine Console command to run</p>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p>Success</p>
 </dd>
-<dt class="field-odd">Return type</dt>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
 <dd class="field-odd"><p>[<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.11)">bool</a>]</p>
 </dd>
 </dl>
@@ -1510,7 +1514,7 @@ Allows the user to create bespoke APIs very easily, by adding a custom event to 
 <li><p>Control the field of view of a selected camera</p></li>
 </ul>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>camera_name</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a>) – Name of the camera to be controlled</p></li>
 <li><p><strong>fov_degrees</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.11)"><em>float</em></a>) – Value of field of view in degrees</p></li>
@@ -1528,7 +1532,7 @@ Allows the user to create bespoke APIs very easily, by adding a custom event to 
 <li><p>Control the pose of a selected camera</p></li>
 </ul>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>camera_name</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a>) – Name of the camera to be controlled</p></li>
 <li><p><strong>pose</strong> (<a class="reference internal" href="#airsim.types.Pose" title="airsim.types.Pose"><em>Pose</em></a>) – Pose representing the desired position and orientation of the camera</p></li>
@@ -1544,7 +1548,7 @@ Allows the user to create bespoke APIs very easily, by adding a custom event to 
 <span class="sig-name descname"><span class="pre">simSetDetectionFilterRadius</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">camera_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">image_type</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">radius_cm</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">vehicle_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">external</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/airsim/client.html#VehicleClient.simSetDetectionFilterRadius"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#airsim.client.VehicleClient.simSetDetectionFilterRadius" title="Permalink to this definition"></a></dt>
 <dd><p>Set detection radius for all cameras</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>camera_name</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a>) – Name of the camera, for backwards compatibility, ID numbers such as 0,1,etc. can also be used</p></li>
 <li><p><strong>image_type</strong> (<a class="reference internal" href="#airsim.types.ImageType" title="airsim.types.ImageType"><em>ImageType</em></a>) – Type of image required</p></li>
@@ -1561,7 +1565,7 @@ Allows the user to create bespoke APIs very easily, by adding a custom event to 
 <span class="sig-name descname"><span class="pre">simSetDistortionParam</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">camera_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">param_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">value</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">vehicle_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">external</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/airsim/client.html#VehicleClient.simSetDistortionParam"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#airsim.client.VehicleClient.simSetDistortionParam" title="Permalink to this definition"></a></dt>
 <dd><p>Set single camera distortion parameter</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>camera_name</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a>) – Name of the camera, for backwards compatibility, ID numbers such as 0,1,etc. can also be used</p></li>
 <li><p><strong>param_name</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a>) – Name of distortion parameter</p></li>
@@ -1578,7 +1582,7 @@ Allows the user to create bespoke APIs very easily, by adding a custom event to 
 <span class="sig-name descname"><span class="pre">simSetDistortionParams</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">camera_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">distortion_params</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">vehicle_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">external</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/airsim/client.html#VehicleClient.simSetDistortionParams"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#airsim.client.VehicleClient.simSetDistortionParams" title="Permalink to this definition"></a></dt>
 <dd><p>Set camera distortion parameters</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>camera_name</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a>) – Name of the camera, for backwards compatibility, ID numbers such as 0,1,etc. can also be used</p></li>
 <li><p><strong>distortion_params</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.11)"><em>dict</em></a>) – Dictionary of distortion param names and corresponding values
@@ -1596,7 +1600,7 @@ Allows the user to create bespoke APIs very easily, by adding a custom event to 
 <dd><p>Set arbitrary external forces, in World frame, NED direction. Can be used
 for implementing simple payloads.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><p><strong>ext_force</strong> (<a class="reference internal" href="#airsim.types.Vector3r" title="airsim.types.Vector3r"><em>Vector3r</em></a>) – Force, in World frame, NED direction, in N</p>
 </dd>
 </dl>
@@ -1628,7 +1632,7 @@ for implementing simple payloads.</p>
 <dd><p>Set the kinematics state of the vehicle</p>
 <p>If you don’t want to change position (or orientation) then just set components of position (or orientation) to floating point nan values</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>state</strong> (<a class="reference internal" href="#airsim.types.KinematicsState" title="airsim.types.KinematicsState"><em>KinematicsState</em></a>) – Desired Pose pf the vehicle</p></li>
 <li><p><strong>ignore_collision</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.11)"><em>bool</em></a>) – Whether to ignore any collision or not</p></li>
@@ -1643,16 +1647,16 @@ for implementing simple payloads.</p>
 <span class="sig-name descname"><span class="pre">simSetLightIntensity</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">light_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">intensity</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/airsim/client.html#VehicleClient.simSetLightIntensity"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#airsim.client.VehicleClient.simSetLightIntensity" title="Permalink to this definition"></a></dt>
 <dd><p>Change intensity of named light</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>light_name</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a>) – Name of light to change</p></li>
 <li><p><strong>intensity</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.11)"><em>float</em></a>) – New intensity value</p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p>True if successful, otherwise False</p>
 </dd>
-<dt class="field-odd">Return type</dt>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
 <dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.11)">bool</a></p>
 </dd>
 </dl>
@@ -1670,10 +1674,10 @@ See <a class="reference external" href="https://microsoft.github.io/AirSim/retex
 :param component_id: index of material elements
 :type component_id: int, optional</p>
 <dl class="field-list simple">
-<dt class="field-odd">Returns</dt>
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
 <dd class="field-odd"><p>True if material was set</p>
 </dd>
-<dt class="field-even">Return type</dt>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
 <dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.11)">bool</a></p>
 </dd>
 </dl>
@@ -1691,10 +1695,10 @@ See <a class="reference external" href="https://microsoft.github.io/AirSim/retex
 :param component_id: index of material elements
 :type component_id: int, optional</p>
 <dl class="field-list simple">
-<dt class="field-odd">Returns</dt>
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
 <dd class="field-odd"><p>True if material was set</p>
 </dd>
-<dt class="field-even">Return type</dt>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
 <dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.11)">bool</a></p>
 </dd>
 </dl>
@@ -1707,17 +1711,17 @@ See <a class="reference external" href="https://microsoft.github.io/AirSim/retex
 <p>The specified actor must have Mobility set to movable, otherwise there will be undefined behaviour.
 See <a class="reference external" href="https://www.unrealengine.com/en-US/blog/moving-physical-objects">https://www.unrealengine.com/en-US/blog/moving-physical-objects</a> for details on how to set Mobility and the effect of Teleport parameter</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>object_name</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a>) – Name of the object(actor) to move</p></li>
 <li><p><strong>pose</strong> (<a class="reference internal" href="#airsim.types.Pose" title="airsim.types.Pose"><em>Pose</em></a>) – Desired Pose of the object</p></li>
 <li><p><strong>teleport</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.11)"><em>bool</em></a><em>, </em><em>optional</em>) – Whether to move the object immediately without affecting their velocity</p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p>If the move was successful</p>
 </dd>
-<dt class="field-odd">Return type</dt>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
 <dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.11)">bool</a></p>
 </dd>
 </dl>
@@ -1728,16 +1732,16 @@ See <a class="reference external" href="https://www.unrealengine.com/en-US/blog/
 <span class="sig-name descname"><span class="pre">simSetObjectScale</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">object_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">scale_vector</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/airsim/client.html#VehicleClient.simSetObjectScale"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#airsim.client.VehicleClient.simSetObjectScale" title="Permalink to this definition"></a></dt>
 <dd><p>Sets scale of an object in the world</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>object_name</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a>) – Object to set the scale of</p></li>
 <li><p><strong>scale_vector</strong> (<em>airsim.Vector3r</em>) – Desired scale of object</p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p>True if scale change was successful</p>
 </dd>
-<dt class="field-odd">Return type</dt>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
 <dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.11)">bool</a></p>
 </dd>
 </dl>
@@ -1759,7 +1763,7 @@ See <a class="reference external" href="https://www.unrealengine.com/en-US/blog/
 <dd><p>Set segmentation ID for specific objects</p>
 <p>See <a class="reference external" href="https://microsoft.github.io/AirSim/image_apis/#segmentation">https://microsoft.github.io/AirSim/image_apis/#segmentation</a> for details</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>mesh_name</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a>) – Name of the mesh to set the ID of (supports regex)</p></li>
 <li><p><strong>object_id</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><em>int</em></a>) – <p>Object ID to be set, range 0-255</p>
@@ -1768,10 +1772,10 @@ See <a class="reference external" href="https://www.unrealengine.com/en-US/blog/
 <li><p><strong>is_name_regex</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.11)"><em>bool</em></a><em>, </em><em>optional</em>) – Whether the mesh name is a regex</p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p>If the mesh was found</p>
 </dd>
-<dt class="field-odd">Return type</dt>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
 <dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.11)">bool</a></p>
 </dd>
 </dl>
@@ -1784,7 +1788,7 @@ See <a class="reference external" href="https://www.unrealengine.com/en-US/blog/
 <p>Sun’s position is computed using the coordinates specified in <cite>OriginGeopoint</cite> in settings for the date-time specified in the argument,
 else if the string is empty, current date &amp; time is used</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>is_enabled</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.11)"><em>bool</em></a>) – True to enable time-of-day effect, False to reset the position to original</p></li>
 <li><p><strong>start_datetime</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a><em>, </em><em>optional</em>) – Date &amp; Time in %Y-%m-%d %H:%M:%S format, e.g. <cite>2018-02-12 15:20:00</cite></p></li>
@@ -1805,7 +1809,7 @@ so Sun will move in sky much faster</p></li>
 <dd><p>Modify the color and thickness of the line when Tracing is enabled</p>
 <p>Tracing can be enabled by pressing T in the Editor or setting <cite>EnableTrace</cite> to <cite>True</cite> in the Vehicle Settings</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>color_rgba</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.11)"><em>list</em></a>) – desired RGBA values from 0.0 to 1.0</p></li>
 <li><p><strong>thickness</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.11)"><em>float</em></a><em>, </em><em>optional</em>) – Thickness of the line</p></li>
@@ -1821,7 +1825,7 @@ so Sun will move in sky much faster</p></li>
 <dd><p>Set the pose of the vehicle</p>
 <p>If you don’t want to change position (or orientation) then just set components of position (or orientation) to floating point nan values</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>pose</strong> (<a class="reference internal" href="#airsim.types.Pose" title="airsim.types.Pose"><em>Pose</em></a>) – Desired Pose pf the vehicle</p></li>
 <li><p><strong>ignore_collision</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.11)"><em>bool</em></a>) – Whether to ignore any collision or not</p></li>
@@ -1836,7 +1840,7 @@ so Sun will move in sky much faster</p></li>
 <span class="sig-name descname"><span class="pre">simSetWeatherParameter</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">param</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">val</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/airsim/client.html#VehicleClient.simSetWeatherParameter"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#airsim.client.VehicleClient.simSetWeatherParameter" title="Permalink to this definition"></a></dt>
 <dd><p>Enable various weather effects</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>param</strong> (<a class="reference internal" href="#airsim.types.WeatherParameter" title="airsim.types.WeatherParameter"><em>WeatherParameter</em></a>) – Weather effect to be enabled</p></li>
 <li><p><strong>val</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.11)"><em>float</em></a>) – Intensity of the effect, Range 0-1</p></li>
@@ -1850,7 +1854,7 @@ so Sun will move in sky much faster</p></li>
 <span class="sig-name descname"><span class="pre">simSetWind</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">wind</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/airsim/client.html#VehicleClient.simSetWind"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#airsim.client.VehicleClient.simSetWind" title="Permalink to this definition"></a></dt>
 <dd><p>Set simulated wind, in World frame, NED direction, m/s</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><p><strong>wind</strong> (<a class="reference internal" href="#airsim.types.Vector3r" title="airsim.types.Vector3r"><em>Vector3r</em></a>) – Wind, in World frame, NED direction, in m/s</p>
 </dd>
 </dl>
@@ -1861,7 +1865,7 @@ so Sun will move in sky much faster</p></li>
 <span class="sig-name descname"><span class="pre">simSpawnObject</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">object_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">asset_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pose</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">scale</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">physics_enabled</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">is_blueprint</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/airsim/client.html#VehicleClient.simSpawnObject"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#airsim.client.VehicleClient.simSpawnObject" title="Permalink to this definition"></a></dt>
 <dd><p>Spawned selected object in the world</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>object_name</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a>) – Desired name of new object</p></li>
 <li><p><strong>asset_name</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a>) – Name of asset(mesh) in the project database</p></li>
@@ -1871,10 +1875,10 @@ so Sun will move in sky much faster</p></li>
 <li><p><strong>is_blueprint</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.11)"><em>bool</em></a><em>, </em><em>optional</em>) – Whether to spawn a blueprint or an actor</p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p>Name of spawned object, in case it had to be modified</p>
 </dd>
-<dt class="field-odd">Return type</dt>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
 <dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)">str</a></p>
 </dd>
 </dl>
@@ -1886,7 +1890,7 @@ so Sun will move in sky much faster</p></li>
 <dd><p>Runtime Swap Texture API</p>
 <p>See <a class="reference external" href="https://microsoft.github.io/AirSim/retexturing/">https://microsoft.github.io/AirSim/retexturing/</a> for details</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>tags</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a>) – string of “,” or “, ” delimited tags to identify on which actors to perform the swap</p></li>
 <li><p><strong>tex_id</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><em>int</em></a><em>, </em><em>optional</em>) – <p>indexes the array of textures assigned to each actor undergoing a swap</p>
@@ -1896,10 +1900,10 @@ so Sun will move in sky much faster</p></li>
 <li><p><strong>material_id</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><em>int</em></a><em>, </em><em>optional</em>) – </p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p>List of objects which matched the provided tags and had the texture swap perfomed</p>
 </dd>
-<dt class="field-odd">Return type</dt>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
 <dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.11)">list</a>[<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)">str</a>]</p>
 </dd>
 </dl>
@@ -1910,16 +1914,16 @@ so Sun will move in sky much faster</p></li>
 <span class="sig-name descname"><span class="pre">simTestLineOfSightBetweenPoints</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">point1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">point2</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/airsim/client.html#VehicleClient.simTestLineOfSightBetweenPoints"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#airsim.client.VehicleClient.simTestLineOfSightBetweenPoints" title="Permalink to this definition"></a></dt>
 <dd><p>Returns whether the target point is visible from the perspective of the source point</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>point1</strong> (<a class="reference internal" href="#airsim.types.GeoPoint" title="airsim.types.GeoPoint"><em>GeoPoint</em></a>) – source point</p></li>
 <li><p><strong>point2</strong> (<a class="reference internal" href="#airsim.types.GeoPoint" title="airsim.types.GeoPoint"><em>GeoPoint</em></a>) – target point</p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p>Success</p>
 </dd>
-<dt class="field-odd">Return type</dt>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
 <dd class="field-odd"><p>[<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.11)">bool</a>]</p>
 </dd>
 </dl>
@@ -1930,16 +1934,16 @@ so Sun will move in sky much faster</p></li>
 <span class="sig-name descname"><span class="pre">simTestLineOfSightToPoint</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">point</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">vehicle_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/airsim/client.html#VehicleClient.simTestLineOfSightToPoint"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#airsim.client.VehicleClient.simTestLineOfSightToPoint" title="Permalink to this definition"></a></dt>
 <dd><p>Returns whether the target point is visible from the perspective of the inputted vehicle</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>point</strong> (<a class="reference internal" href="#airsim.types.GeoPoint" title="airsim.types.GeoPoint"><em>GeoPoint</em></a>) – target point</p></li>
 <li><p><strong>vehicle_name</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a><em>, </em><em>optional</em>) – Name of vehicle</p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p>Success</p>
 </dd>
-<dt class="field-odd">Return type</dt>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
 <dd class="field-odd"><p>[<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.11)">bool</a>]</p>
 </dd>
 </dl>
@@ -1969,10 +1973,10 @@ so Sun will move in sky much faster</p></li>
 <span class="sig-name descname"><span class="pre">getMultirotorState</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">vehicle_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#airsim.types.MultirotorState" title="airsim.types.MultirotorState"><span class="pre">MultirotorState</span></a></span></span><a class="reference internal" href="_modules/airsim/client.html#MultirotorClient.getMultirotorState"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#airsim.client.MultirotorClient.getMultirotorState" title="Permalink to this definition"></a></dt>
 <dd><p>The position inside the returned MultirotorState is in the frame of the vehicle’s starting point</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><p><strong>vehicle_name</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a><em>, </em><em>optional</em>) – Vehicle to get the state of</p>
 </dd>
-<dt class="field-even">Return type</dt>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
 <dd class="field-even"><p><a class="reference internal" href="#airsim.types.MultirotorState" title="airsim.types.MultirotorState">MultirotorState</a></p>
 </dd>
 </dl>
@@ -1984,13 +1988,13 @@ so Sun will move in sky much faster</p></li>
 <dd><p>Used to obtain the current state of all a multirotor’s rotors. The state includes the speeds,
 thrusts and torques for all rotors.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><p><strong>vehicle_name</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a><em>, </em><em>optional</em>) – Vehicle to get the rotor state of</p>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p>Containing a timestamp and the speed, thrust and torque of all rotors.</p>
 </dd>
-<dt class="field-odd">Return type</dt>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
 <dd class="field-odd"><p><a class="reference internal" href="#airsim.types.RotorStates" title="airsim.types.RotorStates">RotorStates</a></p>
 </dd>
 </dl>
@@ -2001,16 +2005,16 @@ thrusts and torques for all rotors.</p>
 <span class="sig-name descname"><span class="pre">goHomeAsync</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">timeout_sec</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">3e+38</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">vehicle_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/airsim/client.html#MultirotorClient.goHomeAsync"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#airsim.client.MultirotorClient.goHomeAsync" title="Permalink to this definition"></a></dt>
 <dd><p>Return vehicle to Home i.e. Launch location</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>timeout_sec</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><em>int</em></a><em>, </em><em>optional</em>) – Timeout for the vehicle to reach desired altitude</p></li>
 <li><p><strong>vehicle_name</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a><em>, </em><em>optional</em>) – Name of the vehicle to send this command to</p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p>future. call .join() to wait for method to finish. Example: client.METHOD().join()</p>
 </dd>
-<dt class="field-odd">Return type</dt>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
 <dd class="field-odd"><p>msgpackrpc.future.Future</p>
 </dd>
 </dl>
@@ -2026,16 +2030,16 @@ thrusts and torques for all rotors.</p>
 <span class="sig-name descname"><span class="pre">landAsync</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">timeout_sec</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">60</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">vehicle_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/airsim/client.html#MultirotorClient.landAsync"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#airsim.client.MultirotorClient.landAsync" title="Permalink to this definition"></a></dt>
 <dd><p>Land the vehicle</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>timeout_sec</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><em>int</em></a><em>, </em><em>optional</em>) – Timeout for the vehicle to land</p></li>
 <li><p><strong>vehicle_name</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a><em>, </em><em>optional</em>) – Name of the vehicle to send this command to</p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p>future. call .join() to wait for method to finish. Example: client.METHOD().join()</p>
 </dd>
-<dt class="field-odd">Return type</dt>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
 <dd class="field-odd"><p>msgpackrpc.future.Future</p>
 </dd>
 </dl>
@@ -2075,7 +2079,7 @@ thrusts and torques for all rotors.</p>
 </li>
 </ul>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>roll_rate</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.11)"><em>float</em></a>) – Desired roll rate, in radians / second</p></li>
 <li><p><strong>pitch_rate</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.11)"><em>float</em></a>) – Desired pitch rate, in radians / second</p></li>
@@ -2085,10 +2089,10 @@ thrusts and torques for all rotors.</p>
 <li><p><strong>vehicle_name</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a><em>, </em><em>optional</em>) – Name of the multirotor to send this command to</p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p>future. call .join() to wait for method to finish. Example: client.METHOD().join()</p>
 </dd>
-<dt class="field-odd">Return type</dt>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
 <dd class="field-odd"><p>msgpackrpc.future.Future</p>
 </dd>
 </dl>
@@ -2128,7 +2132,7 @@ thrusts and torques for all rotors.</p>
 </li>
 </ul>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>roll_rate</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.11)"><em>float</em></a>) – Desired roll rate, in radians / second</p></li>
 <li><p><strong>pitch_rate</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.11)"><em>float</em></a>) – Desired pitch rate, in radians / second</p></li>
@@ -2138,10 +2142,10 @@ thrusts and torques for all rotors.</p>
 <li><p><strong>vehicle_name</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a><em>, </em><em>optional</em>) – Name of the multirotor to send this command to</p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p>future. call .join() to wait for method to finish. Example: client.METHOD().join()</p>
 </dd>
-<dt class="field-odd">Return type</dt>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
 <dd class="field-odd"><p>msgpackrpc.future.Future</p>
 </dd>
 </dl>
@@ -2166,7 +2170,7 @@ thrusts and torques for all rotors.</p>
 <p>Parameters sets up the constraints on velocity and minimum altitude while flying. If RC state is detected to violate these constraints
 then that RC state would be ignored.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>vx_max</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.11)"><em>float</em></a>) – max velocity allowed in x direction</p></li>
 <li><p><strong>vy_max</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.11)"><em>float</em></a>) – max velocity allowed in y direction</p></li>
@@ -2178,10 +2182,10 @@ then that RC state would be ignored.</p>
 <li><p><strong>vehicle_name</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a><em>, </em><em>optional</em>) – Name of the multirotor to send this command to</p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p>future. call .join() to wait for method to finish. Example: client.METHOD().join()</p>
 </dd>
-<dt class="field-odd">Return type</dt>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
 <dd class="field-odd"><p>msgpackrpc.future.Future</p>
 </dd>
 </dl>
@@ -2194,7 +2198,7 @@ then that RC state would be ignored.</p>
 <li><p>Directly control the motors using PWM values</p></li>
 </ul>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>front_right_pwm</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.11)"><em>float</em></a>) – PWM value for the front right motor (between 0.0 to 1.0)</p></li>
 <li><p><strong>rear_left_pwm</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.11)"><em>float</em></a>) – PWM value for the rear left motor (between 0.0 to 1.0)</p></li>
@@ -2204,10 +2208,10 @@ then that RC state would be ignored.</p>
 <li><p><strong>vehicle_name</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a><em>, </em><em>optional</em>) – Name of the multirotor to send this command to</p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p>future. call .join() to wait for method to finish. Example: client.METHOD().join()</p>
 </dd>
-<dt class="field-odd">Return type</dt>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
 <dd class="field-odd"><p>msgpackrpc.future.Future</p>
 </dd>
 </dl>
@@ -2252,7 +2256,7 @@ then that RC state would be ignored.</p>
 </li>
 </ul>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>roll</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.11)"><em>float</em></a>) – Desired roll angle.</p></li>
 <li><p><strong>pitch</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.11)"><em>float</em></a>) – Desired pitch angle.</p></li>
@@ -2262,10 +2266,10 @@ then that RC state would be ignored.</p>
 <li><p><strong>vehicle_name</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a><em>, </em><em>optional</em>) – Name of the multirotor to send this command to</p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p>future. call .join() to wait for method to finish. Example: client.METHOD().join()</p>
 </dd>
-<dt class="field-odd">Return type</dt>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
 <dd class="field-odd"><p>msgpackrpc.future.Future</p>
 </dd>
 </dl>
@@ -2305,7 +2309,7 @@ then that RC state would be ignored.</p>
 </li>
 </ul>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>roll</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.11)"><em>float</em></a>) – Desired roll angle, in radians.</p></li>
 <li><p><strong>pitch</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.11)"><em>float</em></a>) – Desired pitch angle, in radians.</p></li>
@@ -2315,10 +2319,10 @@ then that RC state would be ignored.</p>
 <li><p><strong>vehicle_name</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a><em>, </em><em>optional</em>) – Name of the multirotor to send this command to</p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p>future. call .join() to wait for method to finish. Example: client.METHOD().join()</p>
 </dd>
-<dt class="field-odd">Return type</dt>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
 <dd class="field-odd"><p>msgpackrpc.future.Future</p>
 </dd>
 </dl>
@@ -2358,7 +2362,7 @@ then that RC state would be ignored.</p>
 </li>
 </ul>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>roll</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.11)"><em>float</em></a>) – Desired roll angle, in radians.</p></li>
 <li><p><strong>pitch</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.11)"><em>float</em></a>) – Desired pitch angle, in radians.</p></li>
@@ -2368,10 +2372,10 @@ then that RC state would be ignored.</p>
 <li><p><strong>vehicle_name</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a><em>, </em><em>optional</em>) – Name of the multirotor to send this command to</p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p>future. call .join() to wait for method to finish. Example: client.METHOD().join()</p>
 </dd>
-<dt class="field-odd">Return type</dt>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
 <dd class="field-odd"><p>msgpackrpc.future.Future</p>
 </dd>
 </dl>
@@ -2411,7 +2415,7 @@ then that RC state would be ignored.</p>
 </li>
 </ul>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>roll</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.11)"><em>float</em></a>) – Desired roll angle, in radians.</p></li>
 <li><p><strong>pitch</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.11)"><em>float</em></a>) – Desired pitch angle, in radians.</p></li>
@@ -2421,10 +2425,10 @@ then that RC state would be ignored.</p>
 <li><p><strong>vehicle_name</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a><em>, </em><em>optional</em>) – Name of the multirotor to send this command to</p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p>future. call .join() to wait for method to finish. Example: client.METHOD().join()</p>
 </dd>
-<dt class="field-odd">Return type</dt>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
 <dd class="field-odd"><p>msgpackrpc.future.Future</p>
 </dd>
 </dl>
@@ -2434,7 +2438,7 @@ then that RC state would be ignored.</p>
 <dt class="sig sig-object py" id="airsim.client.MultirotorClient.moveByVelocityAsync">
 <span class="sig-name descname"><span class="pre">moveByVelocityAsync</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">vx</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">vy</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">vz</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">duration</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">drivetrain=0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">yaw_mode=&lt;YawMode&gt;</span> <span class="pre">{</span>&#160;&#160; <span class="pre">'is_rate':</span> <span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">'yaw_or_rate':</span> <span class="pre">0.0}</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">vehicle_name=''</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/airsim/client.html#MultirotorClient.moveByVelocityAsync"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#airsim.client.MultirotorClient.moveByVelocityAsync" title="Permalink to this definition"></a></dt>
 <dd><dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>vx</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.11)"><em>float</em></a>) – desired velocity in world (NED) X axis</p></li>
 <li><p><strong>vy</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.11)"><em>float</em></a>) – desired velocity in world (NED) Y axis</p></li>
@@ -2445,10 +2449,10 @@ then that RC state would be ignored.</p>
 <li><p><strong>vehicle_name</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a><em>, </em><em>optional</em>) – Name of the multirotor to send this command to</p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p>future. call .join() to wait for method to finish. Example: client.METHOD().join()</p>
 </dd>
-<dt class="field-odd">Return type</dt>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
 <dd class="field-odd"><p>msgpackrpc.future.Future</p>
 </dd>
 </dl>
@@ -2458,7 +2462,7 @@ then that RC state would be ignored.</p>
 <dt class="sig sig-object py" id="airsim.client.MultirotorClient.moveByVelocityBodyFrameAsync">
 <span class="sig-name descname"><span class="pre">moveByVelocityBodyFrameAsync</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">vx</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">vy</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">vz</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">duration</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">drivetrain=0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">yaw_mode=&lt;YawMode&gt;</span> <span class="pre">{</span>&#160;&#160; <span class="pre">'is_rate':</span> <span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">'yaw_or_rate':</span> <span class="pre">0.0}</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">vehicle_name=''</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/airsim/client.html#MultirotorClient.moveByVelocityBodyFrameAsync"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#airsim.client.MultirotorClient.moveByVelocityBodyFrameAsync" title="Permalink to this definition"></a></dt>
 <dd><dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>vx</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.11)"><em>float</em></a>) – desired velocity in the X axis of the vehicle’s local NED frame.</p></li>
 <li><p><strong>vy</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.11)"><em>float</em></a>) – desired velocity in the Y axis of the vehicle’s local NED frame.</p></li>
@@ -2469,10 +2473,10 @@ then that RC state would be ignored.</p>
 <li><p><strong>vehicle_name</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a><em>, </em><em>optional</em>) – Name of the multirotor to send this command to</p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p>future. call .join() to wait for method to finish. Example: client.METHOD().join()</p>
 </dd>
-<dt class="field-odd">Return type</dt>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
 <dd class="field-odd"><p>msgpackrpc.future.Future</p>
 </dd>
 </dl>
@@ -2487,7 +2491,7 @@ then that RC state would be ignored.</p>
 <dt class="sig sig-object py" id="airsim.client.MultirotorClient.moveByVelocityZBodyFrameAsync">
 <span class="sig-name descname"><span class="pre">moveByVelocityZBodyFrameAsync</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">vx</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">vy</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">z</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">duration</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">drivetrain=0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">yaw_mode=&lt;YawMode&gt;</span> <span class="pre">{</span>&#160;&#160; <span class="pre">'is_rate':</span> <span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">'yaw_or_rate':</span> <span class="pre">0.0}</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">vehicle_name=''</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/airsim/client.html#MultirotorClient.moveByVelocityZBodyFrameAsync"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#airsim.client.MultirotorClient.moveByVelocityZBodyFrameAsync" title="Permalink to this definition"></a></dt>
 <dd><dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>vx</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.11)"><em>float</em></a>) – desired velocity in the X axis of the vehicle’s local NED frame</p></li>
 <li><p><strong>vy</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.11)"><em>float</em></a>) – desired velocity in the Y axis of the vehicle’s local NED frame</p></li>
@@ -2498,10 +2502,10 @@ then that RC state would be ignored.</p>
 <li><p><strong>vehicle_name</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a><em>, </em><em>optional</em>) – Name of the multirotor to send this command to</p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p>future. call .join() to wait for method to finish. Example: client.METHOD().join()</p>
 </dd>
-<dt class="field-odd">Return type</dt>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
 <dd class="field-odd"><p>msgpackrpc.future.Future</p>
 </dd>
 </dl>
@@ -2551,7 +2555,7 @@ then that RC state would be ignored.</p>
 <li><p>Passing AngleLevelControllerGains() sets gains to default airsim values.</p></li>
 </ul>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>angle_level_gains</strong> (<a class="reference internal" href="#airsim.types.AngleLevelControllerGains" title="airsim.types.AngleLevelControllerGains"><em>AngleLevelControllerGains</em></a>) – <ul>
 <li><p>Correspond to the roll, pitch, yaw axes, defined in the body frame.</p></li>
@@ -2577,7 +2581,7 @@ That angle level setpoint is itself tracked with and angle rate controller.</p>
 <li><p>This function should only be called if the default angle rate control PID gains need to be modified.</p></li>
 </ul>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>angle_rate_gains</strong> (<a class="reference internal" href="#airsim.types.AngleRateControllerGains" title="airsim.types.AngleRateControllerGains"><em>AngleRateControllerGains</em></a>) – <ul>
 <li><p>Correspond to the roll, pitch, yaw axes, defined in the body frame.</p></li>
@@ -2596,7 +2600,7 @@ That angle level setpoint is itself tracked with and angle rate controller.</p>
 <dd><p>Sets position controller gains for moveByPositionAsync.
 This function should only be called if the default position control PID gains need to be modified.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>position_gains</strong> (<a class="reference internal" href="#airsim.types.PositionControllerGains" title="airsim.types.PositionControllerGains"><em>PositionControllerGains</em></a>) – <ul>
 <li><p>Correspond to the X, Y, Z axes.</p></li>
@@ -2618,7 +2622,7 @@ This function should only be called if the default position control PID gains ne
 <li><p>Passing VelocityControllerGains() sets gains to default airsim values.</p></li>
 </ul>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>velocity_gains</strong> (<a class="reference internal" href="#airsim.types.VelocityControllerGains" title="airsim.types.VelocityControllerGains"><em>VelocityControllerGains</em></a>) – <ul>
 <li><p>Correspond to the world X, Y, Z axes.</p></li>
@@ -2637,16 +2641,16 @@ This function should only be called if the default position control PID gains ne
 <span class="sig-name descname"><span class="pre">takeoffAsync</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">timeout_sec</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">20</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">vehicle_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/airsim/client.html#MultirotorClient.takeoffAsync"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#airsim.client.MultirotorClient.takeoffAsync" title="Permalink to this definition"></a></dt>
 <dd><p>Takeoff vehicle to 3m above ground. Vehicle should not be moving when this API is used</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>timeout_sec</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><em>int</em></a><em>, </em><em>optional</em>) – Timeout for the vehicle to reach desired altitude</p></li>
 <li><p><strong>vehicle_name</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a><em>, </em><em>optional</em>) – Name of the vehicle to send this command to</p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p>future. call .join() to wait for method to finish. Example: client.METHOD().join()</p>
 </dd>
-<dt class="field-odd">Return type</dt>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
 <dd class="field-odd"><p>msgpackrpc.future.Future</p>
 </dd>
 </dl>
@@ -2662,10 +2666,10 @@ This function should only be called if the default position control PID gains ne
 <dt class="sig sig-object py" id="airsim.client.CarClient.getCarControls">
 <span class="sig-name descname"><span class="pre">getCarControls</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">vehicle_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/airsim/client.html#CarClient.getCarControls"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#airsim.client.CarClient.getCarControls" title="Permalink to this definition"></a></dt>
 <dd><dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><p><strong>vehicle_name</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a><em>, </em><em>optional</em>) – Name of vehicle</p>
 </dd>
-<dt class="field-even">Return type</dt>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
 <dd class="field-even"><p><a class="reference internal" href="#airsim.types.CarControls" title="airsim.types.CarControls">CarControls</a></p>
 </dd>
 </dl>
@@ -2676,10 +2680,10 @@ This function should only be called if the default position control PID gains ne
 <span class="sig-name descname"><span class="pre">getCarState</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">vehicle_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/airsim/client.html#CarClient.getCarState"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#airsim.client.CarClient.getCarState" title="Permalink to this definition"></a></dt>
 <dd><p>The position inside the returned CarState is in the frame of the vehicle’s starting point</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><p><strong>vehicle_name</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a><em>, </em><em>optional</em>) – Name of vehicle</p>
 </dd>
-<dt class="field-even">Return type</dt>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
 <dd class="field-even"><p><a class="reference internal" href="#airsim.types.CarState" title="airsim.types.CarState">CarState</a></p>
 </dd>
 </dl>
@@ -2690,7 +2694,7 @@ This function should only be called if the default position control PID gains ne
 <span class="sig-name descname"><span class="pre">setCarControls</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">controls</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">vehicle_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/airsim/client.html#CarClient.setCarControls"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#airsim.client.CarClient.setCarControls" title="Permalink to this definition"></a></dt>
 <dd><p>Control the car using throttle, steering, brake, etc.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>controls</strong> (<a class="reference internal" href="#airsim.types.CarControls" title="airsim.types.CarControls"><em>CarControls</em></a>) – Struct containing control values</p></li>
 <li><p><strong>vehicle_name</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a><em>, </em><em>optional</em>) – Name of vehicle to be controlled</p></li>
@@ -2710,7 +2714,7 @@ This function should only be called if the default position control PID gains ne
 <span class="sig-name descname"><span class="pre">roll_gains</span></span><a class="headerlink" href="#airsim.types.AngleLevelControllerGains.roll_gains" title="Permalink to this definition"></a></dt>
 <dd><p>kP, kI, kD for roll axis</p>
 <dl class="field-list simple">
-<dt class="field-odd">Type</dt>
+<dt class="field-odd">Type<span class="colon">:</span></dt>
 <dd class="field-odd"><p><a class="reference internal" href="#airsim.types.PIDGains" title="airsim.types.PIDGains">PIDGains</a></p>
 </dd>
 </dl>
@@ -2721,7 +2725,7 @@ This function should only be called if the default position control PID gains ne
 <span class="sig-name descname"><span class="pre">pitch_gains</span></span><a class="headerlink" href="#airsim.types.AngleLevelControllerGains.pitch_gains" title="Permalink to this definition"></a></dt>
 <dd><p>kP, kI, kD for pitch axis</p>
 <dl class="field-list simple">
-<dt class="field-odd">Type</dt>
+<dt class="field-odd">Type<span class="colon">:</span></dt>
 <dd class="field-odd"><p><a class="reference internal" href="#airsim.types.PIDGains" title="airsim.types.PIDGains">PIDGains</a></p>
 </dd>
 </dl>
@@ -2732,7 +2736,7 @@ This function should only be called if the default position control PID gains ne
 <span class="sig-name descname"><span class="pre">yaw_gains</span></span><a class="headerlink" href="#airsim.types.AngleLevelControllerGains.yaw_gains" title="Permalink to this definition"></a></dt>
 <dd><p>kP, kI, kD for yaw axis</p>
 <dl class="field-list simple">
-<dt class="field-odd">Type</dt>
+<dt class="field-odd">Type<span class="colon">:</span></dt>
 <dd class="field-odd"><p><a class="reference internal" href="#airsim.types.PIDGains" title="airsim.types.PIDGains">PIDGains</a></p>
 </dd>
 </dl>
@@ -2754,7 +2758,7 @@ This function should only be called if the default position control PID gains ne
 <span class="sig-name descname"><span class="pre">roll_gains</span></span><a class="headerlink" href="#airsim.types.AngleRateControllerGains.roll_gains" title="Permalink to this definition"></a></dt>
 <dd><p>kP, kI, kD for roll axis</p>
 <dl class="field-list simple">
-<dt class="field-odd">Type</dt>
+<dt class="field-odd">Type<span class="colon">:</span></dt>
 <dd class="field-odd"><p><a class="reference internal" href="#airsim.types.PIDGains" title="airsim.types.PIDGains">PIDGains</a></p>
 </dd>
 </dl>
@@ -2765,7 +2769,7 @@ This function should only be called if the default position control PID gains ne
 <span class="sig-name descname"><span class="pre">pitch_gains</span></span><a class="headerlink" href="#airsim.types.AngleRateControllerGains.pitch_gains" title="Permalink to this definition"></a></dt>
 <dd><p>kP, kI, kD for pitch axis</p>
 <dl class="field-list simple">
-<dt class="field-odd">Type</dt>
+<dt class="field-odd">Type<span class="colon">:</span></dt>
 <dd class="field-odd"><p><a class="reference internal" href="#airsim.types.PIDGains" title="airsim.types.PIDGains">PIDGains</a></p>
 </dd>
 </dl>
@@ -2776,7 +2780,7 @@ This function should only be called if the default position control PID gains ne
 <span class="sig-name descname"><span class="pre">yaw_gains</span></span><a class="headerlink" href="#airsim.types.AngleRateControllerGains.yaw_gains" title="Permalink to this definition"></a></dt>
 <dd><p>kP, kI, kD for yaw axis</p>
 <dl class="field-list simple">
-<dt class="field-odd">Type</dt>
+<dt class="field-odd">Type<span class="colon">:</span></dt>
 <dd class="field-odd"><p><a class="reference internal" href="#airsim.types.PIDGains" title="airsim.types.PIDGains">PIDGains</a></p>
 </dd>
 </dl>
@@ -3574,7 +3578,7 @@ AngleLevel/AngleRate/Velocity/PositionControllerGains objects.</p>
 <span class="sig-name descname"><span class="pre">kP</span></span><a class="headerlink" href="#airsim.types.PIDGains.kP" title="Permalink to this definition"></a></dt>
 <dd><p>Proportional gain</p>
 <dl class="field-list simple">
-<dt class="field-odd">Type</dt>
+<dt class="field-odd">Type<span class="colon">:</span></dt>
 <dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.11)">float</a></p>
 </dd>
 </dl>
@@ -3585,7 +3589,7 @@ AngleLevel/AngleRate/Velocity/PositionControllerGains objects.</p>
 <span class="sig-name descname"><span class="pre">kI</span></span><a class="headerlink" href="#airsim.types.PIDGains.kI" title="Permalink to this definition"></a></dt>
 <dd><p>Integrator gain</p>
 <dl class="field-list simple">
-<dt class="field-odd">Type</dt>
+<dt class="field-odd">Type<span class="colon">:</span></dt>
 <dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.11)">float</a></p>
 </dd>
 </dl>
@@ -3596,7 +3600,7 @@ AngleLevel/AngleRate/Velocity/PositionControllerGains objects.</p>
 <span class="sig-name descname"><span class="pre">kD</span></span><a class="headerlink" href="#airsim.types.PIDGains.kD" title="Permalink to this definition"></a></dt>
 <dd><p>Derivative gain</p>
 <dl class="field-list simple">
-<dt class="field-odd">Type</dt>
+<dt class="field-odd">Type<span class="colon">:</span></dt>
 <dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.11)">float</a></p>
 </dd>
 </dl>
@@ -3643,7 +3647,7 @@ AngleLevel/AngleRate/Velocity/PositionControllerGains objects.</p>
 <span class="sig-name descname"><span class="pre">x_gains</span></span><a class="headerlink" href="#airsim.types.PositionControllerGains.x_gains" title="Permalink to this definition"></a></dt>
 <dd><p>kP, kI, kD for X axis</p>
 <dl class="field-list simple">
-<dt class="field-odd">Type</dt>
+<dt class="field-odd">Type<span class="colon">:</span></dt>
 <dd class="field-odd"><p><a class="reference internal" href="#airsim.types.PIDGains" title="airsim.types.PIDGains">PIDGains</a></p>
 </dd>
 </dl>
@@ -3654,7 +3658,7 @@ AngleLevel/AngleRate/Velocity/PositionControllerGains objects.</p>
 <span class="sig-name descname"><span class="pre">y_gains</span></span><a class="headerlink" href="#airsim.types.PositionControllerGains.y_gains" title="Permalink to this definition"></a></dt>
 <dd><p>kP, kI, kD for Y axis</p>
 <dl class="field-list simple">
-<dt class="field-odd">Type</dt>
+<dt class="field-odd">Type<span class="colon">:</span></dt>
 <dd class="field-odd"><p><a class="reference internal" href="#airsim.types.PIDGains" title="airsim.types.PIDGains">PIDGains</a></p>
 </dd>
 </dl>
@@ -3665,7 +3669,7 @@ AngleLevel/AngleRate/Velocity/PositionControllerGains objects.</p>
 <span class="sig-name descname"><span class="pre">z_gains</span></span><a class="headerlink" href="#airsim.types.PositionControllerGains.z_gains" title="Permalink to this definition"></a></dt>
 <dd><p>kP, kI, kD for Z axis</p>
 <dl class="field-list simple">
-<dt class="field-odd">Type</dt>
+<dt class="field-odd">Type<span class="colon">:</span></dt>
 <dd class="field-odd"><p><a class="reference internal" href="#airsim.types.PIDGains" title="airsim.types.PIDGains">PIDGains</a></p>
 </dd>
 </dl>
@@ -3952,7 +3956,7 @@ AngleLevel/AngleRate/Velocity/PositionControllerGains objects.</p>
 <span class="sig-name descname"><span class="pre">x_gains</span></span><a class="headerlink" href="#airsim.types.VelocityControllerGains.x_gains" title="Permalink to this definition"></a></dt>
 <dd><p>kP, kI, kD for X axis</p>
 <dl class="field-list simple">
-<dt class="field-odd">Type</dt>
+<dt class="field-odd">Type<span class="colon">:</span></dt>
 <dd class="field-odd"><p><a class="reference internal" href="#airsim.types.PIDGains" title="airsim.types.PIDGains">PIDGains</a></p>
 </dd>
 </dl>
@@ -3963,7 +3967,7 @@ AngleLevel/AngleRate/Velocity/PositionControllerGains objects.</p>
 <span class="sig-name descname"><span class="pre">y_gains</span></span><a class="headerlink" href="#airsim.types.VelocityControllerGains.y_gains" title="Permalink to this definition"></a></dt>
 <dd><p>kP, kI, kD for Y axis</p>
 <dl class="field-list simple">
-<dt class="field-odd">Type</dt>
+<dt class="field-odd">Type<span class="colon">:</span></dt>
 <dd class="field-odd"><p><a class="reference internal" href="#airsim.types.PIDGains" title="airsim.types.PIDGains">PIDGains</a></p>
 </dd>
 </dl>
@@ -3974,7 +3978,7 @@ AngleLevel/AngleRate/Velocity/PositionControllerGains objects.</p>
 <span class="sig-name descname"><span class="pre">z_gains</span></span><a class="headerlink" href="#airsim.types.VelocityControllerGains.z_gains" title="Permalink to this definition"></a></dt>
 <dd><p>kP, kI, kD for Z axis</p>
 <dl class="field-list simple">
-<dt class="field-odd">Type</dt>
+<dt class="field-odd">Type<span class="colon">:</span></dt>
 <dd class="field-odd"><p><a class="reference internal" href="#airsim.types.PIDGains" title="airsim.types.PIDGains">PIDGains</a></p>
 </dd>
 </dl>
