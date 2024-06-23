@@ -101,7 +101,7 @@
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#usage">Usage</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#building-custom-environments-for-airsim">Building Custom Environments For AirSim</a>
+    <li class="toctree-l2"><a class="reference internal" href="#building-custom-environments-for-colosseum">Building Custom Environments For Colosseum</a>
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#cross-compiling-to-linux">Cross-Compiling to Linux</a>
         <ul>
@@ -346,9 +346,9 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <h1 id="airsim-on-unity">AirSim on Unity<a class="headerlink" href="#airsim-on-unity" title="Permanent link">#</a></h1>
+                <h1 id="colosseum-on-unity">Colosseum on Unity<a class="headerlink" href="#colosseum-on-unity" title="Permanent link">#</a></h1>
 <ul>
-<li>AirSim on Unity allows you to run your simulators in the <a href="https://unity3d.com/">Unity Engine</a>. This project comes with some sample Unity projects and a wrapper around the AirLib library to run as a <a href="https://docs.unity3d.com/Manual/NativePlugins.html">native plugin</a> in Unity. </li>
+<li>Colosseum on Unity allows you to run your simulators in the <a href="https://unity3d.com/">Unity Engine</a>. This project comes with some sample Unity projects and a wrapper around the AirLib library to run as a <a href="https://docs.unity3d.com/Manual/NativePlugins.html">native plugin</a> in Unity. </li>
 <li>Included are two basic Unity Projects, one for a Car simulator and another for a Drone simulator. They are meant to be lightweight, and can be used to verify your setup is correct. </li>
 <li>Check out the <a href="https://blogs.unity3d.com/2018/11/14/airsim-on-unity-experiment-with-autonomous-vehicle-simulation/">Unity blogpost</a> for overview on the release.  </li>
 </ul>
@@ -371,12 +371,12 @@
 <li>
 <p>Start <code>x64 Native Tools Command Prompt for VS 2019</code>. </p>
 </li>
-<li>Clone the repo: <code>git clone https://github.com/Microsoft/AirSim.git</code>, and go the AirSim directory by <code>cd AirSim</code>. </li>
+<li>Clone the repo: <code>git clone https://github.com/CodexLabsLLC/Colosseum.git</code>, and go the Colosseum directory by <code>cd Colosseum</code>. </li>
 <li>Run <code>build.cmd</code> from the command line. </li>
 </ul>
 <h4 id="build-unity-project">Build Unity Project<a class="headerlink" href="#build-unity-project" title="Permanent link">#</a></h4>
 <ul>
-<li>Go inside the AirSim\Unity directory: <code>cd Unity</code>. </li>
+<li>Go inside the Colosseum\Unity directory: <code>cd Unity</code>. </li>
 <li>Build the unity project: <code>build.cmd</code>. </li>
 <li>Additionally, there is a free environment <code>Windridge City</code> which you can download from <a href="https://assetstore.unity.com/packages/3d/environments/roadways/windridge-city-132222">Unity Asset Store</a>. And, of course, you can always create your own environment.</li>
 </ul>
@@ -392,36 +392,36 @@
 <li>Note: If you are using Unity for the first time, check out <a href="https://docs.unity3d.com/Manual/GettingStarted.html">the Getting started guide</a>. The <a href="https://docs.unity3d.com/Manual/UnityManual.html">Unity User Manual</a> has additional tips, resources, and FAQs.</li>
 </ul>
 <h4 id="build-airsim_1">Build Airsim<a class="headerlink" href="#build-airsim_1" title="Permanent link">#</a></h4>
-<pre class="highlight"><code>git clone https://github.com/Microsoft/AirSim.git;
-cd AirSim;
+<pre class="highlight"><code>git clone https://github.com/CodexLabsLLC/Colosseum.git;
+cd Colosseum;
 ./setup.sh;
 ./build.sh</code></pre>
 <h4 id="generate-airsimwrapper-shared-library">Generate AirsimWrapper Shared Library<a class="headerlink" href="#generate-airsimwrapper-shared-library" title="Permanent link">#</a></h4>
-<pre class="highlight"><code>cd AirSim/Unity
+<pre class="highlight"><code>cd Colosseum/Unity
 ./build.sh</code></pre>
 <p>This will generate the necessary shared library and copy it to the UnityDemo Plugins folder.</p>
 <h2 id="usage">Usage<a class="headerlink" href="#usage" title="Permanent link">#</a></h2>
 <ul>
 <li>Start Unity Hub, click on <code>Projects</code> on left pane, and then click on the <code>Add</code> button </li>
-<li>Select the folder <code>AirSim\Unity\UnityDemo</code>, and then hit the <code>OK</code> button. </li>
+<li>Select the folder <code>Colosseum\Unity\UnityDemo</code>, and then hit the <code>OK</code> button. </li>
 <li>Click on the new project which showed up in the Unity Hub menu to open it in Unity. </li>
 <li>In the bottom pane, click on <code>Projects</code>-&gt;<code>Assets</code>-&gt;<code>Scenes</code>. Then, <strong>Double-click</strong> on <code>SimModeSelector</code>. This will load the SimModeSelector scene into the scene hierarchy pane. <em>DO NOT</em> add CarDemo or DroneDemo scene into the scene hierarchy pane.</li>
 <li>Hit the play button to start the simulation (and hit play again to stop the simulation. .  </li>
 <li>Alternatively, you can change the SimMode in your <code>Settings.json</code> file. (You can read more about <a href="../settings/"><code>Settings.json</code> here</a>)</li>
 <li>Controlling the car:  <br />
-Use <code>WASD</code> or the <code>Arrow keys</code> or the AirSim client.   </li>
+Use <code>WASD</code> or the <code>Arrow keys</code> or the Colosseum client.   </li>
 <li>Controlling the drone:  <br />
 Keyboard control is not currently available for drone flight.</li>
 <li>Changing camera views:  <br />
 Keys <code>0</code>, <code>1</code>, <code>2</code>, <code>3</code> are used to toggle windows of different camera views.</li>
 <li>Recording simulation data:  <br />
-Press <em>Record</em> button(Red button) located at the right bottom corner of the screen, to toggle recording of the simulation data. The recorded data can be found at <code>Documents\AirSim\(Date of recording)</code> on Windows and <code>~/Documents/AirSim/(Date of recording)</code> on Linux.</li>
+Press <em>Record</em> button(Red button) located at the right bottom corner of the screen, to toggle recording of the simulation data. The recorded data can be found at <code>Documents\Colosseum\(Date of recording)</code> on Windows and <code>~/Documents/Colosseum/(Date of recording)</code> on Linux.</li>
 </ul>
-<h2 id="building-custom-environments-for-airsim">Building Custom Environments For AirSim<a class="headerlink" href="#building-custom-environments-for-airsim" title="Permanent link">#</a></h2>
+<h2 id="building-custom-environments-for-colosseum">Building Custom Environments For Colosseum<a class="headerlink" href="#building-custom-environments-for-colosseum" title="Permanent link">#</a></h2>
 <p>To use environments other than <code>UnityDemo</code>, follow the instructions written <a href="../custom_unity_environments/">here</a></p>
 <h2 id="cross-compiling-to-linux">Cross-Compiling to Linux<a class="headerlink" href="#cross-compiling-to-linux" title="Permanent link">#</a></h2>
 <p>Unity Editor supports compiling projects to Linux systems.
-After following the steps to build AirSim and Unity on Windows, do the following:</p>
+After following the steps to build Colosseum and Unity on Windows, do the following:</p>
 <h4 id="linux-pre-requisites">Linux Pre-Requisites<a class="headerlink" href="#linux-pre-requisites" title="Permanent link">#</a></h4>
 <p>Before being able to run Unity Binaries with the Airsim plugin, be sure have airsim and airsim unity built on your linux machine by following the Linux build steps above.</p>
 <h3 id="package-unitydemo-binary-on-windows">Package UnityDemo Binary On Windows<a class="headerlink" href="#package-unitydemo-binary-on-windows" title="Permanent link">#</a></h3>
@@ -447,7 +447,7 @@ Once this component is successfully installed, you are ready to build Unity Proj
 </ul>
 <h4 id="copy-the-airsimwrapper-library-to-the-project-plugins-folder">Copy The AirsimWrapper Library to the Project Plugins folder<a class="headerlink" href="#copy-the-airsimwrapper-library-to-the-project-plugins-folder" title="Permanent link">#</a></h4>
 <ul>
-<li>On your linux machine, navigate to your AirSim repository, and run the following commands in a terminal window:
+<li>On your linux machine, navigate to your Colosseum repository, and run the following commands in a terminal window:
     <pre class="highlight"><code>cp Unity/linux-build/libAirsimWrapper.so path/to/your/project/{project_name}_Data/Plugins/{os_version}</code></pre>
 This will generate the necessary shared library to allow Airsim to communicate with Unity and copy it to the plugins folder of your project binary.</li>
 </ul>
@@ -461,8 +461,8 @@ This will generate the necessary shared library to allow Airsim to communicate w
 </ul>
 <h3 id="using-airsim-api">Using Airsim API<a class="headerlink" href="#using-airsim-api" title="Permanent link">#</a></h3>
 <ul>
-<li>For quickstart with the Python APIs for the car or the drone, simply run the <a href="https://github.com/Microsoft/AirSim/blob/main/PythonClient/car/hello_car.py"><code>hello_car.py</code></a> or the <a href="https://github.com/Microsoft/AirSim/blob/main/PythonClient/multirotor/hello_drone.py"><code>hello_drone.py</code></a> script accordingly. </li>
-<li>Details of the AirSim C++ and Python APIs are <a href="../apis/">here</a>. </li>
+<li>For quickstart with the Python APIs for the car or the drone, simply run the <a href="https://github.com/CodexLabsLLC/Colosseum/blob/main/PythonClient/car/hello_car.py"><code>hello_car.py</code></a> or the <a href="https://github.com/CodexLabsLLC/Colosseum/blob/main/PythonClient/multirotor/hello_drone.py"><code>hello_drone.py</code></a> script accordingly. </li>
+<li>Details of the Colosseum C++ and Python APIs are <a href="../apis/">here</a>. </li>
 </ul>
 <h3 id="acknowledgements">Acknowledgements<a class="headerlink" href="#acknowledgements" title="Permanent link">#</a></h3>
 <ul>

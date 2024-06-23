@@ -290,7 +290,7 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <p>AirSim provides a feature that constructs ground truth voxel grids of the world directly from Unreal Engine. A voxel grid is a representation of the occupancy of a given world/map, by discretizing into cells of a certain size; and recording a voxel if that particular location is occupied. </p>
+                <p>Colosseum provides a feature that constructs ground truth voxel grids of the world directly from Unreal Engine. A voxel grid is a representation of the occupancy of a given world/map, by discretizing into cells of a certain size; and recording a voxel if that particular location is occupied. </p>
 <p>The logic for constructing the voxel grid is in WorldSimApi.cpp-&gt;createVoxelGrid(). For now, the assumption is that the voxel grid is a cube - and the API call from Python is of the structure:</p>
 <pre class="highlight"><code>simCreateVoxelGrid(self, position, x, y, z, res, of)
 

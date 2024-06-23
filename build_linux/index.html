@@ -69,13 +69,13 @@
     </li>
         </ul>
     </li>
-    <li class="toctree-l3"><a class="reference internal" href="#build-airsim">Build AirSim</a>
+    <li class="toctree-l3"><a class="reference internal" href="#build-colosseum">Build Colosseum</a>
     </li>
     <li class="toctree-l3"><a class="reference internal" href="#build-unreal-environment">Build Unreal Environment</a>
     </li>
         </ul>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#how-to-use-airsim">How to Use AirSim</a>
+    <li class="toctree-l2"><a class="reference internal" href="#how-to-use-colosseum">How to Use Colosseum</a>
         <ul>
     <li class="toctree-l3"><a class="reference internal" href="#optional-setup-remote-control-multirotor-only">[Optional] Setup Remote Control (Multirotor Only)</a>
     </li>
@@ -312,8 +312,8 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <h1 id="build-airsim-on-linux">Build AirSim on Linux<a class="headerlink" href="#build-airsim-on-linux" title="Permanent link">#</a></h1>
-<p>The current recommended and tested environment is <strong>Ubuntu 18.04 LTS</strong>. Theoretically, you can build on other distros as well, but we haven't tested it.</p>
+                <h1 id="build-colosseum-on-linux">Build Colosseum on Linux<a class="headerlink" href="#build-colosseum-on-linux" title="Permanent link">#</a></h1>
+<p>The current recommended and tested environment is <strong>Ubuntu 20.04 LTS</strong>. Theoretically, you can build on other distros as well, but we haven't tested it.</p>
 <p>We've two options - you can either build inside docker containers or your host machine.</p>
 <h2 id="docker">Docker<a class="headerlink" href="#docker" title="Permanent link">#</a></h2>
 <p>Please see instructions <a href="../docker_ubuntu/">here</a></p>
@@ -325,38 +325,38 @@
 <p>Make sure you are <a href="https://docs.unrealengine.com/en-US/SharingAndReleasing/Linux/BeginnerLinuxDeveloper/SettingUpAnUnrealWorkflow/index.html">registered with Epic Games</a>. This is required to get source code access for Unreal Engine.</p>
 </li>
 <li>
-<p>Clone Unreal in your favorite folder and build it (this may take a while!). <strong>Note</strong>: We only support Unreal &gt;= 4.27 at present. We recommend using 4.27.</p>
+<p>Clone Unreal in your favorite folder and build it (this may take a while!). <strong>Note</strong>: We only support Unreal &gt;= 5.0 at present. We recommend using 5.3.</p>
 </li>
 </ul>
 <pre class="highlight"><code class="language-bash"># go to the folder where you clone GitHub projects
-git clone -b 4.27 git@github.com:EpicGames/UnrealEngine.git
+git clone -b 5.3 git@github.com:EpicGames/UnrealEngine.git
 cd UnrealEngine
 ./Setup.sh
 ./GenerateProjectFiles.sh
 make</code></pre>
-<h3 id="build-airsim">Build AirSim<a class="headerlink" href="#build-airsim" title="Permanent link">#</a></h3>
+<h3 id="build-colosseum">Build Colosseum<a class="headerlink" href="#build-colosseum" title="Permanent link">#</a></h3>
 <ul>
-<li>Clone AirSim and build it:</li>
+<li>Clone Colosseum and build it:</li>
 </ul>
 <pre class="highlight"><code class="language-bash"># go to the folder where you clone GitHub projects
-git clone https://github.com/Microsoft/AirSim.git
-cd AirSim</code></pre>
-<p>By default AirSim uses clang 8 to build for compatibility with UE 4.27. The setup script will install the right version of cmake, llvm, and eigen.</p>
+git clone https://github.com/CodexLabsLLC/Colosseum.git
+cd Colosseum</code></pre>
+<p>By default Colosseum uses clang 12 to build for compatibility with UE 5.3. The setup script will install the right version of cmake, llvm, and eigen.</p>
 <pre class="highlight"><code class="language-bash">./setup.sh
 ./build.sh
 # use ./build.sh --debug to build in debug mode</code></pre>
 <h3 id="build-unreal-environment">Build Unreal Environment<a class="headerlink" href="#build-unreal-environment" title="Permanent link">#</a></h3>
-<p>Finally, you will need an Unreal project that hosts the environment for your vehicles. AirSim comes with a built-in "Blocks Environment" which you can use, or you can create your own. Please see <a href="../unreal_proj/">setting up Unreal Environment</a> if you'd like to setup your own environment.</p>
-<h2 id="how-to-use-airsim">How to Use AirSim<a class="headerlink" href="#how-to-use-airsim" title="Permanent link">#</a></h2>
-<p>Once AirSim is setup:</p>
+<p>Finally, you will need an Unreal project that hosts the environment for your vehicles. Colosseum comes with a built-in "Blocks Environment" which you can use, or you can create your own. Please see <a href="../unreal_proj/">setting up Unreal Environment</a> if you'd like to setup your own environment.</p>
+<h2 id="how-to-use-colosseum">How to Use Colosseum<a class="headerlink" href="#how-to-use-colosseum" title="Permanent link">#</a></h2>
+<p>Once Colosseum is setup:</p>
 <ul>
 <li>Go to <code>UnrealEngine</code> installation folder and start Unreal by running <code>./Engine/Binaries/Linux/UE4Editor</code>.</li>
-<li>When Unreal Engine prompts for opening or creating project, select Browse and choose <code>AirSim/Unreal/Environments/Blocks</code> (or your <a href="../unreal_custenv/">custom</a> Unreal project).</li>
-<li>Alternatively, the project file can be passed as a commandline argument. For Blocks: <code>./Engine/Binaries/Linux/UE4Editor &lt;AirSim_path&gt;/Unreal/Environments/Blocks/Blocks.uproject</code></li>
-<li>If you get prompts to convert project, look for More Options or Convert-In-Place option. If you get prompted to build, choose Yes. If you get prompted to disable AirSim plugin, choose No.</li>
+<li>When Unreal Engine prompts for opening or creating project, select Browse and choose <code>Colosseum/Unreal/Environments/Blocks</code> (or your <a href="../unreal_custenv/">custom</a> Unreal project).</li>
+<li>Alternatively, the project file can be passed as a commandline argument. For Blocks: <code>./Engine/Binaries/Linux/UE4Editor &lt;Colosseum_path&gt;/Unreal/Environments/Blocks/Blocks.uproject</code></li>
+<li>If you get prompts to convert project, look for More Options or Convert-In-Place option. If you get prompted to build, choose Yes. If you get prompted to disable Colosseum plugin, choose No.</li>
 <li>After Unreal Editor loads, press Play button.</li>
 </ul>
-<p>See <a href="../apis/">Using APIs</a> and <a href="../settings/">settings.json</a> for various options available for AirSim usage.</p>
+<p>See <a href="../apis/">Using APIs</a> and <a href="../settings/">settings.json</a> for various options available for Colosseum usage.</p>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
 </div>

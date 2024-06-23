@@ -298,7 +298,7 @@
               
                 <h1 id="object-detection">Object Detection<a class="headerlink" href="#object-detection" title="Permanent link">#</a></h1>
 <h2 id="about">About<a class="headerlink" href="#about" title="Permanent link">#</a></h2>
-<p>This feature lets you generate object detection using existing cameras in AirSim, similar to detection DNN. <br />
+<p>This feature lets you generate object detection using existing cameras in Colosseum, similar to detection DNN. <br />
 Using the API you can control which object to detect by name and radius from camera. <br />
 One can control these settings for each camera, image type and vehicle combination separately.</p>
 <h2 id="api">API<a class="headerlink" href="#api" title="Permanent link">#</a></h2>
@@ -328,7 +328,7 @@ One can control these settings for each camera, image type and vehicle combinati
     box3D = Box3D()
     relative_pose = Pose()</code></pre></p>
 <h2 id="usage-example">Usage example<a class="headerlink" href="#usage-example" title="Permanent link">#</a></h2>
-<p>Python script <a href="https://github.com/microsoft/AirSim/blob/main/PythonClient/detection/detection.py">detection.py</a> shows how to set detection parameters and shows the result in OpenCV capture.</p>
+<p>Python script <a href="https://github.com/CodexLabsLLC/Colosseum/blob/main/PythonClient/detection/detection.py">detection.py</a> shows how to set detection parameters and shows the result in OpenCV capture.</p>
 <p>A minimal example using API with Blocks environment to detect Cylinder objects:
 <pre class="highlight"><code class="language-python">camera_name = "0"
 image_type = airsim.ImageType.Scene

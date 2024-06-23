@@ -59,13 +59,13 @@
     <ul class="current">
     <li class="toctree-l2"><a class="reference internal" href="#install-unreal-engine">Install Unreal Engine</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#build-airsim">Build AirSim</a>
+    <li class="toctree-l2"><a class="reference internal" href="#build-colosseum">Build Colosseum</a>
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#build-unreal-project">Build Unreal Project</a>
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#setup-remote-control-multirotor-only">Setup Remote Control (Multirotor only)</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#how-to-use-airsim">How to Use AirSim</a>
+    <li class="toctree-l2"><a class="reference internal" href="#how-to-use-colosseum">How to Use Colosseum</a>
     </li>
     </ul>
                   </li>
@@ -300,40 +300,40 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <h1 id="build-airsim-on-windows">Build AirSim on Windows<a class="headerlink" href="#build-airsim-on-windows" title="Permanent link">#</a></h1>
+                <h1 id="build-colosseum-on-windows">Build Colosseum on Windows<a class="headerlink" href="#build-colosseum-on-windows" title="Permanent link">#</a></h1>
 <h2 id="install-unreal-engine">Install Unreal Engine<a class="headerlink" href="#install-unreal-engine" title="Permanent link">#</a></h2>
 <ol>
 <li><a href="https://www.unrealengine.com/download">Download</a> the Epic Games Launcher. While the Unreal Engine is open source and free to download, registration is still required.</li>
 <li>Run the Epic Games Launcher, open the <code>Unreal Engine</code> tab on the left pane.
-Click on the <code>Install</code> button on the top right, which should show the option to download <strong>Unreal Engine &gt;= 4.27</strong>. Chose the install location to suit your needs, as shown in the images below. If you have multiple versions of Unreal installed then <strong>make sure the version you are using is set to <code>current</code></strong> by clicking down arrow next to the Launch button for the version.</li>
+Click on the <code>Install</code> button on the top right, which should show the option to download <strong>Unreal Engine &gt;= 5.0</strong>. Chose the install location to suit your needs, as shown in the images below. If you have multiple versions of Unreal installed then <strong>make sure the version you are using is set to <code>current</code></strong> by clicking down arrow next to the Launch button for the version.</li>
 </ol>
-<p><strong>Note</strong>: If you have UE 4.16 or older projects, please see the <a href="../unreal_upgrade/">upgrade guide</a> to upgrade your projects.</p>
+<p><strong>Note</strong>: If you have UE 5.2 or older projects, please see the <a href="../unreal_upgrade/">upgrade guide</a> to upgrade your projects.</p>
 <p><img alt="Unreal Engine Tab UI Screenshot" src="../images/ue_install.png" /></p>
 <p><img alt="Unreal Engine Install Location UI Screenshot" src="../images/ue_install_location.png" /></p>
-<h2 id="build-airsim">Build AirSim<a class="headerlink" href="#build-airsim" title="Permanent link">#</a></h2>
+<h2 id="build-colosseum">Build Colosseum<a class="headerlink" href="#build-colosseum" title="Permanent link">#</a></h2>
 <ul>
 <li>Install Visual Studio 2022.
 <strong>Make sure</strong> to select <strong>Desktop Development with C++</strong> and <strong>Windows 10 SDK 10.0.19041</strong> (should be selected by default) and select the latest .NET Framework SDK under the 'Individual Components' tab while installing VS 2022.</li>
 <li>Start <code>Developer Command Prompt for VS 2022</code>.</li>
 <li>
-<p>Clone the repo: <code>git clone https://github.com/Microsoft/AirSim.git</code>, and go the AirSim directory by <code>cd AirSim</code>.</p>
-<p><strong>Note:</strong> It's generally not a good idea to install AirSim in C drive. This can cause scripts to fail, and requires running VS in Admin mode. Instead clone in a different drive such as D or E.</p>
+<p>Clone the repo: <code>git clone https://github.com/CodexLabsLLC/Colosseum.git</code>, and go the Colosseum directory by <code>cd Colosseum</code>.</p>
+<p><strong>Note:</strong> It's generally not a good idea to install Colosseum in C drive. This can cause scripts to fail, and requires running VS in Admin mode. Instead clone in a different drive such as D or E.</p>
 </li>
 <li>
 <p>Run <code>build.cmd</code> from the command line. This will create ready to use plugin bits in the <code>Unreal\Plugins</code> folder that can be dropped into any Unreal project.</p>
 </li>
 </ul>
 <h2 id="build-unreal-project">Build Unreal Project<a class="headerlink" href="#build-unreal-project" title="Permanent link">#</a></h2>
-<p>Finally, you will need an Unreal project that hosts the environment for your vehicles. Make sure to close and re-open the Unreal Engine and the Epic Games Launcher before building your first environment if you haven't done so already. After restarting the Epic Games Launcher it will ask you to associate project file extensions with Unreal Engine, click on 'fix now' to fix it. AirSim comes with a built-in "Blocks Environment" which you can use, or you can create your own. Please see <a href="../unreal_proj/">setting up Unreal Environment</a>.</p>
+<p>Finally, you will need an Unreal project that hosts the environment for your vehicles. Make sure to close and re-open the Unreal Engine and the Epic Games Launcher before building your first environment if you haven't done so already. After restarting the Epic Games Launcher it will ask you to associate project file extensions with Unreal Engine, click on 'fix now' to fix it. Colosseum comes with a built-in "Blocks Environment" which you can use, or you can create your own. Please see <a href="../unreal_proj/">setting up Unreal Environment</a>.</p>
 <h2 id="setup-remote-control-multirotor-only">Setup Remote Control (Multirotor only)<a class="headerlink" href="#setup-remote-control-multirotor-only" title="Permanent link">#</a></h2>
 <p>A remote control is required if you want to fly manually. See the <a href="../remote_control/">remote control setup</a> for more details.</p>
 <p>Alternatively, you can use <a href="../apis/">APIs</a> for programmatic control or use the so-called <a href="../image_apis/">Computer Vision mode</a> to move around using the keyboard.</p>
-<h2 id="how-to-use-airsim">How to Use AirSim<a class="headerlink" href="#how-to-use-airsim" title="Permanent link">#</a></h2>
-<p>Once AirSim is set up by following above steps, you can,</p>
+<h2 id="how-to-use-colosseum">How to Use Colosseum<a class="headerlink" href="#how-to-use-colosseum" title="Permanent link">#</a></h2>
+<p>Once Colosseum is set up by following above steps, you can,</p>
 <ol>
 <li>
 <p>Double click on .sln file to load the Blocks project in <code>Unreal\Environments\Blocks</code> (or .sln file in your own <a href="../unreal_custenv/">custom</a> Unreal project). If you don't see .sln file then you probably haven't completed steps in Build Unreal Project section above.</p>
-<p><strong>Note</strong>: Unreal 4.27 will auto-generate the .sln file targetting Visual Studio 2019. Visual Studio 2022 will be able to load and run this .sln, but if you want full Visual Studio 2022 support, you will need to explicitly enable support by going to 'Edit-&gt;Editor Preferences-&gt;Source Code' and selecting 'Visual Studio 2022' for the 'Source Code Editor' setting.</p>
+<p><strong>Note</strong>: Unreal 5.3 will auto-generate the .sln file targetting Visual Studio 2019. Visual Studio 2022 will be able to load and run this .sln, but if you want full Visual Studio 2022 support, you will need to explicitly enable support by going to 'Edit-&gt;Editor Preferences-&gt;Source Code' and selecting 'Visual Studio 2022' for the 'Source Code Editor' setting.</p>
 </li>
 <li>
 <p>Select your Unreal project as Start Up project (for example, Blocks project) and make sure Build config is set to "Develop Editor" and x64.</p>
@@ -345,8 +345,8 @@ Click on the <code>Install</code> button on the top right, which should show the
 <p>Go to 'Edit-&gt;Editor Preferences', in the 'Search' box type 'CPU' and ensure that the 'Use Less CPU when in Background' is unchecked.</p>
 </div>
 <p>See <a href="../apis/">Using APIs</a> and <a href="../settings/">settings.json</a> for various options available.</p>
-<h1 id="airsim-on-unity-experimental">AirSim on Unity (Experimental)<a class="headerlink" href="#airsim-on-unity-experimental" title="Permanent link">#</a></h1>
-<p><a href="https://unity3d.com/">Unity</a> is another great game engine platform and we have an <strong>experimental</strong> integration of <a href="../Unity/">AirSim with Unity</a>. Please note that this is work in progress and all features may not work yet.</p>
+<h1 id="colosseum-on-unity-experimental">Colosseum on Unity (Experimental)<a class="headerlink" href="#colosseum-on-unity-experimental" title="Permanent link">#</a></h1>
+<p><a href="https://unity3d.com/">Unity</a> is another great game engine platform and we have an <strong>experimental</strong> integration of <a href="../Unity/">Colosseum with Unity</a>. Please note that this is work in progress and all features may not work yet.</p>
               
             </div>
           </div><footer>

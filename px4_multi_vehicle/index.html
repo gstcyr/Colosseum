@@ -296,7 +296,7 @@
             <div class="section" itemprop="articleBody">
               
                 <h1 id="setting-up-multi-vehicle-px4-simulation">Setting up multi-vehicle PX4 simulation<a class="headerlink" href="#setting-up-multi-vehicle-px4-simulation" title="Permanent link">#</a></h1>
-<p>The <a href="../px4_sitl/">PX4 SITL stack</a> comes with a <code>sitl_multiple_run.sh</code> shell script that runs multiple instances of the PX4 binary. This would allow the SITL stack to listen to connections from multiple AirSim vehicles on multiple TCP ports starting from 4560.
+<p>The <a href="../px4_sitl/">PX4 SITL stack</a> comes with a <code>sitl_multiple_run.sh</code> shell script that runs multiple instances of the PX4 binary. This would allow the SITL stack to listen to connections from multiple Colosseum vehicles on multiple TCP ports starting from 4560.
 However, the provided script does not let us view the PX4 console. If you want to run the instances manually while being able to view each instance's console (<strong>Recommended</strong>) see <a href="./#starting-sitl-instances-with-px4-console">this section</a> </p>
 <h2 id="setting-up-multiple-instances-of-px4-software-in-loop">Setting up multiple instances of PX4 Software-in-Loop<a class="headerlink" href="#setting-up-multiple-instances-of-px4-software-in-loop" title="Permanent link">#</a></h2>
 <p><strong>Note</strong> you have to build PX4 with <code>make px4_sitl_default none_iris</code> as shown <a href="../px4_sitl/#setting-up-px4-software-in-loop">here</a> before trying to run multiple PX4 instances.</p>
@@ -314,7 +314,7 @@ starting instance 0 in /cygdrive/c/PX4/home/PX4/Firmware/build/px4_sitl_default/
 starting instance 1 in /cygdrive/c/PX4/home/PX4/Firmware/build/px4_sitl_default/instance_1</code></pre></p>
 </li>
 <li>
-<p>Now edit <a href="../settings/">AirSim settings</a> file to make sure you have matching TCP port settings for the set number of vehicles and to make sure that both vehicles do not spawn on the same point. </p>
+<p>Now edit <a href="../settings/">Colosseum settings</a> file to make sure you have matching TCP port settings for the set number of vehicles and to make sure that both vehicles do not spawn on the same point. </p>
 <p>For example, these settings would spawn two PX4Multirotors where one of them would try to connect to PX4 SITL at port <code>4560</code> and the other at port <code>4561</code>. It also makes sure the vehicles spawn at <code>0,1,0</code> and <code>0,-1,0</code> to avoid collision:
 <pre class="highlight"><code class="language-json">{
     "SettingsVersion": 1.2,
@@ -343,9 +343,9 @@ starting instance 1 in /cygdrive/c/PX4/home/PX4/Firmware/build/px4_sitl_default/
 You can add more than two vehicles but you will need to make sure you adjust the TCP port for each (ie: vehicle 3's port would be <code>4562</code> and so on..) and adjust the spawn point.</p>
 </li>
 <li>
-<p>Now run your Unreal AirSim environment and it should connect to SITL PX4 via TCP.
+<p>Now run your Unreal Colosseum environment and it should connect to SITL PX4 via TCP.
 If you are running the instances with the <a href="./#Starting-sitl-instances-with-px4-console">PX4 console visible</a>, you should see a bunch of messages from each SITL PX4 window.
-Specifically, the following messages tell you that AirSim is connected properly and GPS fusion is stable:
+Specifically, the following messages tell you that Colosseum is connected properly and GPS fusion is stable:
     <pre class="highlight"><code>INFO  [simulator] Simulator connected on UDP port 14560
 INFO  [mavlink] partner IP: 127.0.0.1
 INFO  [ecl/EKF] EKF GPS checks passed (WGS-84 origin set)
@@ -355,12 +355,12 @@ INFO  [ecl/EKF] EKF commencing GPS fusion</code></pre></p>
 <li>
 <p>You should also be able to use QGroundControl with SITL mode.  Make sure
 there is no Pixhawk hardware plugged in, otherwise QGroundControl will choose
-to use that instead.  Note that as we don't have a physical board, an RC cannot be connected directly to it. So the alternatives are either use XBox 360 Controller or connect your RC using USB (for example, in case of FrSky Taranis X9D Plus) or using trainer USB cable to your PC. This makes your RC look like a joystick. You will need to do extra set up in QGroundControl to use virtual joystick for RC control.  You do not need to do this unless you plan to fly a drone manually in AirSim.  Autonomous flight using the Python
+to use that instead.  Note that as we don't have a physical board, an RC cannot be connected directly to it. So the alternatives are either use XBox 360 Controller or connect your RC using USB (for example, in case of FrSky Taranis X9D Plus) or using trainer USB cable to your PC. This makes your RC look like a joystick. You will need to do extra set up in QGroundControl to use virtual joystick for RC control.  You do not need to do this unless you plan to fly a drone manually in Colosseum.  Autonomous flight using the Python
 API does not require RC, see <a href="../px4_sitl/#No-Remote-Control"><code>No Remote Control</code></a>.</p>
 </li>
 </ol>
 <h2 id="starting-sitl-instances-with-px4-console">Starting SITL instances with PX4 console<a class="headerlink" href="#starting-sitl-instances-with-px4-console" title="Permanent link">#</a></h2>
-<p>If you want to start your SITL instances while being able to view the PX4 console, you will need to run the shell scripts found <a href="https://github.com/microsoft/AirSim/tree/main/PX4Scripts">here</a> rather than <code>sitl_multiple_run.sh</code>.
+<p>If you want to start your SITL instances while being able to view the PX4 console, you will need to run the shell scripts found <a href="https://github.com/CodexLabsLLC/Colosseum/tree/main/PX4Scripts">here</a> rather than <code>sitl_multiple_run.sh</code>.
 Here is how you would do so:</p>
 <p><strong>Note</strong> This script also assumes PX4 is built with <code>make px4_sitl_default none_iris</code> as shown <a href="../px4_sitl/#setting-up-px4-software-in-loop">here</a> before trying to run multiple PX4 instances.</p>
 <ol>
@@ -368,8 +368,8 @@ Here is how you would do so:</p>
     <pre class="highlight"><code>cd PX4
 mkdir -p Scripts
 cd Scripts
-wget https://github.com/microsoft/AirSim/raw/main/PX4Scripts/sitl_kill.sh
-wget https://github.com/microsoft/AirSim/raw/main/PX4Scripts/run_airsim_sitl.sh</code></pre>
+wget https://github.com/CodexLabsLLC/Colosseum/raw/main/PX4Scripts/sitl_kill.sh
+wget https://github.com/CodexLabsLLC/Colosseum/raw/main/PX4Scripts/run_airsim_sitl.sh</code></pre>
     <strong>Note</strong> the shell scripts expect the <code>Scripts</code> and <code>Firmware</code> directories to be within the same parent directory. Also, you may need to make the scripts executable by running <code>chmod +x sitl_kill.sh</code> and <code>chmod +x run_airsim_sitl.sh</code>.</li>
 <li>
 <p>Run the <code>sitl_kill.sh</code> script to kill all active PX4 SITL instances 
@@ -378,7 +378,7 @@ wget https://github.com/microsoft/AirSim/raw/main/PX4Scripts/run_airsim_sitl.sh<
 <li>
 <p>Run the <code>run_airsim_sitl.sh</code> script while specifying which instance you would like to run in the current terminal window (the first instance would be numbered 0)
     <pre class="highlight"><code>./run_airsim_sitl.sh 0 # first instance = 0</code></pre></p>
-<p>You should see the PX4 instance starting and waiting for AirSim's connection as it would with a single instance.
+<p>You should see the PX4 instance starting and waiting for Colosseum's connection as it would with a single instance.
 <pre class="highlight"><code>______  __   __    ___
 | ___ \ \ \ / /   /   |
 | |_/ /  \ V /   / /| |
@@ -399,7 +399,7 @@ cd Scripts
 <p>Repeat step 4 for as many instances as you would like to start</p>
 </li>
 <li>
-<p>Run your Unreal AirSim environment and it should connect to SITL PX4 via TCP (assuming your settings.json file has the right ports).</p>
+<p>Run your Unreal Colosseum environment and it should connect to SITL PX4 via TCP (assuming your settings.json file has the right ports).</p>
 </li>
 </ol>
               

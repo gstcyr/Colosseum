@@ -93,7 +93,7 @@
     </li>
     <li class="toctree-l3"><a class="reference internal" href="#i-get-error-corecrth-no-such-file-or-directory-or-windows-sdk-version-81-not-found">I get error "'corecrt.h': No such file or directory" or "Windows SDK version 8.1 not found"</a>
     </li>
-    <li class="toctree-l3"><a class="reference internal" href="#how-do-i-use-px4-firmware-with-airsim">How do I use PX4 firmware with AirSim?</a>
+    <li class="toctree-l3"><a class="reference internal" href="#how-do-i-use-px4-firmware-with-colosseum">How do I use PX4 firmware with Colosseum?</a>
     </li>
     <li class="toctree-l3"><a class="reference internal" href="#i-made-changes-in-visual-studio-but-there-is-no-effect">I made changes in Visual Studio but there is no effect</a>
     </li>
@@ -111,11 +111,11 @@
     </li>
     <li class="toctree-l3"><a class="reference internal" href="#can-i-cross-compile-for-linux-from-a-windows-machine">Can I cross compile for Linux from a Windows machine?</a>
     </li>
-    <li class="toctree-l3"><a class="reference internal" href="#what-compiler-and-stdlib-does-airsim-use">What compiler and stdlib does AirSim use?</a>
+    <li class="toctree-l3"><a class="reference internal" href="#what-compiler-and-stdlib-does-colosseum-use">What compiler and stdlib does Colosseum use?</a>
     </li>
-    <li class="toctree-l3"><a class="reference internal" href="#what-version-of-cmake-does-the-airsim-build-use">What version of CMake does the AirSim build use?</a>
+    <li class="toctree-l3"><a class="reference internal" href="#what-version-of-cmake-does-the-colosseum-build-use">What version of CMake does the Colosseum build use?</a>
     </li>
-    <li class="toctree-l3"><a class="reference internal" href="#can-i-compile-airsim-in-bashonwindows">Can I compile AirSim in BashOnWindows?</a>
+    <li class="toctree-l3"><a class="reference internal" href="#can-i-compile-colosseum-in-bashonwindows">Can I compile Colosseum in BashOnWindows?</a>
     </li>
     <li class="toctree-l3"><a class="reference internal" href="#where-can-i-find-more-info-on-running-unreal-on-linux">Where can I find more info on running Unreal on Linux?</a>
     </li>
@@ -123,7 +123,7 @@
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#other_1">Other</a>
         <ul>
-    <li class="toctree-l3"><a class="reference internal" href="#packaging-a-binary-including-the-airsim-plugin">Packaging a binary including the AirSim plugin</a>
+    <li class="toctree-l3"><a class="reference internal" href="#packaging-a-binary-including-the-colosseum-plugin">Packaging a binary including the Colosseum plugin</a>
     </li>
         </ul>
     </li>
@@ -346,31 +346,63 @@
 <hr />
 <h2 id="windows-build">Windows build<a class="headerlink" href="#windows-build" title="Permanent link">#</a></h2>
 <ul>
-<li><a href="#how-to-force-unreal-to-use-visual-studio-2019">How to force Unreal to use Visual Studio 2019?</a></li>
-<li><a href="#i-get-error-where-is-not-recognized-as-an-internal-or-external-command">I get error: 'where' is not recognized as an internal or external command</a></li>
-<li><a href="#im-getting-error-myproject-could-not-be-compiled-try-rebuilding-from-source-manually">I'm getting error <code>&lt;MyProject&gt; could not be compiled. Try rebuilding from source manually</code></a></li>
-<li><a href="#i-get-error-c100--an-internal-error-has-occurred-in-the-compiler-when-running-buildcmd">I get <code>error C100 : An internal error has occurred in the compiler</code> when running build.cmd</a></li>
-<li><a href="#i-get-error-corecrth-no-such-file-or-directory-or-windows-sdk-version-81-not-found">I get error "'corecrt.h': No such file or directory" or "Windows SDK version 8.1 not found"</a></li>
-<li><a href="#how-do-i-use-px4-firmware-with-airsim">How do I use PX4 firmware with AirSim?</a></li>
-<li><a href="#i-made-changes-in-visual-studio-but-there-is-no-effect">I made changes in Visual Studio but there is no effect</a></li>
-<li><a href="#unreal-still-uses-vs2015-or-im-getting-some-link-error">Unreal still uses VS2015 or I'm getting some link error</a></li>
+<li><a href="#faq">FAQ</a></li>
+<li><a href="#windows-build">Windows build</a></li>
+<li><a href="#linux-build">Linux build</a></li>
+<li><a href="#other">Other</a></li>
+<li><a href="#windows-build-1">Windows build</a>
+          - <a href="#how-to-force-unreal-to-use-visual-studio-2019">How to force Unreal to use Visual Studio 2019?</a>
+          - <a href="#i-get-error-where-is-not-recognized-as-an-internal-or-external-command">I get error: 'where' is not recognized as an internal or external command</a>
+          - <a href="#im-getting-error-myproject-could-not-be-compiled-try-rebuilding-from-source-manually">I'm getting error <code>&lt;MyProject&gt; could not be compiled. Try rebuilding from source manually</code></a>
+          - <a href="#i-get-error-c100--an-internal-error-has-occurred-in-the-compiler-when-running-buildcmd">I get <code>error C100 : An internal error has occurred in the compiler</code> when running build.cmd</a>
+          - <a href="#i-get-error-corecrth-no-such-file-or-directory-or-windows-sdk-version-81-not-found">I get error "'corecrt.h': No such file or directory" or "Windows SDK version 8.1 not found"</a>
+          - <a href="#how-do-i-use-px4-firmware-with-colosseum">How do I use PX4 firmware with Colosseum?</a>
+          - <a href="#i-made-changes-in-visual-studio-but-there-is-no-effect">I made changes in Visual Studio but there is no effect</a>
+          - <a href="#unreal-still-uses-vs2015-or-im-getting-some-link-error">Unreal still uses VS2015 or I'm getting some link error</a></li>
+<li><a href="#linux-build-1">Linux build</a>
+          - <a href="#im-getting-error-myproject-could-not-be-compiled-try-rebuilding-from-source-manually-1">I'm getting error <code>&lt;MyProject&gt; could not be compiled. Try rebuilding from source manually</code>.</a>
+          - <a href="#unreal-crashed-how-do-i-know-what-went-wrong">Unreal crashed! How do I know what went wrong?</a>
+          - <a href="#how-do-i-use-an-ide-on-linux">How do I use an IDE on Linux?</a>
+          - <a href="#can-i-cross-compile-for-linux-from-a-windows-machine">Can I cross compile for Linux from a Windows machine?</a>
+          - <a href="#what-compiler-and-stdlib-does-colosseum-use">What compiler and stdlib does Colosseum use?</a>
+          - <a href="#what-version-of-cmake-does-the-colosseum-build-use">What version of CMake does the Colosseum build use?</a>
+          - <a href="#can-i-compile-colosseum-in-bashonwindows">Can I compile Colosseum in BashOnWindows?</a>
+          - <a href="#where-can-i-find-more-info-on-running-unreal-on-linux">Where can I find more info on running Unreal on Linux?</a></li>
+<li><a href="#other-1">Other</a>
+          - <a href="#packaging-a-binary-including-the-colosseum-plugin">Packaging a binary including the Colosseum plugin</a></li>
 </ul>
 <hr />
 <h2 id="linux-build">Linux build<a class="headerlink" href="#linux-build" title="Permanent link">#</a></h2>
 <ul>
-<li><a href="#im-getting-error-myproject-could-not-be-compiled-try-rebuilding-from-source-manually">I'm getting error <code>&lt;MyProject&gt; could not be compiled. Try rebuilding from source manually</code>.</a></li>
-<li><a href="#unreal-crashed-how-do-i-know-what-went-wrong">Unreal crashed! How do I know what went wrong?</a></li>
-<li><a href="#how-do-i-use-an-ide-on-linux">How do I use an IDE on Linux?</a></li>
-<li><a href="#can-i-cross-compile-for-linux-from-a-windows-machine">Can I cross compile for Linux from a Windows machine?</a></li>
-<li><a href="#what-compiler-and-stdlib-does-airsim-use">What compiler and stdlib does AirSim use?</a></li>
-<li><a href="#what-version-of-cmake-does-the-airsim-build-use">What version of CMake does the AirSim build use?</a></li>
-<li><a href="#can-i-compile-airsim-in-bashonwindows">Can I compile AirSim in BashOnWindows?</a></li>
-<li><a href="#where-can-i-find-more-info-on-running-unreal-on-linux">Where can I find more info on running Unreal on Linux?</a></li>
+<li><a href="#faq">FAQ</a></li>
+<li><a href="#windows-build">Windows build</a></li>
+<li><a href="#linux-build">Linux build</a></li>
+<li><a href="#other">Other</a></li>
+<li><a href="#windows-build-1">Windows build</a>
+          - <a href="#how-to-force-unreal-to-use-visual-studio-2019">How to force Unreal to use Visual Studio 2019?</a>
+          - <a href="#i-get-error-where-is-not-recognized-as-an-internal-or-external-command">I get error: 'where' is not recognized as an internal or external command</a>
+          - <a href="#im-getting-error-myproject-could-not-be-compiled-try-rebuilding-from-source-manually">I'm getting error <code>&lt;MyProject&gt; could not be compiled. Try rebuilding from source manually</code></a>
+          - <a href="#i-get-error-c100--an-internal-error-has-occurred-in-the-compiler-when-running-buildcmd">I get <code>error C100 : An internal error has occurred in the compiler</code> when running build.cmd</a>
+          - <a href="#i-get-error-corecrth-no-such-file-or-directory-or-windows-sdk-version-81-not-found">I get error "'corecrt.h': No such file or directory" or "Windows SDK version 8.1 not found"</a>
+          - <a href="#how-do-i-use-px4-firmware-with-colosseum">How do I use PX4 firmware with Colosseum?</a>
+          - <a href="#i-made-changes-in-visual-studio-but-there-is-no-effect">I made changes in Visual Studio but there is no effect</a>
+          - <a href="#unreal-still-uses-vs2015-or-im-getting-some-link-error">Unreal still uses VS2015 or I'm getting some link error</a></li>
+<li><a href="#linux-build-1">Linux build</a>
+          - <a href="#im-getting-error-myproject-could-not-be-compiled-try-rebuilding-from-source-manually-1">I'm getting error <code>&lt;MyProject&gt; could not be compiled. Try rebuilding from source manually</code>.</a>
+          - <a href="#unreal-crashed-how-do-i-know-what-went-wrong">Unreal crashed! How do I know what went wrong?</a>
+          - <a href="#how-do-i-use-an-ide-on-linux">How do I use an IDE on Linux?</a>
+          - <a href="#can-i-cross-compile-for-linux-from-a-windows-machine">Can I cross compile for Linux from a Windows machine?</a>
+          - <a href="#what-compiler-and-stdlib-does-colosseum-use">What compiler and stdlib does Colosseum use?</a>
+          - <a href="#what-version-of-cmake-does-the-colosseum-build-use">What version of CMake does the Colosseum build use?</a>
+          - <a href="#can-i-compile-colosseum-in-bashonwindows">Can I compile Colosseum in BashOnWindows?</a>
+          - <a href="#where-can-i-find-more-info-on-running-unreal-on-linux">Where can I find more info on running Unreal on Linux?</a></li>
+<li><a href="#other-1">Other</a>
+          - <a href="#packaging-a-binary-including-the-colosseum-plugin">Packaging a binary including the Colosseum plugin</a></li>
 </ul>
 <hr />
 <h2 id="other">Other<a class="headerlink" href="#other" title="Permanent link">#</a></h2>
 <ul>
-<li><a href="#packaging-a-binary-including-the-airsim-plugin">Packaging AirSim</a></li>
+<li><a href="#packaging-a-binary-including-the-airsim-plugin">Packaging Colosseum</a></li>
 </ul>
 <hr />
 <!-- ======================================================================= -->
@@ -381,11 +413,11 @@
 <blockquote>
 <p>If the default <code>update_from_git.bat</code> file results in VS 2017 project, then you may need to run the <code>C:\Program Files\Epic Games\UE_4.25\Engine\Binaries\DotNET\UnrealBuildTool.exe</code> tool manually, with the command line options <code>-projectfiles -project=&lt;your.uproject&gt;  -game -rocket -progress -2019</code>.</p>
 <p>If you are upgrading from 4.18 to 4.25 you may also need to add <code>BuildSettingsVersion.V2</code> to your <code>*.Target.cs</code> and <code>*Editor.Target.cs</code> build files, like this:</p>
-<pre class="highlight"><code class="language-c#">   public AirSimNHTestTarget(TargetInfo Target) : base(Target)
+<pre class="highlight"><code class="language-c#">   public ColosseumNHTestTarget(TargetInfo Target) : base(Target)
    {
        Type = TargetType.Game;
        DefaultBuildSettings = BuildSettingsVersion.V2;
-       ExtraModuleNames.AddRange(new string[] { "AirSimNHTest" });
+       ExtraModuleNames.AddRange(new string[] { "ColosseumNHTest" });
    }</code></pre>
 <p>You may also need to edit this file:</p>
 <pre class="highlight"><code>"%APPDATA%\Unreal Engine\UnrealBuildTool\BuildConfiguration.xml</code></pre>
@@ -407,14 +439,14 @@
 <h6 id="im-getting-error-myproject-could-not-be-compiled-try-rebuilding-from-source-manually">I'm getting error <code>&lt;MyProject&gt; could not be compiled. Try rebuilding from source manually</code><a class="headerlink" href="#im-getting-error-myproject-could-not-be-compiled-try-rebuilding-from-source-manually" title="Permanent link">#</a></h6>
 <blockquote>
 <p>This will occur when there are compilation errors. Logs are stored in <code>&lt;My-Project&gt;\Saved\Logs</code> which can be used to figure out the problem.</p>
-<p>A common problem could be Visual Studio version conflict, AirSim uses VS 2019 while UE is using VS 2017, this can be found by searching for <code>2017</code> in the Log file. In that case, see the answer above.</p>
-<p>If you have modified the AirSim plugin files, then you can right-click the <code>.uproject</code> file, select <code>Generate Visual Studio solution file</code> and then open the <code>.sln</code> file in VS to fix the errors and build again.</p>
+<p>A common problem could be Visual Studio version conflict, Colosseum uses VS 2019 while UE is using VS 2017, this can be found by searching for <code>2017</code> in the Log file. In that case, see the answer above.</p>
+<p>If you have modified the Colosseum plugin files, then you can right-click the <code>.uproject</code> file, select <code>Generate Visual Studio solution file</code> and then open the <code>.sln</code> file in VS to fix the errors and build again.</p>
 </blockquote>
 <!-- ======================================================================= -->
 
 <h6 id="i-get-error-c100-an-internal-error-has-occurred-in-the-compiler-when-running-buildcmd">I get <code>error C100 : An internal error has occurred in the compiler</code> when running build.cmd<a class="headerlink" href="#i-get-error-c100-an-internal-error-has-occurred-in-the-compiler-when-running-buildcmd" title="Permanent link">#</a></h6>
 <blockquote>
-<p>We have noticed this happening with VS version <code>15.9.0</code> and have checked-in a workaround in AirSim code. If you have this VS version, please make sure to pull the latest AirSim code.</p>
+<p>We have noticed this happening with VS version <code>15.9.0</code> and have checked-in a workaround in Colosseum code. If you have this VS version, please make sure to pull the latest Colosseum code.</p>
 </blockquote>
 <!-- ======================================================================= -->
 
@@ -424,15 +456,15 @@
 </blockquote>
 <!-- ======================================================================= -->
 
-<h6 id="how-do-i-use-px4-firmware-with-airsim">How do I use PX4 firmware with AirSim?<a class="headerlink" href="#how-do-i-use-px4-firmware-with-airsim" title="Permanent link">#</a></h6>
+<h6 id="how-do-i-use-px4-firmware-with-colosseum">How do I use PX4 firmware with Colosseum?<a class="headerlink" href="#how-do-i-use-px4-firmware-with-colosseum" title="Permanent link">#</a></h6>
 <blockquote>
-<p>By default, AirSim uses its own built-in firmware called <a href="../simple_flight/">simple_flight</a>. There is no additional setup if you just want to go with it. If you want to switch to using PX4 instead then please see <a href="../px4_setup/">this guide</a>.</p>
+<p>By default, Colosseum uses its own built-in firmware called <a href="../simple_flight/">simple_flight</a>. There is no additional setup if you just want to go with it. If you want to switch to using PX4 instead then please see <a href="../px4_setup/">this guide</a>.</p>
 </blockquote>
 <!-- ======================================================================= -->
 
 <h6 id="i-made-changes-in-visual-studio-but-there-is-no-effect">I made changes in Visual Studio but there is no effect<a class="headerlink" href="#i-made-changes-in-visual-studio-but-there-is-no-effect" title="Permanent link">#</a></h6>
 <blockquote>
-<p>Sometimes the Unreal + VS build system doesn't recompile if you make changes to only header files. To ensure a recompile, make some Unreal based cpp file "dirty" like AirSimGameMode.cpp.</p>
+<p>Sometimes the Unreal + VS build system doesn't recompile if you make changes to only header files. To ensure a recompile, make some Unreal based cpp file "dirty" like ColosseumGameMode.cpp.</p>
 </blockquote>
 <!-- ======================================================================= -->
 
@@ -483,22 +515,22 @@ You can also take a look at the <code>Diagnostics.txt</code> file.</p>
 </blockquote>
 <!-- ======================================================================= -->
 
-<h6 id="what-compiler-and-stdlib-does-airsim-use">What compiler and stdlib does AirSim use?<a class="headerlink" href="#what-compiler-and-stdlib-does-airsim-use" title="Permanent link">#</a></h6>
+<h6 id="what-compiler-and-stdlib-does-colosseum-use">What compiler and stdlib does Colosseum use?<a class="headerlink" href="#what-compiler-and-stdlib-does-colosseum-use" title="Permanent link">#</a></h6>
 <blockquote>
-<p>We use the same compiler that Unreal Engine uses, <strong>Clang 8</strong>, and stdlib, <strong>libc++</strong>. AirSim's <code>setup.sh</code> will automatically download them.</p>
+<p>We use the same compiler that Unreal Engine uses, <strong>Clang 8</strong>, and stdlib, <strong>libc++</strong>. Colosseum's <code>setup.sh</code> will automatically download them.</p>
 </blockquote>
 <!-- ======================================================================= -->
 
-<h6 id="what-version-of-cmake-does-the-airsim-build-use">What version of CMake does the AirSim build use?<a class="headerlink" href="#what-version-of-cmake-does-the-airsim-build-use" title="Permanent link">#</a></h6>
+<h6 id="what-version-of-cmake-does-the-colosseum-build-use">What version of CMake does the Colosseum build use?<a class="headerlink" href="#what-version-of-cmake-does-the-colosseum-build-use" title="Permanent link">#</a></h6>
 <blockquote>
 <p>3.10.0 or higher. This is <em>not</em> the default in Ubuntu 16.04 so setup.sh installs it for you. You can check your CMake version using <code>cmake --version</code>. If you have an older version, follow <a href="../cmake_linux/">these instructions</a> or see the <a href="https://cmake.org/install/">CMake website</a>.</p>
 </blockquote>
 <!-- ======================================================================= -->
 
-<h6 id="can-i-compile-airsim-in-bashonwindows">Can I compile AirSim in BashOnWindows?<a class="headerlink" href="#can-i-compile-airsim-in-bashonwindows" title="Permanent link">#</a></h6>
+<h6 id="can-i-compile-colosseum-in-bashonwindows">Can I compile Colosseum in BashOnWindows?<a class="headerlink" href="#can-i-compile-colosseum-in-bashonwindows" title="Permanent link">#</a></h6>
 <blockquote>
 <p>Yes, however, you can't run Unreal from BashOnWindows. So this is kind of useful to check a Linux compile, but not for an end-to-end run.
-See the <a href="https://msdn.microsoft.com/en-us/commandline/wsl/install_guide">BashOnWindows install guide</a>.
+See the <a href="https://msdn.CodexLabsLLC.com/en-us/commandline/wsl/install_guide">BashOnWindows install guide</a>.
 Make sure to have the latest version (Windows 10 Creators Edition) as previous versions had various issues.
 Also, don't invoke <code>bash</code> from <code>Visual Studio Command Prompt</code>, otherwise CMake might find VC++ and try and use that!</p>
 </blockquote>
@@ -515,12 +547,12 @@ Also, don't invoke <code>bash</code> from <code>Visual Studio Command Prompt</co
 <h2 id="other_1">Other<a class="headerlink" href="#other_1" title="Permanent link">#</a></h2>
 <!-- ======================================================================= -->
 
-<h6 id="packaging-a-binary-including-the-airsim-plugin">Packaging a binary including the AirSim plugin<a class="headerlink" href="#packaging-a-binary-including-the-airsim-plugin" title="Permanent link">#</a></h6>
+<h6 id="packaging-a-binary-including-the-colosseum-plugin">Packaging a binary including the Colosseum plugin<a class="headerlink" href="#packaging-a-binary-including-the-colosseum-plugin" title="Permanent link">#</a></h6>
 <blockquote>
-<p>In order to package a custom environment with the AirSim plugin, there are a few project settings that are necessary for ensuring all required assets needed for AirSim are included inside the package. Under <code>Edit -&gt; Project Settings... -&gt; Project -&gt; Packaging</code>, please ensure the following settings are configured properly:</p>
+<p>In order to package a custom environment with the Colosseum plugin, there are a few project settings that are necessary for ensuring all required assets needed for Colosseum are included inside the package. Under <code>Edit -&gt; Project Settings... -&gt; Project -&gt; Packaging</code>, please ensure the following settings are configured properly:</p>
 <ul>
-<li><code>List of maps to include in a packaged build</code>: ensure one entry exists for <code>/AirSim/AirSimAssets</code> </li>
-<li><code>Additional Asset Directories to Cook</code>: ensure one entry exists for <code>/AirSim/HUDAssets</code></li>
+<li><code>List of maps to include in a packaged build</code>: ensure one entry exists for <code>/Colosseum/ColosseumAssets</code> </li>
+<li><code>Additional Asset Directories to Cook</code>: ensure one entry exists for <code>/Colosseum/HUDAssets</code></li>
 </ul>
 </blockquote>
               

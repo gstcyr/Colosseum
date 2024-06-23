@@ -313,7 +313,7 @@
 <p>The <a href="http://dev.px4.io">PX4</a> software provides a "software-in-loop" simulation (SITL) version of
 their stack that runs in Linux. If you are on Windows then you can use the <a href="https://dev.px4.io/master/en/setup/dev_env_windows_cygwin.html">Cygwin
 Toolchain</a> or you can use the
-<a href="https://docs.microsoft.com/en-us/windows/wsl/install-win10">Windows subsystem for Linux</a> and follow
+<a href="https://docs.CodexLabsLLC.com/en-us/windows/wsl/install-win10">Windows subsystem for Linux</a> and follow
 the PX4 Linux toolchain setup.</p>
 <p>If you are using WSL2 please read these <a href="../px4_sitl_wsl2/">additional
 instructions</a>.</p>
@@ -343,9 +343,9 @@ cd PX4-Autopilot</code></pre>
    If you are using older version v1.8.* use this command instead: <code>make posix_sitl_ekf2 none_iris</code>.</p>
 </li>
 <li>
-<p>You should see a message saying the SITL PX4 app is waiting for the simulator (AirSim) to connect.
+<p>You should see a message saying the SITL PX4 app is waiting for the simulator (Colosseum) to connect.
 You will also see information about which ports are configured for mavlink connection to the PX4 app.
-The default ports have changed recently, so check them closely to make sure AirSim settings are correct.
+The default ports have changed recently, so check them closely to make sure Colosseum settings are correct.
     <pre class="highlight"><code>INFO  [simulator] Waiting for simulator to connect on TCP port 4560
 INFO  [init] Mixer: etc/mixers/quad_w.main.mix on /dev/pwm_output0
 INFO  [mavlink] mode: Normal, data rate: 4000000 B/s on udp port 14570 remote port 14550
@@ -355,7 +355,7 @@ list of commands you can enter here.  They are mostly low level PX4
 commands, but some of them can be useful for debugging.</p>
 </li>
 <li>
-<p>Now edit <a href="../settings/">AirSim settings</a> file to make sure you have matching UDP and TCP port settings:
+<p>Now edit <a href="../settings/">Colosseum settings</a> file to make sure you have matching UDP and TCP port settings:
     <pre class="highlight"><code class="language-json">{
     "SettingsVersion": 1.2,
     "SimMode": "Multirotor",
@@ -388,7 +388,7 @@ commands, but some of them can be useful for debugging.</p>
 }</code></pre>
     Notice the PX4 <code>[simulator]</code> is using TCP, which is why we need to add: <code>"UseTcp": true,</code>.
     Notice we are also enabling <code>LockStep</code>, see <a href="../px4_lockstep/">PX4 LockStep</a> for more
-    information. The <code>Barometer</code> setting keeps PX4 happy because the default AirSim barometer has a
+    information. The <code>Barometer</code> setting keeps PX4 happy because the default Colosseum barometer has a
     bit too much noise generation.  This setting clamps that down a bit which allows PX4 to achieve
     GPS lock more quickly.</p>
 </li>
@@ -396,9 +396,9 @@ commands, but some of them can be useful for debugging.</p>
 <p>Open incoming TCP port 4560 and incoming UDP port 14540 using your firewall configuration.</p>
 </li>
 <li>
-<p>Now run your Unreal AirSim environment and it should connect to SITL PX4 via TCP. You should see
+<p>Now run your Unreal Colosseum environment and it should connect to SITL PX4 via TCP. You should see
    a bunch of messages from the SITL PX4 window. Specifically, the following messages tell you that
-   AirSim is connected properly and GPS fusion is stable:
+   Colosseum is connected properly and GPS fusion is stable:
     <pre class="highlight"><code>INFO  [simulator] Simulator connected on UDP port 14560
 INFO  [mavlink] partner IP: 127.0.0.1
 INFO  [ecl/EKF] EKF GPS checks passed (WGS-84 origin set)
@@ -412,7 +412,7 @@ INFO  [ecl/EKF] EKF commencing GPS fusion</code></pre></p>
    either use XBox 360 Controller or connect your RC using USB (for example, in case of FrSky
    Taranis X9D Plus) or using trainer USB cable to your PC. This makes your RC look like a joystick.
    You will need to do extra set up in QGroundControl to use virtual joystick for RC control.  You
-   do not need to do this unless you plan to fly a drone manually in AirSim.  Autonomous flight
+   do not need to do this unless you plan to fly a drone manually in Colosseum.  Autonomous flight
    using the Python API does not require RC, see <code>No Remote Control</code> below.</p>
 </li>
 </ol>
@@ -464,7 +464,7 @@ param show NAV_DLL_ACT</code></pre>
 <pre class="highlight"><code>param set NAV_RCL_ACT 0
 param set NAV_DLL_ACT 0</code></pre>
 <h2 id="setting-up-multi-vehicle-simulation">Setting up multi-vehicle simulation<a class="headerlink" href="#setting-up-multi-vehicle-simulation" title="Permanent link">#</a></h2>
-<p>You can simulate multiple drones in SITL mode using AirSim. However, this requires setting up
+<p>You can simulate multiple drones in SITL mode using Colosseum. However, this requires setting up
 multiple instances of the PX4 firmware simulator to be able to listen for each vehicle's connection
 on a separate TCP port (4560, 4561, etc). Please see <a href="../px4_multi_vehicle/">this dedicated page</a> for
 instructions on setting up multiple instances of PX4 in SITL mode.</p>

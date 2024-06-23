@@ -290,19 +290,19 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <p>AirSim provides a Python-based event camera simulator, aimed at performance and ability to run in real-time along with the sim.</p>
+                <p>Colosseum provides a Python-based event camera simulator, aimed at performance and ability to run in real-time along with the sim.</p>
 <h4 id="event-cameras">Event cameras<a class="headerlink" href="#event-cameras" title="Permanent link">#</a></h4>
 <p>An event camera is a special vision sensor that measures changes in logarithmic brightness and only reports 'events'. Each event is a set of four values that gets generated every time the absolute change in the logarithmic brightness exceeds a certain threshold. An event contains the timestamp of the measurement, pixel location (x and y coordinates) and the polarity: which is either +1/-1 based on whether the logarithmic brightness has increased or decreased. Most event cameras have a temporal resolution of the order of microseconds, making them significantly faster than RGB sensors, and also demonstrate a high dynamic range and low motion blur. More details about event cameras can be found in <a href="http://rpg.ifi.uzh.ch/docs/scaramuzza/Tutorial_on_Event_Cameras_Scaramuzza.pdf">this tutorial from RPG-UZH</a></p>
-<h4 id="airsim-event-simulator">AirSim event simulator<a class="headerlink" href="#airsim-event-simulator" title="Permanent link">#</a></h4>
-<p>The AirSim event simulator uses two consecutive RGB images (converted to grayscale), and computes "past events" that would have occurred during the transition based on the change in log luminance between the images. These events are reported as a stream of bytes, following this format:</p>
+<h4 id="colosseum-event-simulator">Colosseum event simulator<a class="headerlink" href="#colosseum-event-simulator" title="Permanent link">#</a></h4>
+<p>The Colosseum event simulator uses two consecutive RGB images (converted to grayscale), and computes "past events" that would have occurred during the transition based on the change in log luminance between the images. These events are reported as a stream of bytes, following this format:</p>
 <p><code>&lt;x&gt; &lt;y&gt; &lt;timestamp&gt; &lt;pol&gt;</code></p>
 <p>x and y are the pixel locations of the event firing, timestamp is the global timestamp in microseconds and pol is either +1/-1 depending on whether the brightness increased or decreased. Along with this bytestream, an accumulation of events over a 2D frame is also constructed, known as an 'event image' that visualizes +1 events as red and -1 as blue pixels. An example event image is shown below:</p>
 <p><img alt="image" src="../images/event_sim.png" /></p>
 <h4 id="usage">Usage<a class="headerlink" href="#usage" title="Permanent link">#</a></h4>
-<p>An example script to run the event simulator alongside AirSim is located at https://github.com/microsoft/AirSim/blob/main/PythonClient/eventcamera_sim/test_event_sim.py. The following optional command-line arguments can be passed to this script.</p>
+<p>An example script to run the event simulator alongside Colosseum is located at https://github.com/CodexLabsLLC/Colosseum/blob/main/PythonClient/eventcamera_sim/test_event_sim.py. The following optional command-line arguments can be passed to this script.</p>
 <pre class="highlight"><code>args.width, args.height (float): Simulated event camera resolution
 args.save (bool): Whether or not to save the event data to a file, args.debug (bool): Whether or not to display the simulated events as an image</code></pre>
-<p>The implementation of the actual event simulation, written in Python and numba, is at https://github.com/microsoft/AirSim/blob/main/PythonClient/eventcamera_sim/event_simulator.py. The event simulator is initialized as follows, with the arguments controlling the resolution of the camera.</p>
+<p>The implementation of the actual event simulation, written in Python and numba, is at https://github.com/CodexLabsLLC/Colosseum/blob/main/PythonClient/eventcamera_sim/event_simulator.py. The event simulator is initialized as follows, with the arguments controlling the resolution of the camera.</p>
 <pre class="highlight"><code>from event_simulator import *
 ev_sim = EventSimulator(W, H)</code></pre>
 <p>The actual computation of the events is triggered through an <code>image_callback</code> function, which is executed every time a new RGB image is obtained. The first time this function is called, due to the lack of a 'previous' image, it acts as an initialization of the event sim. </p>

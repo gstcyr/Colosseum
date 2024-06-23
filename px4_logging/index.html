@@ -304,7 +304,7 @@
                 <h1 id="px4mavlink-logging">PX4/MavLink Logging<a class="headerlink" href="#px4mavlink-logging" title="Permanent link">#</a></h1>
 <p>Thanks to <a href="https://github.com/clovett">Chris Lovett</a> for developing various tools for PX4/MavLink logging mentioned on this page!</p>
 <h2 id="logging-mavlink-messages">Logging MavLink Messages<a class="headerlink" href="#logging-mavlink-messages" title="Permanent link">#</a></h2>
-<p>AirSim can capture mavlink log files if you add the following to the PX4 section of your <code>settings.json</code> file:</p>
+<p>Colosseum can capture mavlink log files if you add the following to the PX4 section of your <code>settings.json</code> file:</p>
 <pre class="highlight"><code class="language-json">{
     "SettingsVersion": 1.2,
     "SimMode": "Multirotor",
@@ -315,7 +315,7 @@
         }
     }
 }</code></pre>
-<p>AirSim will create a timestamped log file in this folder for each "armed/disarmed" flight session.</p>
+<p>Colosseum will create a timestamped log file in this folder for each "armed/disarmed" flight session.</p>
 <p>You will then see log files organized by date in d:\temp\logs, specifically *input.mavlink and *output.mavlink files.</p>
 <h2 id="mavlink-logviewer">MavLink LogViewer<a class="headerlink" href="#mavlink-logviewer" title="Permanent link">#</a></h2>
 <p>For MavLink enabled drones, you can also use our <a href="../log_viewer/">Log Viewer</a> to visualize the streams of data.
@@ -329,23 +329,23 @@ are mutually exclusive.</p>
 using QGroundControl. PX4 will write log file on device which you can download at later date using QGroundControl.</p>
 <h2 id="debugging-a-bad-flight">Debugging a bad flight<a class="headerlink" href="#debugging-a-bad-flight" title="Permanent link">#</a></h2>
 <p>You can use these *.mavlink log files to debug a bad flight using the <a href="../log_viewer/">LogViewer</a>.
-For example, AirSim/PX4 flight may misbehave if you run it on an under powered computer.
+For example, Colosseum/PX4 flight may misbehave if you run it on an under powered computer.
 The following shows what might happen in that situation.</p>
 <p><img alt="screenshot" src="../images/px4_debugging.png" /></p>
 <p>In this flight we ran a simple <code>commander takeoff</code> test as performed
 by <code>PythonClient/multirotor/stability_test.py</code> and the flight started off fine, but then went crazy at the end and the drone crashed.  So why is that?  What can the log file show?</p>
 <p>Here we've plotted the following 5 metrics:
-- <code>hil_gps.alt</code> - the simulated altitude sent from AirSim to PX4
-- <code>telemetry.update_rate</code> - the rate AirSim is performing the critical drone update loop in updates per second.
-- <code>telemetry.update_time</code> - the average time taken inside AirSim performing the critical drone update loop.
+- <code>hil_gps.alt</code> - the simulated altitude sent from Colosseum to PX4
+- <code>telemetry.update_rate</code> - the rate Colosseum is performing the critical drone update loop in updates per second.
+- <code>telemetry.update_time</code> - the average time taken inside Colosseum performing the critical drone update loop.
 - <code>telemetry.actuation_delay</code> - this is a very interesting metric measuring how long it takes PX4 to send back updated actuator controls message (motor power)
 - <code>actuator_controls.0</code> - the actuator controls signal from PX4 for the first rotor.</p>
-<p>What we see then with these metrics is that things started off nicely, with nice flat altitude, high update rate in the 275 to 300 fps range, and a nice low update time inside AirSim around 113 microseconds, and a nice low actuation delay in the round trip from PX4.  The actuator controls also stabilize quickly to a nice flat line.</p>
+<p>What we see then with these metrics is that things started off nicely, with nice flat altitude, high update rate in the 275 to 300 fps range, and a nice low update time inside Colosseum around 113 microseconds, and a nice low actuation delay in the round trip from PX4.  The actuator controls also stabilize quickly to a nice flat line.</p>
 <p>But then the update_time starts to climb, at the same time the actuation_delay climbs and we see a little tip in actuator_controls.
 This dip should not happen, the PX4 is panicking over loss of update rate but it recovers.</p>
-<p>But then we see actuator controls go crazy, a huge spike in actuation delay, and around this time we see a message from AirSim saying <code>lockstep disabled</code>.  A delay over 100 millisecond triggers AirSim into jumping out of lockstep mode and the PX4 goes nuts and the drone crashes.</p>
+<p>But then we see actuator controls go crazy, a huge spike in actuation delay, and around this time we see a message from Colosseum saying <code>lockstep disabled</code>.  A delay over 100 millisecond triggers Colosseum into jumping out of lockstep mode and the PX4 goes nuts and the drone crashes.</p>
 <p>The button line is that if a simple <code>takeoff</code> cannot maintain steady smooth flight and you see these kinds of spikes and uneven update rates
-then it means you are running AirSim on a computer that does not have enough horsepower.</p>
+then it means you are running Colosseum on a computer that does not have enough horsepower.</p>
 <p>This is what a simple takeoff and hover and land should look like:</p>
 <p><img alt="nice" src="../images/px4_nice.png" /></p>
 <p>Here you see the <code>update_rate</code> sticking the target of 333 updates per second.

@@ -153,7 +153,7 @@
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#what-flight-controllers-are-supported">What Flight Controllers are Supported?</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#using-airsim-without-flight-controller">Using AirSim Without Flight Controller</a>
+    <li class="toctree-l2"><a class="reference internal" href="#using-colosseum-without-flight-controller">Using Colosseum Without Flight Controller</a>
     </li>
     </ul>
                   </li>
@@ -309,9 +309,9 @@
 <p>Hardware-in-Loop (HITL or HIL) means flight controller runs in actual hardware such as Naze32 or Pixhawk chip. You then connect this hardware to PC using USB port. Simulator talks to the device to retrieve actuator signals and send it simulated sensor data. This is obviously as close as you can get to real thing. However, it typically requires more steps to set up and usually hard to debug. One big issue is that simulator clock and device clock runs on their own speed and accuracy. Also, USB connection (which is usually only USB 2.0) may not be enough for real-time communication.</p>
 <p>In "software-in-loop" simulation (SITL or SIL) mode the firmware runs in your computer as opposed to separate board. This is generally fine except that now you are not touching any code paths that are specific to your device. Also, none of your code now runs with real-time clock usually provided by specialized hardware board. For well-designed flight controllers with software clock, these are usually not concerning issues.</p>
 <h2 id="what-flight-controllers-are-supported">What Flight Controllers are Supported?<a class="headerlink" href="#what-flight-controllers-are-supported" title="Permanent link">#</a></h2>
-<p>AirSim has built-in flight controller called <a href="../simple_flight/">simple_flight</a> and it is used by default. You don't need to do anything to use or configure it. AirSim also supports <a href="../px4_setup/">PX4</a> &amp; <a href="https://ardupilot.org/dev/docs/sitl-with-airsim.html">ArduPilot</a> as external flight controllers for advanced users.</p>
-<h2 id="using-airsim-without-flight-controller">Using AirSim Without Flight Controller<a class="headerlink" href="#using-airsim-without-flight-controller" title="Permanent link">#</a></h2>
-<p>Yes, now it's possible to use AirSim without flight controller. Please see the <a href="../image_apis/">instructions here</a> for how to use so-called "Computer Vision" mode. If you don't need vehicle dynamics, we highly recommend using this mode.</p>
+<p>Colosseum has built-in flight controller called <a href="../simple_flight/">simple_flight</a> and it is used by default. You don't need to do anything to use or configure it. Colosseum also supports <a href="../px4_setup/">PX4</a> &amp; <a href="https://ardupilot.org/dev/docs/sitl-with-airsim.html">ArduPilot</a> as external flight controllers for advanced users.</p>
+<h2 id="using-colosseum-without-flight-controller">Using Colosseum Without Flight Controller<a class="headerlink" href="#using-colosseum-without-flight-controller" title="Permanent link">#</a></h2>
+<p>Yes, now it's possible to use Colosseum without flight controller. Please see the <a href="../image_apis/">instructions here</a> for how to use so-called "Computer Vision" mode. If you don't need vehicle dynamics, we highly recommend using this mode.</p>
               
             </div>
           </div><footer>
