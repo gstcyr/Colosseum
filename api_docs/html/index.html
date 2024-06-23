@@ -81,6 +81,7 @@
 <li><a class="reference internal" href="#airsim.client.VehicleClient.simEnableFocusPlane"><code class="docutils literal notranslate"><span class="pre">VehicleClient.simEnableFocusPlane()</span></code></a></li>
 <li><a class="reference internal" href="#airsim.client.VehicleClient.simEnableManualFocus"><code class="docutils literal notranslate"><span class="pre">VehicleClient.simEnableManualFocus()</span></code></a></li>
 <li><a class="reference internal" href="#airsim.client.VehicleClient.simEnableWeather"><code class="docutils literal notranslate"><span class="pre">VehicleClient.simEnableWeather()</span></code></a></li>
+<li><a class="reference internal" href="#airsim.client.VehicleClient.simFindLookAtRotation"><code class="docutils literal notranslate"><span class="pre">VehicleClient.simFindLookAtRotation()</span></code></a></li>
 <li><a class="reference internal" href="#airsim.client.VehicleClient.simFlushPersistentMarkers"><code class="docutils literal notranslate"><span class="pre">VehicleClient.simFlushPersistentMarkers()</span></code></a></li>
 <li><a class="reference internal" href="#airsim.client.VehicleClient.simGetCameraInfo"><code class="docutils literal notranslate"><span class="pre">VehicleClient.simGetCameraInfo()</span></code></a></li>
 <li><a class="reference internal" href="#airsim.client.VehicleClient.simGetCollisionInfo"><code class="docutils literal notranslate"><span class="pre">VehicleClient.simGetCollisionInfo()</span></code></a></li>
@@ -108,6 +109,7 @@
 <li><a class="reference internal" href="#airsim.client.VehicleClient.simIsPause"><code class="docutils literal notranslate"><span class="pre">VehicleClient.simIsPause()</span></code></a></li>
 <li><a class="reference internal" href="#airsim.client.VehicleClient.simListAssets"><code class="docutils literal notranslate"><span class="pre">VehicleClient.simListAssets()</span></code></a></li>
 <li><a class="reference internal" href="#airsim.client.VehicleClient.simListSceneObjects"><code class="docutils literal notranslate"><span class="pre">VehicleClient.simListSceneObjects()</span></code></a></li>
+<li><a class="reference internal" href="#airsim.client.VehicleClient.simListSceneObjectsByTag"><code class="docutils literal notranslate"><span class="pre">VehicleClient.simListSceneObjectsByTag()</span></code></a></li>
 <li><a class="reference internal" href="#airsim.client.VehicleClient.simLoadLevel"><code class="docutils literal notranslate"><span class="pre">VehicleClient.simLoadLevel()</span></code></a></li>
 <li><a class="reference internal" href="#airsim.client.VehicleClient.simPause"><code class="docutils literal notranslate"><span class="pre">VehicleClient.simPause()</span></code></a></li>
 <li><a class="reference internal" href="#airsim.client.VehicleClient.simPlotArrows"><code class="docutils literal notranslate"><span class="pre">VehicleClient.simPlotArrows()</span></code></a></li>
@@ -980,6 +982,11 @@
 </dd></dl>
 
 <dl class="py method">
+<dt class="sig sig-object py" id="airsim.client.VehicleClient.simFindLookAtRotation">
+<span class="sig-name descname"><span class="pre">simFindLookAtRotation</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">object_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">vehicle_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/airsim/client.html#VehicleClient.simFindLookAtRotation"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#airsim.client.VehicleClient.simFindLookAtRotation" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
 <dt class="sig sig-object py" id="airsim.client.VehicleClient.simFlushPersistentMarkers">
 <span class="sig-name descname"><span class="pre">simFlushPersistentMarkers</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/airsim/client.html#VehicleClient.simFlushPersistentMarkers"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#airsim.client.VehicleClient.simFlushPersistentMarkers" title="Permalink to this definition"></a></dt>
 <dd><p>Clear any persistent markers - those plotted with setting <cite>is_persistent=True</cite> in the APIs below</p>
@@ -1310,6 +1317,24 @@ Returns Segmentation ID of each point’s collided object in the last Lidar upda
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><p><strong>name_regex</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.12)"><em>str</em></a><em>, </em><em>optional</em>) – String to match actor names against, e.g. “Cylinder.*”</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>List containing all the names</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.12)">list</a>[<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.12)">str</a>]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="airsim.client.VehicleClient.simListSceneObjectsByTag">
+<span class="sig-name descname"><span class="pre">simListSceneObjectsByTag</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tag_regex</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'.*'</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/airsim/client.html#VehicleClient.simListSceneObjectsByTag"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#airsim.client.VehicleClient.simListSceneObjectsByTag" title="Permalink to this definition"></a></dt>
+<dd><p>Lists the objects present in the environment by searching their tags</p>
+<p>Default behaviour is to list all objects, regex can be used to return smaller list of matching objects or actors</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>tag_regex</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.12)"><em>str</em></a><em>, </em><em>optional</em>) – String to match actor tags against, e.g. “Tag.*”</p>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p>List containing all the names</p>

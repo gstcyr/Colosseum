@@ -629,6 +629,20 @@
 <span class="sd">        &quot;&quot;&quot;</span>
         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">client</span><span class="o">.</span><span class="n">call</span><span class="p">(</span><span class="s1">&#39;simListSceneObjects&#39;</span><span class="p">,</span> <span class="n">name_regex</span><span class="p">)</span></div>
 
+<div class="viewcode-block" id="VehicleClient.simListSceneObjectsByTag"><a class="viewcode-back" href="../../index.html#airsim.client.VehicleClient.simListSceneObjectsByTag">[docs]</a>    <span class="k">def</span> <span class="nf">simListSceneObjectsByTag</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">tag_regex</span> <span class="o">=</span> <span class="s1">&#39;.*&#39;</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Lists the objects present in the environment by searching their tags</span>
+
+<span class="sd">        Default behaviour is to list all objects, regex can be used to return smaller list of matching objects or actors</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            tag_regex (str, optional): String to match actor tags against, e.g. &quot;Tag.*&quot;</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            list[str]: List containing all the names</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">client</span><span class="o">.</span><span class="n">call</span><span class="p">(</span><span class="s1">&#39;simListSceneObjectsByTag&#39;</span><span class="p">,</span> <span class="n">tag_regex</span><span class="p">)</span></div>
+
 <div class="viewcode-block" id="VehicleClient.simLoadLevel"><a class="viewcode-back" href="../../index.html#airsim.client.VehicleClient.simLoadLevel">[docs]</a>    <span class="k">def</span> <span class="nf">simLoadLevel</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">level_name</span><span class="p">):</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">        Loads a level specified by its name</span>
@@ -1195,7 +1209,10 @@
 <span class="sd">        Args:</span>
 <span class="sd">            ext_force (Vector3r): Force, in World frame, NED direction, in N</span>
 <span class="sd">        &quot;&quot;&quot;</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">client</span><span class="o">.</span><span class="n">call</span><span class="p">(</span><span class="s1">&#39;simSetExtForce&#39;</span><span class="p">,</span> <span class="n">ext_force</span><span class="p">)</span></div></div>
+        <span class="bp">self</span><span class="o">.</span><span class="n">client</span><span class="o">.</span><span class="n">call</span><span class="p">(</span><span class="s1">&#39;simSetExtForce&#39;</span><span class="p">,</span> <span class="n">ext_force</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="VehicleClient.simFindLookAtRotation"><a class="viewcode-back" href="../../index.html#airsim.client.VehicleClient.simFindLookAtRotation">[docs]</a>    <span class="k">def</span> <span class="nf">simFindLookAtRotation</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">object_name</span><span class="p">,</span> <span class="n">vehicle_name</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">client</span><span class="o">.</span><span class="n">call</span><span class="p">(</span><span class="s1">&#39;simFindLookAtRotation&#39;</span><span class="p">,</span> <span class="n">vehicle_name</span><span class="p">,</span> <span class="n">object_name</span><span class="p">)</span></div></div>
 
 <span class="c1"># -----------------------------------  Multirotor APIs ---------------------------------------------</span>
 <div class="viewcode-block" id="MultirotorClient"><a class="viewcode-back" href="../../index.html#airsim.client.MultirotorClient">[docs]</a><span class="k">class</span> <span class="nc">MultirotorClient</span><span class="p">(</span><span class="n">VehicleClient</span><span class="p">,</span> <span class="nb">object</span><span class="p">):</span>
