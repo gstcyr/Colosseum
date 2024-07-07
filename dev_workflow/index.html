@@ -334,7 +334,7 @@
 <h2 id="updating-and-changing-colosseum-code">Updating and Changing Colosseum Code<a class="headerlink" href="#updating-and-changing-colosseum-code" title="Permanent link">#</a></h2>
 <h3 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">#</a></h3>
 <p>Colosseum is designed as plugin. This means it can't run by itself, you need to put it in an Unreal project (we call it "environment"). So building and testing Colosseum has two steps: (1) build the plugin (2) deploy plugin in Unreal project and run the project. </p>
-<p>The first step is accomplished by build.cmd available in Colosseum root. This command will update everything you need for the plugin in the <code>Unreal\Plugins</code> folder. So to deploy the plugin, you just need to copy <code>Unreal\Plugins</code> folder in to your Unreal project folder. Next you should remove all  intermediate files in your Unreal project and then regenerate .sln file for your Unreal project. To do this, we have two handy .bat files in <code>Unreal\Environments\Blocks</code> folder: <code>clean.bat</code> and <code>GenerateProjectFiles.bat</code>. So just run these bat files in sequence from root of your Unreal project. Now you are ready to open new .sln in Visual Studio and press F5 to run it.</p>
+<p>The first step is accomplished by build.cmd available in Colosseum root. This command will update everything you need for the plugin in the <code>Unreal\Plugins</code> folder. So to deploy the plugin, you just need to copy <code>Unreal\Plugins</code> folder in to your Unreal project folder. Next you should remove all  intermediate files in your Unreal project and then regenerate .sln file for your Unreal project. To do this, we have two handy .bat files in <code>Unreal\Environments\BlocksV2</code> folder: <code>clean.bat</code> and <code>GenerateProjectFiles.bat</code>. So just run these bat files in sequence from root of your Unreal project. Now you are ready to open new .sln in Visual Studio and press F5 to run it.</p>
 <h3 id="steps">Steps<a class="headerlink" href="#steps" title="Permanent link">#</a></h3>
 <p>Below are the steps we use to make changes in Colosseum and test them out. The best way to do development in Colosseum code is to use <a href="../unreal_blocks/">Blocks project</a>. This is the light weight project so compile time is relatively faster. Generally the workflow is,</p>
 <pre class="highlight"><code>REM //Use x64 Native Tools Command Prompt for VS 2019
@@ -342,13 +342,13 @@ REM //Navigate to Colosseum repo folder
 
 git pull                          
 build.cmd                        
-cd Unreal\Environments\Blocks         
+cd Unreal\Environments\BlocksV2      
 update_from_git.bat
 start Blocks.sln</code></pre>
 <p>Above commands first builds the Colosseum plugin and then deploys it to Blocks project using handy <code>update_from_git.bat</code>. Now you can work inside Visual Studio solution, make changes to the code and just run F5 to build, run and test your changes. The debugging, break points etc should work as usual. </p>
 <p>After you are done with you code changes, you might want to push your changes back to Colosseum repo or your own fork or you may deploy the new plugin to your custom Unreal project. To do this, go back to command prompt and first update the Colosseum repo folder:</p>
 <pre class="highlight"><code>REM //Use x64 Native Tools Command Prompt for VS 2019
-REM //run this from Unreal\Environments\Blocks 
+REM //run this from Unreal\Environments\BlocksV2
 
 update_to_git.bat
 build.cmd</code></pre>

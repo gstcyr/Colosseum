@@ -313,7 +313,7 @@ Use <a href="https://www.7-zip.org/download.html">7zip</a> to unzip these files.
 <p>The Colosseum binaries, like CityEnviron, requires a beefy GPU to run smoothly. You can run them in low resolution mode by editing the <code>run.bat</code> file (if it doesn't exist, create it with the following content) on Windows like this:</p>
 <pre class="highlight"><code class="language-batch">start CityEnviron -ResX=640 -ResY=480 -windowed</code></pre>
 <p>For Linux binaries, use the <code>Blocks.sh</code> or corresponding shell script as follows -</p>
-<pre class="highlight"><code class="language-shell">./Blocks.sh -ResX=640 -ResY=480 -windowed</code></pre>
+<pre class="highlight"><code class="language-shell">./BlocksV2.sh -ResX=640 -ResY=480 -windowed</code></pre>
 <p>Check out all the other <a href="https://docs.unrealengine.com/en-US/ProductionPipelines/CommandLineArguments/index.html">command-line options</a></p>
 <p>UE 4.24 uses Vulkan drivers by default, but they can consume more GPU memory. If you get memory allocation errors, then you can try switching to OpenGL using <code>-opengl</code></p>
 <p>You can also limit the maximum FPS using the <code>simRunConsoleCommand()</code> API as follows-</p>

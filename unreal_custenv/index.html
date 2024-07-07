@@ -341,7 +341,7 @@
 <p>Go to your folder for Colosseum repo and copy <code>Unreal\Plugins</code> folder in to your <code>LandscapeMountains</code> folder. This way now your own Unreal project has Colosseum plugin.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>If the Colosseum installation is fresh, i.e, hasn't been built before, make sure that you run <code>build.cmd</code> from the root directory once before copying <code>Unreal\Plugins</code> folder so that <code>AirLib</code> files are also included. If you have made some changes in the Blocks environment, make sure to run <code>update_to_git.bat</code> from <code>Unreal\Environments\Blocks</code> to update the files in <code>Unreal\Plugins</code>.</p>
+<p>If the Colosseum installation is fresh, i.e, hasn't been built before, make sure that you run <code>build.cmd</code> from the root directory once before copying <code>Unreal\Plugins</code> folder so that <code>AirLib</code> files are also included. If you have made some changes in the Blocks environment, make sure to run <code>update_to_git.bat</code> from <code>Unreal\Environments\BlocksV2</code> to update the files in <code>Unreal\Plugins</code>.</p>
 </div>
 </li>
 <li>
@@ -423,7 +423,7 @@ but you can use any environment. Another free environment is <a href="https://ww
 <h4 id="when-i-press-play-button-some-kind-of-video-starts-instead-of-my-vehicle">When I press Play button some kind of video starts instead of my vehicle.<a class="headerlink" href="#when-i-press-play-button-some-kind-of-video-starts-instead-of-my-vehicle" title="Permanent link">#</a></h4>
 <p>If the environment comes with MatineeActor, delete it to avoid any startup demo sequences. There might be other ways to remove it as well, for example, click on Blueprints button, then Level Blueprint and then look at Begin Play event in Event Graph. You might want to disconnect any connections that may be starting "matinee".</p>
 <h4 id="is-there-easy-way-to-sync-code-in-my-unreal-project-with-code-in-colosseum-repo">Is there easy way to sync code in my Unreal project with code in Colosseum repo?<a class="headerlink" href="#is-there-easy-way-to-sync-code-in-my-unreal-project-with-code-in-colosseum-repo" title="Permanent link">#</a></h4>
-<p>Sure, there is! You can find bunch of <code>.bat</code> files (for linux, <code>.sh</code>) in <code>Colosseum\Unreal\Environments\Blocks</code>. Just copy them over to your own Unreal project. Most of these are quite simple and self explanatory.</p>
+<p>Sure, there is! You can find bunch of <code>.bat</code> files (for linux, <code>.sh</code>) in <code>Colosseum\Unreal\Environments\BlocksV2</code>. Just copy them over to your own Unreal project. Most of these are quite simple and self explanatory.</p>
 <h4 id="i-get-some-error-about-map">I get some error about map.<a class="headerlink" href="#i-get-some-error-about-map" title="Permanent link">#</a></h4>
 <p>You might have to set default map for your project. For example, if you are using Modular Neighborhood Pack, set the Editor Starter Map as well as Game Default Map to Demo_Map in Project Settings &gt; Maps &amp; Modes.</p>
 <h4 id="i-see-add-to-project-option-for-environment-but-not-create-project-option">I see "Add to project" option for environment but not "Create project" option.<a class="headerlink" href="#i-see-add-to-project-option-for-environment-but-not-create-project-option" title="Permanent link">#</a></h4>

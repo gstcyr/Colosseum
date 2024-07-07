@@ -381,22 +381,22 @@
 <li>
 <p>Looking at the (absolute) path specified by the <code>-settings</code> command line argument.
 For example, in Windows: <code>Colosseum.exe -settings="C:\path\to\settings.json"</code>
-In Linux <code>./Blocks.sh -settings="/home/$USER/path/to/settings.json"</code></p>
+In Linux <code>./BlocksV2.sh -settings="/home/$USER/path/to/settings.json"</code></p>
 </li>
 <li>
 <p>Looking for a json document passed as a command line argument by the <code>-settings</code> argument.
 For example, in Windows: <code>Colosseum.exe -settings={"foo":"bar"}</code>
-In Linux <code>./Blocks.sh -settings={"foo":"bar"}</code></p>
+In Linux <code>./BlocksV2.sh -settings={"foo":"bar"}</code></p>
 </li>
 <li>
 <p>Looking in the folder of the executable for a file called <code>settings.json</code>.
 This will be a deep location where the actual executable of the Editor or binary is stored.
-For e.g. with the Blocks binary, the location searched is <code>&lt;path-of-binary&gt;/LinuxNoEditor/Blocks/Binaries/Linux/settings.json</code>.</p>
+For e.g. with the Blocks binary, the location searched is <code>&lt;path-of-binary&gt;/LinuxNoEditor/BlocksV2/Binaries/Linux/settings.json</code>.</p>
 </li>
 <li>
 <p>Searching for <code>settings.json</code> in the folder from where the executable is launched</p>
 <p>This is a top-level directory containing the launch script or executable. For e.g. Linux: <code>&lt;path-of-binary&gt;/LinuxNoEditor/settings.json</code>, Windows: <code>&lt;path-of-binary&gt;/WindowsNoEditor/settings.json</code></p>
-<p>Note that this path changes depending on where its invoked from. On Linux, if executing the <code>Blocks.sh</code> script from inside LinuxNoEditor folder like <code>./Blocks.sh</code>, then the previous mentioned path is used. However, if launched from outside LinuxNoEditor folder such as <code>./LinuxNoEditor/Blocks.sh</code>, then <code>&lt;path-of-binary&gt;/settings.json</code> will be used.</p>
+<p>Note that this path changes depending on where its invoked from. On Linux, if executing the <code>Blocks.sh</code> script from inside LinuxNoEditor folder like <code>./BlocksV2.sh</code>, then the previous mentioned path is used. However, if launched from outside LinuxNoEditor folder such as <code>./LinuxNoEditor/BlocksV2.sh</code>, then <code>&lt;path-of-binary&gt;/settings.json</code> will be used.</p>
 </li>
 <li>
 <p>Looking in the Colosseum subfolder for a file called <code>settings.json</code>. The Colosseum subfolder is located at <code>Documents\Colosseum</code> on Windows and <code>~/Documents/Colosseum</code> on Linux systems.</p>
