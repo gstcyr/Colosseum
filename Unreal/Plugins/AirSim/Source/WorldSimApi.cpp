@@ -359,6 +359,16 @@ bool WorldSimApi::runConsoleCommand(const std::string& command)
     return succeeded;
 }
 
+std::string WorldSimApi::getConsoleBuffer()
+{
+    std::string message = "";
+    UAirBlueprintLib::RunCommandOnGameThread([this, &message]() {
+        message = UAirBlueprintLib::GetConsoleBuffer(simmode_);
+    },
+                                             true);
+    return message;
+}
+
 WorldSimApi::Pose WorldSimApi::getObjectPose(const std::string& object_name) const
 {
     Pose result;

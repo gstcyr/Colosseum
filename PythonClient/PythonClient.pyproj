@@ -25,16 +25,6 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="airsim\client.py" />
-    <Compile Include="airsim\types.py">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="airsim\utils.py">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="airsim\__init__.py">
-      <SubType>Code</SubType>
-    </Compile>
     <Compile Include="car\multi_agent_car.py">
       <SubType>Code</SubType>
     </Compile>
@@ -73,7 +63,6 @@
     <Compile Include="multirotor\navigate.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="airsim\pfm.py" />
     <Compile Include="car\car_collision.py" />
     <Compile Include="car\car_monitor.py" />
     <Compile Include="car\car_stress_test.py" />

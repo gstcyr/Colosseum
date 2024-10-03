@@ -89,6 +89,12 @@ public:
 
     UFUNCTION(BlueprintCallable, Category = "AirSim")
     static bool RunConsoleCommand(const AActor* context, const FString& command);
+    
+    //UFUNCTION(BlueprintCallable, Category = "AirSim")
+    static std::string GetConsoleBuffer(const AActor* context);
+
+    UFUNCTION(BlueprintCallable, Category = "AirSim")
+    static bool SetConsoleBuffer(const AActor* context, const FString& value);
 
     static bool HasObstacle(const AActor* actor, const FVector& start, const FVector& end,
                             const AActor* ignore_actor = nullptr, ECollisionChannel collision_channel = ECC_Visibility);
@@ -292,6 +298,7 @@ private:
 
 private:
     static bool log_messages_hidden_;
+    static std::string console_buffer;
     //FViewPort doesn't expose this field so we are doing dirty work around by maintaining count by ourselves
     static uint32_t flush_on_draw_count_;
     static msr::airlib::AirSimSettings::SegmentationSetting::MeshNamingMethodType mesh_naming_method_;

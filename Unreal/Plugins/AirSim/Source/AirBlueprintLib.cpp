@@ -36,6 +36,8 @@ parameters -> camel_case
 */
 
 bool UAirBlueprintLib::log_messages_hidden_ = false;
+std::string UAirBlueprintLib::console_buffer = "";
+
 msr::airlib::AirSimSettings::SegmentationSetting::MeshNamingMethodType UAirBlueprintLib::mesh_naming_method_ =
     msr::airlib::AirSimSettings::SegmentationSetting::MeshNamingMethodType::OwnerName;
 IImageWrapperModule* UAirBlueprintLib::image_wrapper_module_ = nullptr;
@@ -639,6 +641,22 @@ bool UAirBlueprintLib::RunConsoleCommand(const AActor* context, const FString& c
     if (playerController != nullptr)
         playerController->ConsoleCommand(command, true);
     return playerController != nullptr;
+}
+
+bool UAirBlueprintLib::SetConsoleBuffer(const AActor* context, const FString& value)
+{
+    auto* playerController = UGameplayStatics::GetPlayerController(context->GetWorld(), 0);
+
+    console_buffer = std::string(TCHAR_TO_UTF8(*value));;
+    // Set value of console buffer to 'value';
+    
+    return playerController != nullptr;
+}
+
+
+std::string UAirBlueprintLib::GetConsoleBuffer(const AActor* context)
+{
+    return console_buffer;
 }
 
 bool UAirBlueprintLib::HasObstacle(const AActor* actor, const FVector& start, const FVector& end, const AActor* ignore_actor, ECollisionChannel collision_channel)

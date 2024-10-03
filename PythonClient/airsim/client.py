@@ -422,6 +422,17 @@ class VehicleClient:
             [bool]: Success
         """
         return self.client.call('simRunConsoleCommand', command)
+        
+    def simGetConsoleBuffer(self):
+        """
+        You can use the 'Set Console Buffer' node in Unreal's Blueprints to set a string value, which can then be read by this function.
+        Useful if you need a return value from 'simRunConsoleCommand'.
+        
+        Returns:
+            [string]
+        """
+        result = self.client.call('simGetConsoleBuffer')
+        return result
 
 #gets the static meshes in the unreal scene
     def simGetMeshPositionVertexBuffers(self):
