@@ -14,7 +14,21 @@
 #define _CRT_SECURE_NO_WARNINGS 1
 #endif
 
-#include "common/common_utils/WindowsApisCommonPre.hpp"
+#include "CoreTypes.h"
+#include "Windows/AllowWindowsPlatformTypes.h"
+#include "Windows/AllowWindowsPlatformAtomics.h"
+
+// Define _WIN32_DCOM before including Windows headers
+#ifndef _WIN32_DCOM
+#define _WIN32_DCOM
+#endif
+
+//remove warnings for VC++
+#pragma warning(push)
+#pragma warning(disable:4191 6000 28251)
+#pragma warning(disable:4996) //warning C4996: This function or variable may be unsafe. Consider using xxx instead.
+#pragma warning(disable:4005) //warning C4005: 'TEXT': macro redefinition
+
 
 #include "common/common_utils/MinWinDefines.hpp"
 #include <windows.h>
@@ -34,7 +48,10 @@
 #endif
 #include <wbemidl.h>
 
-#include "common/common_utils/WindowsApisCommonPost.hpp"
+// Close Unreal Engine's wrappers
+#include "Windows/HideWindowsPlatformAtomics.h"
+#include "Windows/HideWindowsPlatformTypes.h"
+
 
 //-----------------------------------------------------------------------------
 // Defines, constants, and global variables
