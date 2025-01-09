@@ -22,7 +22,7 @@
 #undef NOUSER // All USER #undefs and routines
 #undef NOMSG // typedef MSG and associated routines
 
-#include <fileapi.h>
+//#include <fileapi.h>
 #include <Shlobj.h>
 #include <direct.h>
 #include <stdlib.h>
