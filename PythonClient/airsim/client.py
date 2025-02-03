@@ -414,6 +414,7 @@ class VehicleClient:
         Allows the client to execute a command in Unreal's native console, via an API.
         Affords access to the countless built-in commands such as "stat unit", "stat fps", "open [map]", adjust any config settings, etc. etc.
         Allows the user to create bespoke APIs very easily, by adding a custom event to the level blueprint, and then calling the console command "ce MyEventName [args]". No recompilation of AirSim needed!
+        Blueprints can return values to Python using `SET CONSOLE BUFFER` node in their Blueprints and `simGetConsoleBuffer` command in Python.
 
         Args:
             command ([string]): Desired Unreal Engine Console command to run
@@ -423,7 +424,7 @@ class VehicleClient:
         """
         return self.client.call('simRunConsoleCommand', command)
         
-    def simGetConsoleBuffer(self):
+    def simGetConsoleBuffer(self, key=""):
         """
         You can use the 'Set Console Buffer' node in Unreal's Blueprints to set a string value, which can then be read by this function.
         Useful if you need a return value from 'simRunConsoleCommand'.
@@ -431,7 +432,7 @@ class VehicleClient:
         Returns:
             [string]
         """
-        result = self.client.call('simGetConsoleBuffer')
+        result = self.client.call('simGetConsoleBuffer', key)
         return result
 
 #gets the static meshes in the unreal scene

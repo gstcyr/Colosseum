@@ -12,7 +12,7 @@ setuptools.setup(
     description="Open source simulator based on Unreal Engine for autonomous vehicles from Microsoft AI & Research",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/microsoft/airsim",
+    url="https://github.com/gstcyr/Colosseum",
     packages=setuptools.find_packages(),
 	license='MIT',
     classifiers=(

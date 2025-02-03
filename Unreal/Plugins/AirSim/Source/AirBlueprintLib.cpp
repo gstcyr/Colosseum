@@ -37,6 +37,7 @@ parameters -> camel_case
 
 bool UAirBlueprintLib::log_messages_hidden_ = false;
 std::string UAirBlueprintLib::console_buffer = "";
+TMap<FString, std::string> UAirBlueprintLib::console_buffer_map;
 
 msr::airlib::AirSimSettings::SegmentationSetting::MeshNamingMethodType UAirBlueprintLib::mesh_naming_method_ =
     msr::airlib::AirSimSettings::SegmentationSetting::MeshNamingMethodType::OwnerName;
@@ -643,19 +644,26 @@ bool UAirBlueprintLib::RunConsoleCommand(const AActor* context, const FString& c
     return playerController != nullptr;
 }
 
-bool UAirBlueprintLib::SetConsoleBuffer(const AActor* context, const FString& value)
+bool UAirBlueprintLib::SetConsoleBuffer(const AActor* context, const FString& key, const FString& value)
 {
     auto* playerController = UGameplayStatics::GetPlayerController(context->GetWorld(), 0);
 
-    console_buffer = std::string(TCHAR_TO_UTF8(*value));;
-    // Set value of console buffer to 'value';
+    std::string strVal = std::string(TCHAR_TO_UTF8(*value));
     
+    if(!key.IsEmpty()) {
+        console_buffer_map.Add(key, strVal);
+    } else {
+        console_buffer = strVal;
+    }
     return playerController != nullptr;
 }
 
 
-std::string UAirBlueprintLib::GetConsoleBuffer(const AActor* context)
+std::string UAirBlueprintLib::GetConsoleBuffer(const AActor* context, const FString& key)
 {
+    if(key != "" && console_buffer_map.Contains(key)) {
+        return console_buffer_map[key];
+    }
     return console_buffer;
 }
 

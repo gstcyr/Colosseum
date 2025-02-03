@@ -144,8 +144,8 @@ namespace airlib
             return getWorldSimApi()->runConsoleCommand(command);
         });
 
-        pimpl_->server.bind("simGetConsoleBuffer", [&]() -> std::string {
-            return getWorldSimApi()->getConsoleBuffer();
+        pimpl_->server.bind("simGetConsoleBuffer", [&](const std::string& key) -> std::string {
+            return getWorldSimApi()->getConsoleBuffer(key);
         });
         
         pimpl_->server.bind("simGetImages", [&](const std::vector<RpcLibAdaptorsBase::ImageRequest>& request_adapter, const std::string& vehicle_name, bool external) -> vector<RpcLibAdaptorsBase::ImageResponse> {
