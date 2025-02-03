@@ -359,11 +359,12 @@ bool WorldSimApi::runConsoleCommand(const std::string& command)
     return succeeded;
 }
 
-std::string WorldSimApi::getConsoleBuffer()
+std::string WorldSimApi::getConsoleBuffer(const std::string& key)
 {
     std::string message = "";
-    UAirBlueprintLib::RunCommandOnGameThread([this, &message]() {
-        message = UAirBlueprintLib::GetConsoleBuffer(simmode_);
+    UAirBlueprintLib::RunCommandOnGameThread([this, &message, &key]() {
+        FString fStringKey(key.c_str());
+        message = UAirBlueprintLib::GetConsoleBuffer(simmode_, fStringKey);
     },
                                              true);
     return message;

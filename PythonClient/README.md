@@ -18,3 +18,10 @@ Some examples also requires opencv.
 More information on AirSim Python APIs can be found at:
 https://github.com/Microsoft/AirSim/blob/main/docs/python.md
 
+
+
+## To build a new WHL file:
+Easiest to run from turret-vision PyCharm instance so you have access to the venv
+```
+python setup.py bdist_wheel
+```
