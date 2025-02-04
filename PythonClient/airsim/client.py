@@ -409,7 +409,7 @@ class VehicleClient:
         responses_raw = self.client.call('simGetWorldExtents')
         return [GeoPoint.from_msgpack(response_raw) for response_raw in responses_raw]
 
-    def simRunConsoleCommand(self, command):
+    def simRunConsoleCommand(self, command, key=""):
         """
         Allows the client to execute a command in Unreal's native console, via an API.
         Affords access to the countless built-in commands such as "stat unit", "stat fps", "open [map]", adjust any config settings, etc. etc.
@@ -418,16 +418,26 @@ class VehicleClient:
 
         Args:
             command ([string]): Desired Unreal Engine Console command to run
+            key ([string]): If a response is expected from `Set Console Buffer`, this can be used to make sure we retrieve the correct response
 
         Returns:
             [bool]: Success
         """
-        return self.client.call('simRunConsoleCommand', command)
+        result = self.client.call('simRunConsoleCommand', command)
+        if result and key:
+            response = self.client.call("simGetConsoleBuffer", key)
+            return response
+            
+        return result
+        
         
     def simGetConsoleBuffer(self, key=""):
         """
         You can use the 'Set Console Buffer' node in Unreal's Blueprints to set a string value, which can then be read by this function.
         Useful if you need a return value from 'simRunConsoleCommand'.
+        
+        Args:
+            key ([string]): The key set by the `Set Console Buffer` node
         
         Returns:
             [string]
