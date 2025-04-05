@@ -662,7 +662,9 @@ bool UAirBlueprintLib::SetConsoleBuffer(const AActor* context, const FString& ke
 std::string UAirBlueprintLib::GetConsoleBuffer(const AActor* context, const FString& key)
 {
     if(key != "" && console_buffer_map.Contains(key)) {
-        return console_buffer_map[key];
+        std::string result = console_buffer_map[key];
+        console_buffer_map.Remove(key); // Remove the value once it's been retrieved
+        return result;
     }
     return console_buffer;
 }
